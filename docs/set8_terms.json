@@ -10,7 +10,13 @@
 "Combustion occurs without excess air"
 ],
 "a": "B",
-"e": "HHV includes the latent heat of the water vapor, which is recovered when the water condenses to liquid."
+"e": "HHV includes the latent heat of the water vapor, which is recovered when the water condenses to liquid.",
+"x": {
+"A": "Water staying as vapor is the lower heating value, since the latent heat is not counted.",
+"B": "HHV counts the latent heat released when the water formed in combustion condenses to liquid.",
+"C": "A fuel with no hydrogen would form no water, so the vapor-or-liquid question would not even arise; HHV does not assume this.",
+"D": "Excess air changes flue gas temperature and boiler efficiency, not how heating value is defined."
+}
 },
 {
 "q": "What is the primary constituent of natural gas?",
@@ -21,7 +27,13 @@
 "Butane"
 ],
 "a": "A",
-"e": "Natural gas is mostly methane (CH4), typically 85–95%."
+"e": "Natural gas is mostly methane (CH4), typically 85–95%.",
+"x": {
+"A": "Ethane is only a minor component, usually a few percent.",
+"B": "Propane is a small component, normally separated out as LPG.",
+"C": "Methane is the main component, typically 85–95%.",
+"D": "Butane is a trace component, also separated as LPG."
+}
 },
 {
 "q": "What is the reason producer gas requiring more air than natural gas?",
@@ -32,7 +44,13 @@
 "Lower temperature"
 ],
 "a": "A",
-"e": "Producer gas has a much lower heating value, so a larger volume of gas (and its combustion air) is needed for the same heat output. Marked answer on the paper."
+"e": "Producer gas has a much lower heating value, so a larger volume of gas (and its combustion air) is needed for the same heat output. Marked answer on the paper.",
+"x": {
+"A": "Producer gas has a much lower heating value, so a larger volume of gas is burned per unit of heat, which the marked answer ties to its air demand.",
+"B": "Density does not set the air a fuel needs; that comes from its combustible content.",
+"C": "Pressure does not change the chemical amount of air a fuel needs.",
+"D": "Temperature changes air density, not the oxygen needed for the fuel."
+}
 },
 {
 "q": "The Orsat apparatus is used to measure:",
@@ -43,7 +61,13 @@
 "Moisture content"
 ],
 "a": "B",
-"e": "The Orsat apparatus analyzes flue gas by absorbing CO₂, O₂ and CO in turn."
+"e": "The Orsat apparatus analyzes flue gas by absorbing CO₂, O₂ and CO in turn.",
+"x": {
+"A": "Calorific value is measured with a bomb calorimeter, not an Orsat apparatus.",
+"B": "An Orsat apparatus absorbs CO₂, O₂ and CO from a flue-gas sample in turn to find its composition.",
+"C": "Flash point is found with a flash-point tester such as Pensky-Martens.",
+"D": "Moisture content is found by drying a sample and weighing it."
+}
 },
 {
 "q": "The main cause of smoke in combustion is:",
@@ -54,7 +78,13 @@
 "High hydrogen content"
 ],
 "a": "B",
-"e": "Not enough air means incomplete combustion, so unburned carbon shows up as smoke."
+"e": "Not enough air means incomplete combustion, so unburned carbon shows up as smoke.",
+"x": {
+"A": "Excess air gives more complete combustion and does not produce smoke.",
+"B": "Too little air leaves carbon unburned, and it leaves the stack as smoke.",
+"C": "Low sulfur reduces SO₂ and corrosion but has no effect on smoke.",
+"D": "Hydrogen burns readily to water vapor, so hydrogen-rich fuels tend to burn cleaner."
+}
 },
 {
 "q": "In boiler combustion, a low CO₂ percentage with high O₂ indicates:",
@@ -65,7 +95,13 @@
 "High carbon monoxide"
 ],
 "a": "B",
-"e": "Extra air dilutes the flue gas, which lowers the CO₂ percentage and raises the O₂."
+"e": "Extra air dilutes the flue gas, which lowers the CO₂ percentage and raises the O₂.",
+"x": {
+"A": "Perfect combustion would show high CO₂ and very little leftover O₂.",
+"B": "Extra air dilutes the flue gas, lowering CO₂ and raising O₂.",
+"C": "Deficient air gives low O₂ and often CO, so O₂ would not be high.",
+"D": "High CO shows up when air is short, with little O₂, not a lot of it."
+}
 },
 {
 "q": "ASTM D240 is the standard test for:",
@@ -76,7 +112,13 @@
 "Smoke point of kerosene"
 ],
 "a": "B",
-"e": "ASTM D240 measures the heat of combustion of liquid hydrocarbon fuels with a bomb calorimeter."
+"e": "ASTM D240 measures the heat of combustion of liquid hydrocarbon fuels with a bomb calorimeter.",
+"x": {
+"A": "Flash point is covered by ASTM D93 (Pensky-Martens), not D240.",
+"B": "D240 measures the heat of combustion of liquid hydrocarbon fuels with a bomb calorimeter.",
+"C": "Sulfur in coal is covered by other coal tests (for example ASTM D3177).",
+"D": "Smoke point of kerosene is a different test (ASTM D1322)."
+}
 },
 {
 "q": "Which solid fuel generally has the highest volatile matter?",
@@ -87,7 +129,13 @@
 "Peat"
 ],
 "a": "D",
-"e": "Peat is the lowest-rank solid fuel, so it has the highest volatile matter (anthracite has the lowest)."
+"e": "Peat is the lowest-rank solid fuel, so it has the highest volatile matter (anthracite has the lowest).",
+"x": {
+"A": "Anthracite has the lowest volatile matter and the highest carbon.",
+"B": "Bituminous coal has moderate volatile matter.",
+"C": "Lignite is high in volatile matter but ranks above peat.",
+"D": "Peat is the lowest-rank solid fuel, so it has the highest volatile matter."
+}
 },
 {
 "q": "For safe storage of liquid fuels, the container should be:",
@@ -98,7 +146,13 @@
 "Transparent"
 ],
 "a": "B",
-"e": "The container must be sealed to limit vapor escape but vented so pressure from temperature changes can be released."
+"e": "The container must be sealed to limit vapor escape but vented so pressure from temperature changes can be released.",
+"x": {
+"A": "An unvented container can build pressure as temperatures change and rupture.",
+"B": "The container is sealed to limit vapor loss but vented to release pressure.",
+"C": "Heating continuously raises vapor pressure and fire risk.",
+"D": "A transparent container exposes the fuel to sunlight and heat and is not a safety requirement."
+}
 },
 {
 "q": "The ASTM standard for coal proximate analysis is:",
@@ -109,7 +163,13 @@
 "ASTM D93"
 ],
 "a": "A",
-"e": "ASTM D3172 covers proximate analysis of coal and coke (moisture, volatile matter, fixed carbon, ash)."
+"e": "ASTM D3172 covers proximate analysis of coal and coke (moisture, volatile matter, fixed carbon, ash).",
+"x": {
+"A": "ASTM D3172 covers proximate analysis of coal and coke: moisture, volatile matter, fixed carbon and ash.",
+"B": "D240 is the heat of combustion of liquid hydrocarbons, not coal proximate analysis.",
+"C": "D86 is distillation of petroleum products.",
+"D": "D93 is the flash point test."
+}
 },
 {
 "q": "What is meant by “variable load” in a power plant?",
@@ -120,7 +180,13 @@
 "Change in fuel composition"
 ],
 "a": "B",
-"e": "Variable load is the change in electrical demand on the plant over time."
+"e": "Variable load is the change in electrical demand on the plant over time.",
+"x": {
+"A": "A sudden change in steam quality is an operating upset, not a definition of load.",
+"B": "Variable load means the electrical demand on the plant changes over time.",
+"C": "Drum-level variation is a boiler control matter, not a load definition.",
+"D": "A change in fuel composition is a fuel-quality issue, not load."
+}
 },
 {
 "q": "Given two plants of similar capacity where one has lower load demand and the other has higher load demand. Which plant operates more efficiently?",
@@ -131,7 +197,13 @@
 "Depends on fuel type"
 ],
 "a": "A",
-"e": "A higher load factor means the plant runs closer to its rated capacity, so it is used more fully and efficiently."
+"e": "A higher load factor means the plant runs closer to its rated capacity, so it is used more fully and efficiently.",
+"x": {
+"A": "A higher load factor means the plant runs closer to its capacity, so it is used more fully and efficiently.",
+"B": "A lower load factor means the plant sits partly idle and is used less efficiently.",
+"C": "The two are not equal, because how fully each is used differs.",
+"D": "Fuel type affects cost, but load factor is what shows how fully a plant is used."
+}
 },
 {
 "q": "Which control method is commonly used to match generation with variable electrical load?",
@@ -142,7 +214,13 @@
 "Economizer bypass"
 ],
 "a": "B",
-"e": "Automatic generation control (AGC) adjusts generator output to follow changing demand."
+"e": "Automatic generation control (AGC) adjusts generator output to follow changing demand.",
+"x": {
+"A": "Boiler blowdown control removes dissolved solids from boiler water; it does not follow demand.",
+"B": "Automatic generation control adjusts generator output to follow changing demand.",
+"C": "Condenser vacuum adjustment tunes turbine back pressure, not generation to load.",
+"D": "An economizer bypass controls feedwater heating, not load matching."
+}
 },
 {
 "q": "What is “spinning reserve” in variable load management?",
@@ -153,7 +231,13 @@
 "Backup capacity kept running and synchronized"
 ],
 "a": "D",
-"e": "Spinning reserve is generating capacity that is already online and synchronized, ready to pick up load quickly."
+"e": "Spinning reserve is generating capacity that is already online and synchronized, ready to pick up load quickly.",
+"x": {
+"A": "Equipment kept offline is not spinning; it is non-spinning or cold reserve.",
+"B": "Spare condenser tubes are maintenance spares, not generating capacity.",
+"C": "Fuel oil in tanks is fuel inventory, not generating capacity.",
+"D": "Spinning reserve is generating capacity already online and synchronized, ready to pick up load quickly."
+}
 },
 {
 "q": "What is “load factor” in power plant economics?",
@@ -164,7 +248,13 @@
 "Ratio of installed capacity to connected load"
 ],
 "a": "B",
-"e": "Load factor = average load / maximum (peak) demand over a period."
+"e": "Load factor = average load / maximum (peak) demand over a period.",
+"x": {
+"A": "That ratio is the inverse of load factor.",
+"B": "Load factor is average load divided by maximum demand over a period.",
+"C": "The base-to-peak ratio is not the definition of load factor.",
+"D": "Installed capacity against connected load is a different ratio."
+}
 },
 {
 "q": "What is the relation between variable load operation and plant maintenance cost?",
@@ -175,7 +265,13 @@
 "Maintenance cost becomes negligible"
 ],
 "a": "C",
-"e": "Frequent load changes cause thermal and mechanical cycling, which increases wear and maintenance cost."
+"e": "Frequent load changes cause thermal and mechanical cycling, which increases wear and maintenance cost.",
+"x": {
+"A": "Cycling does not reduce wear, so maintenance cost does not fall.",
+"B": "Maintenance cost does not stay constant, because thermal cycling adds stress.",
+"C": "Frequent load changes cause thermal and mechanical cycling, which raises wear and maintenance cost.",
+"D": "Maintenance cost never becomes negligible under cycling."
+}
 },
 {
 "q": "What is the main purpose of peak-load plants in a variable load system?",
@@ -186,7 +282,13 @@
 "To dry the fuel before combustion"
 ],
 "a": "B",
-"e": "Peak-load plants (such as gas turbines or diesel sets) run only when demand is high."
+"e": "Peak-load plants (such as gas turbines or diesel sets) run only when demand is high.",
+"x": {
+"A": "Providing base power at a constant rate is the job of base-load plants.",
+"B": "Peak-load plants, such as gas turbines or diesel sets, run only when demand is high.",
+"C": "Condenser vacuum is controlled by turbine auxiliaries, not peak-load plants.",
+"D": "Fuel drying is a fuel-handling function, not peak-load duty."
+}
 },
 {
 "q": "Which type of control valve is preferred for fast response in variable load steam lines?",
@@ -197,7 +299,13 @@
 "Gate valve"
 ],
 "a": "A",
-"e": "Marked answer on the paper. Globe valves give good throttling and control of flow, which is why they are used in control service."
+"e": "Marked answer on the paper. Globe valves give good throttling and control of flow, which is why they are used in control service.",
+"x": {
+"A": "A globe valve gives good throttling and flow control, which is why it is used in control service.",
+"B": "Butterfly valves are compact but less precise for throttling steam.",
+"C": "Ball valves are meant for quick on/off and throttle poorly.",
+"D": "Gate valves are for on/off isolation, and throttling with them damages the gate."
+}
 },
 {
 "q": "What happens to generator excitation when load increases?",
@@ -208,7 +316,13 @@
 "Excitation becomes zero"
 ],
 "a": "C",
-"e": "More load drops the terminal voltage, so excitation must increase to hold voltage."
+"e": "More load drops the terminal voltage, so excitation must increase to hold voltage.",
+"x": {
+"A": "Decreasing excitation under more load would let the voltage fall further.",
+"B": "Constant excitation would let the terminal voltage sag as load rises.",
+"C": "More load drops the terminal voltage, so excitation must be raised to hold it.",
+"D": "Zero excitation means no field, so the generator would produce no voltage."
+}
 },
 {
 "q": "What is the term for rapid decrease in load due to sudden disconnection of a major consumer?",
@@ -219,7 +333,13 @@
 "Load factor"
 ],
 "a": "B",
-"e": "Load rejection is the sudden loss of load on a generator."
+"e": "Load rejection is the sudden loss of load on a generator.",
+"x": {
+"A": "Peak shaving is deliberately reducing peak demand, not a sudden loss of load.",
+"B": "Load rejection is the sudden loss of load on a generator.",
+"C": "Load shedding is deliberate disconnection of loads to protect the grid.",
+"D": "Load factor is a ratio over time, not an event."
+}
 },
 {
 "q": "Which law of thermodynamics defines the concept of temperature?",
@@ -230,7 +350,13 @@
 "Third law"
 ],
 "a": "A",
-"e": "The zeroth law (thermal equilibrium) is the basis for temperature."
+"e": "The zeroth law (thermal equilibrium) is the basis for temperature.",
+"x": {
+"A": "The zeroth law of thermodynamics (thermal equilibrium) is the basis for temperature.",
+"B": "The first law is conservation of energy.",
+"C": "The second law gives the direction of processes and defines entropy.",
+"D": "The third law deals with entropy at absolute zero."
+}
 },
 {
 "q": "Which property is an intensive property of a system?",
@@ -241,7 +367,13 @@
 "Total energy"
 ],
 "a": "B",
-"e": "Intensive properties do not depend on the amount of matter. Temperature is intensive; the others are extensive."
+"e": "Intensive properties do not depend on the amount of matter. Temperature is intensive; the others are extensive.",
+"x": {
+"A": "Volume depends on the amount of matter, so it is extensive.",
+"B": "Temperature does not depend on the amount of matter, so it is intensive.",
+"C": "Mass depends on the amount of matter, so it is extensive.",
+"D": "Total energy depends on the size of the system, so it is extensive."
+}
 },
 {
 "q": "What is an example of an extensive property?",
@@ -252,7 +384,13 @@
 "Density"
 ],
 "a": "A",
-"e": "Extensive properties depend on system size, as volume does."
+"e": "Extensive properties depend on system size, as volume does.",
+"x": {
+"A": "Volume depends on system size, so it is extensive.",
+"B": "Temperature is intensive; it does not depend on system size.",
+"C": "Pressure is intensive; it does not depend on system size.",
+"D": "Density is intensive, since it is mass per unit volume."
+}
 },
 {
 "q": "What is the term for a system that can exchange energy but not mass with its surroundings?",
@@ -263,7 +401,13 @@
 "Adiabatic system"
 ],
 "a": "A",
-"e": "A closed system exchanges energy (heat or work) but no mass."
+"e": "A closed system exchanges energy (heat or work) but no mass.",
+"x": {
+"A": "A closed system exchanges energy (heat or work) but no mass.",
+"B": "An open system exchanges both mass and energy.",
+"C": "An isolated system exchanges neither mass nor energy.",
+"D": "An adiabatic system exchanges no heat but can still exchange mass or work."
+}
 },
 {
 "q": "Which thermodynamic property is a measure of disorder?",
@@ -274,7 +418,13 @@
 "Exergy"
 ],
 "a": "B",
-"e": "Entropy measures molecular disorder (randomness)."
+"e": "Entropy measures molecular disorder (randomness).",
+"x": {
+"A": "Enthalpy is the total heat content, not a measure of disorder.",
+"B": "Entropy measures molecular disorder or randomness.",
+"C": "Internal energy is the energy stored in molecules, not disorder.",
+"D": "Exergy is the useful work potential, not disorder."
+}
 },
 {
 "q": "Which type of system does not exchange either mass or energy with its surroundings?",
@@ -285,7 +435,13 @@
 "Control volume"
 ],
 "a": "B",
-"e": "An isolated system exchanges neither mass nor energy."
+"e": "An isolated system exchanges neither mass nor energy.",
+"x": {
+"A": "A closed system still exchanges energy.",
+"B": "An isolated system exchanges neither mass nor energy.",
+"C": "An open system exchanges both mass and energy.",
+"D": "A control volume is a region in space that can have mass crossing its boundary."
+}
 },
 {
 "q": "What does the second law of thermodynamics establish?",
@@ -296,7 +452,13 @@
 "Definition of enthalpy"
 ],
 "a": "B",
-"e": "The second law gives the direction of natural processes. Heat flows from hot to cold without outside work."
+"e": "The second law gives the direction of natural processes. Heat flows from hot to cold without outside work.",
+"x": {
+"A": "Conservation of energy is the first law, not the second.",
+"B": "The second law gives the direction of natural processes: heat flows from hot to cold without outside work.",
+"C": "The Cp and Cv relation comes from the ideal gas relation, not the second law.",
+"D": "Enthalpy is a defined property (h = u + pv), not set by the second law."
+}
 },
 {
 "q": "What is the term for the energy that can be converted into work?",
@@ -307,7 +469,13 @@
 "Latent heat"
 ],
 "a": "C",
-"e": "Exergy (available energy) is the maximum useful work obtainable."
+"e": "Exergy (available energy) is the maximum useful work obtainable.",
+"x": {
+"A": "Entropy measures disorder; it is not the energy available for work.",
+"B": "Enthalpy is the total heat content, and not all of it can become work.",
+"C": "Exergy is the maximum useful work obtainable from the energy.",
+"D": "Latent heat is the heat absorbed or released during a phase change."
+}
 },
 {
 "q": "What is the relation between internal energy and enthalpy change for constant pressure processes?",
@@ -318,7 +486,13 @@
 "Δu = Δh − pΔv"
 ],
 "a": "C",
-"e": "From h = u + pv at constant p: Δh = Δu + pΔv."
+"e": "From h = u + pv at constant p: Δh = Δu + pΔv.",
+"x": {
+"A": "The sign is wrong: from h = u + pv at constant pressure, Δh = Δu + pΔv, so Δu would be Δh minus pΔv.",
+"B": "The sign is wrong: Δh is Δu plus pΔv, not minus.",
+"C": "From h = u + pv at constant pressure, Δh = Δu + pΔv.",
+"D": "This is the same relation rearranged, so it is also true; the marked answer simply writes it as Δh in terms of Δu."
+}
 },
 {
 "q": "What parameters are inversely related when enthalpy is constant?",
@@ -329,7 +503,13 @@
 "Volume and temperature"
 ],
 "a": "A",
-"e": "Marked answer on the paper: pressure and volume. In a constant-enthalpy (throttling) process, an increase in one goes with a decrease in the other."
+"e": "Marked answer on the paper: pressure and volume. In a constant-enthalpy (throttling) process, an increase in one goes with a decrease in the other.",
+"x": {
+"A": "For an ideal gas at constant enthalpy the temperature stays constant, so pv is constant and pressure and volume are inversely related.",
+"B": "Density and pressure move together for a gas, not inversely.",
+"C": "Temperature and pressure at constant enthalpy depend on the Joule-Thomson effect and are not a simple inverse pair.",
+"D": "Volume and temperature are not simply inverse at constant enthalpy."
+}
 },
 {
 "q": "What parameter primarily affects Diesel cycle efficiency?",
@@ -340,7 +520,13 @@
 "Temperature only"
 ],
 "a": "A",
-"e": "Marked answer on the paper. Diesel cycle efficiency depends on compression ratio and cut-off ratio, and of the choices given only cut-off ratio is a cycle parameter."
+"e": "Marked answer on the paper. Diesel cycle efficiency depends on compression ratio and cut-off ratio, and of the choices given only cut-off ratio is a cycle parameter.",
+"x": {
+"A": "Cut-off ratio is a cycle parameter that, with compression ratio, sets Diesel cycle efficiency.",
+"B": "Pressure alone is not a parameter that sets Diesel cycle efficiency.",
+"C": "Volume alone is not a parameter that sets Diesel cycle efficiency.",
+"D": "Temperature alone is not a parameter that sets Diesel cycle efficiency."
+}
 },
 {
 "q": "What determines the mean effective pressure in an engine cycle?",
@@ -351,7 +537,13 @@
 "Compression ratio only"
 ],
 "a": "A",
-"e": "mep = net work per cycle / displacement volume, so work per cycle is the determining factor."
+"e": "mep = net work per cycle / displacement volume, so work per cycle is the determining factor.",
+"x": {
+"A": "Mean effective pressure is net work per cycle divided by displacement volume, so work per cycle determines it.",
+"B": "Fuel type affects heat release, but mep is defined by work and displacement.",
+"C": "Cylinder volume is only the denominator of mep.",
+"D": "Compression ratio affects efficiency but does not set mep by itself."
+}
 },
 {
 "q": "Which device regulates the air-fuel mixture in a carbureted SI engine?",
@@ -362,7 +554,13 @@
 "Supercharger"
 ],
 "a": "C",
-"e": "The carburetor meters fuel into the air stream in a carbureted engine."
+"e": "The carburetor meters fuel into the air stream in a carbureted engine.",
+"x": {
+"A": "An injector sprays fuel in fuel-injected engines, not in a carbureted one.",
+"B": "A governor controls engine speed, not the mixture.",
+"C": "The carburetor meters fuel into the airstream in a carbureted engine.",
+"D": "A supercharger raises intake pressure and does not meter the mixture."
+}
 },
 {
 "q": "Which cycle efficiency depends only on compression ratio?",
@@ -373,7 +571,13 @@
 "Rankine cycle"
 ],
 "a": "A",
-"e": "Otto efficiency = 1 − 1/r^(k−1), which depends only on compression ratio (and k)."
+"e": "Otto efficiency = 1 − 1/r^(k−1), which depends only on compression ratio (and k).",
+"x": {
+"A": "Otto efficiency is 1 − 1/r^(k−1), which depends only on compression ratio (and k).",
+"B": "Diesel efficiency also depends on cut-off ratio.",
+"C": "The dual cycle depends on cut-off ratio and pressure ratio too.",
+"D": "The Rankine cycle depends on pressures and temperatures, not a compression ratio."
+}
 },
 {
 "q": "What is the main advantage of a two-stroke engine over a four-stroke engine?",
@@ -384,7 +588,13 @@
 "Cleaner exhaust gases"
 ],
 "a": "B",
-"e": "A two-stroke fires every revolution, giving a higher power-to-weight ratio."
+"e": "A two-stroke fires every revolution, giving a higher power-to-weight ratio.",
+"x": {
+"A": "Two-strokes are usually less efficient because some fresh charge is lost during scavenging.",
+"B": "A two-stroke fires every revolution, giving more power for its weight.",
+"C": "Two-strokes usually burn more fuel because fresh charge can escape with the exhaust.",
+"D": "Two-strokes tend to have dirtier exhaust, with unburned fuel and burned lubricating oil."
+}
 },
 {
 "q": "Which engine efficiency is always lower than the air-standard efficiency?",
@@ -395,7 +605,13 @@
 "Brake efficiency"
 ],
 "a": "D",
-"e": "Brake efficiency includes all losses (combustion, heat, friction), so it is the lowest. Marked answer on the paper."
+"e": "Brake efficiency includes all losses (combustion, heat, friction), so it is the lowest. Marked answer on the paper.",
+"x": {
+"A": "Thermal efficiency is a general term and can refer to indicated or brake values.",
+"B": "Mechanical efficiency is the ratio of brake to indicated power, not an overall efficiency.",
+"C": "Indicated efficiency is also below air-standard, but brake efficiency is lower still because friction losses are subtracted.",
+"D": "Brake efficiency includes all losses (combustion, heat and friction), so it is the lowest."
+}
 },
 {
 "q": "What does the term “stoichiometric air-fuel ratio” mean?",
@@ -406,7 +622,13 @@
 "Excess air supplied to reduce emissions"
 ],
 "a": "C",
-"e": "Stoichiometric means the exact (theoretical) amount of air needed to burn the fuel completely, with no excess."
+"e": "Stoichiometric means the exact (theoretical) amount of air needed to burn the fuel completely, with no excess.",
+"x": {
+"A": "Maximum air supply is not the meaning of stoichiometric.",
+"B": "Minimum air is close, but the textbook meaning is the exact amount needed.",
+"C": "Stoichiometric means exactly the air needed for complete combustion, with no excess.",
+"D": "Excess air is supplied beyond stoichiometric, so it is not the definition."
+}
 },
 {
 "q": "What is the effect of increasing compression ratio in SI engines?",
@@ -417,7 +639,13 @@
 "Efficiency becomes independent of ratio"
 ],
 "a": "C",
-"e": "Otto efficiency rises with compression ratio (until knock limits it)."
+"e": "Otto efficiency rises with compression ratio (until knock limits it).",
+"x": {
+"A": "Efficiency does not fall as compression ratio rises.",
+"B": "Efficiency is not constant; it changes with compression ratio.",
+"C": "Otto efficiency rises with compression ratio, until knock limits it.",
+"D": "Efficiency depends strongly on compression ratio."
+}
 },
 {
 "q": "Which type of scavenging is used in most two-stroke engines?",
@@ -428,7 +656,13 @@
 "Radial scavenging"
 ],
 "a": "B",
-"e": "Loop scavenging is the most common design in two-stroke engines. (The handwriting on your paper for this one was hard to read, so please check it.)"
+"e": "Loop scavenging is the most common design in two-stroke engines. (The handwriting on your paper for this one was hard to read, so please check it.)",
+"x": {
+"A": "Cross scavenging was used in older designs with a deflector piston.",
+"B": "Loop scavenging is the most common design in two-stroke engines.",
+"C": "Uniflow scavenging is used in large engines with exhaust valves.",
+"D": "Radial scavenging is not a standard scavenging type."
+}
 },
 {
 "q": "What is the effect of increasing cut-off ratio in a Diesel cycle?",
@@ -439,7 +673,13 @@
 "Efficiency doubles"
 ],
 "a": "C",
-"e": "A larger cut-off ratio means heat is added over more of the stroke, which lowers Diesel cycle efficiency."
+"e": "A larger cut-off ratio means heat is added over more of the stroke, which lowers Diesel cycle efficiency.",
+"x": {
+"A": "Efficiency does not rise with a larger cut-off ratio.",
+"B": "Efficiency is not constant; it changes with cut-off ratio.",
+"C": "A larger cut-off ratio means heat is added over more of the stroke, which lowers Diesel cycle efficiency.",
+"D": "Efficiency cannot double from a larger cut-off ratio."
+}
 },
 {
 "q": "What is the basic mode of heat transfer in solids?",
@@ -450,7 +690,13 @@
 "Advection"
 ],
 "a": "A",
-"e": "Heat moves through solids mainly by conduction."
+"e": "Heat moves through solids mainly by conduction.",
+"x": {
+"A": "Conduction is the basic mode of heat transfer in solids.",
+"B": "Convection needs a moving fluid, so it is not the basic mode in solids.",
+"C": "Radiation needs no medium, but it is not the main mode inside a solid.",
+"D": "Advection is transport by bulk fluid flow, not heat transfer in solids."
+}
 },
 {
 "q": "What law states that heat flux is proportional to the negative temperature gradient?",
@@ -461,7 +707,13 @@
 "Planck's law"
 ],
 "a": "C",
-"e": "Fourier's law: q = −k·dT/dx."
+"e": "Fourier's law: q = −k·dT/dx.",
+"x": {
+"A": "The Stefan-Boltzmann law is about radiation and temperature to the fourth power.",
+"B": "Newton's law of cooling relates convective heat transfer to temperature difference.",
+"C": "Fourier's law says heat flux is proportional to the negative temperature gradient.",
+"D": "Planck's law gives the spectrum of radiation."
+}
 },
 {
 "q": "What heat transfer law states that heat transfer is proportional to temperature difference?",
@@ -472,7 +724,13 @@
 "Kirchhoff's law"
 ],
 "a": "C",
-"e": "Newton's law of cooling: q = hA(Ts − T∞)."
+"e": "Newton's law of cooling: q = hA(Ts − T∞).",
+"x": {
+"A": "The Stefan-Boltzmann law is about radiation and temperature to the fourth power.",
+"B": "Fourier's law is conduction, with heat flux proportional to the temperature gradient.",
+"C": "Newton's law of cooling: q = hA(Ts − T∞), proportional to the temperature difference.",
+"D": "Kirchhoff's law relates emissivity and absorptivity."
+}
 },
 {
 "q": "What factor directly affects convective heat transfer?",
@@ -483,7 +741,13 @@
 "Temperature only"
 ],
 "a": "A",
-"e": "Higher fluid velocity thins the boundary layer and changes the convection coefficient."
+"e": "Higher fluid velocity thins the boundary layer and changes the convection coefficient.",
+"x": {
+"A": "Fluid velocity directly changes the boundary layer and the convection coefficient.",
+"B": "Density alone does not set convective heat transfer.",
+"C": "Pressure alone does not set convective heat transfer.",
+"D": "Temperature alone does not set convective heat transfer."
+}
 },
 {
 "q": "What happens to the convection heat transfer coefficient when air velocity increases?",
@@ -494,7 +758,13 @@
 "Becomes zero"
 ],
 "a": "A",
-"e": "Faster flow thins the boundary layer, so h goes up."
+"e": "Faster flow thins the boundary layer, so h goes up.",
+"x": {
+"A": "Faster flow thins the boundary layer, so the coefficient goes up.",
+"B": "The coefficient does not decrease when velocity rises.",
+"C": "The coefficient does not stay constant when velocity rises.",
+"D": "The coefficient does not become zero when velocity rises."
+}
 },
 {
 "q": "Which non-dimensional number compares conduction resistance to convection resistance?",
@@ -505,7 +775,13 @@
 "Prandtl number"
 ],
 "a": "C",
-"e": "Bi = hL/k is the ratio of internal conduction resistance to surface convection resistance."
+"e": "Bi = hL/k is the ratio of internal conduction resistance to surface convection resistance.",
+"x": {
+"A": "The Reynolds number compares inertial and viscous forces.",
+"B": "The Nusselt number compares convection to conduction in the fluid.",
+"C": "Bi = hL/k compares internal conduction resistance with surface convection resistance.",
+"D": "The Prandtl number compares momentum and thermal diffusivity."
+}
 },
 {
 "q": "Which boundary condition represents constant surface temperature?",
@@ -516,7 +792,13 @@
 "Fourier condition"
 ],
 "a": "A",
-"e": "The Dirichlet (first-kind) condition specifies the surface temperature."
+"e": "The Dirichlet (first-kind) condition specifies the surface temperature.",
+"x": {
+"A": "A Dirichlet condition specifies the surface temperature.",
+"B": "A Robin condition is a mixed condition involving convection at the surface.",
+"C": "A Neumann condition specifies the heat flux at the surface.",
+"D": "Fourier condition is not a standard name for a boundary condition."
+}
 },
 {
 "q": "What is the mechanism of heat transfer in fluids due to bulk motion?",
@@ -527,7 +809,13 @@
 "Evaporation"
 ],
 "a": "C",
-"e": "Convection is heat transfer carried by the bulk motion of a fluid."
+"e": "Convection is heat transfer carried by the bulk motion of a fluid.",
+"x": {
+"A": "Conduction is molecular energy transfer without bulk motion.",
+"B": "Radiation is energy transfer by electromagnetic waves.",
+"C": "Convection is heat carried by the bulk motion of a fluid.",
+"D": "Evaporation is a phase change, not a heat transfer mechanism."
+}
 },
 {
 "q": "Which type of convection occurs when a fan is used to cool a heated surface?",
@@ -538,7 +826,13 @@
 "Radiation"
 ],
 "a": "B",
-"e": "A fan moves the fluid externally, which is forced convection."
+"e": "A fan moves the fluid externally, which is forced convection.",
+"x": {
+"A": "Natural convection is driven by buoyancy, not by a fan.",
+"B": "A fan moves the fluid externally, which is forced convection.",
+"C": "Boiling convection involves a phase change, not just a fan.",
+"D": "Radiation is a separate mechanism, not a type of convection."
+}
 },
 {
 "q": "Which dimensionless number is used to calculate radiative heat transfer between surfaces?",
@@ -549,7 +843,13 @@
 "Radiation shape factor"
 ],
 "a": "D",
-"e": "Marked answer on the paper. The view factor and radiation shape factor are the same geometric quantity (F12), so check which one your reviewer prefers."
+"e": "Marked answer on the paper. The view factor and radiation shape factor are the same geometric quantity (F12), so check which one your reviewer prefers.",
+"x": {
+"A": "The Biot number compares conduction and convection resistance, not radiation between surfaces.",
+"B": "The view factor is the geometric fraction of radiation that leaves one surface and reaches another, the same quantity as the shape factor, so this is also arguably correct.",
+"C": "The Nusselt number is for convection.",
+"D": "The radiation shape factor is the geometric quantity used for radiation between surfaces (the marked answer)."
+}
 }
 ]
 }

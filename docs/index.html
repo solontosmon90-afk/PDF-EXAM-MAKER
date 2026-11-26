@@ -48,7 +48,7 @@ return qs.filter(x=>x.c.filter(Boolean).length>=2)}
 async function doImport(){const t=document.getElementById('t').value.trim();let title=document.getElementById('n').value.trim(),qs;
 try{const j=JSON.parse(t);qs=Array.isArray(j)?j:j.questions;title=title||j.title}catch(e){qs=parse(t)}
 if(!qs||!qs.length){alert('No questions found.');return}
-qs=qs.map(x=>({q:x.q,c:Array.from(x.c||[]).map(s=>s||''),a:x.a??null,e:x.e??''}));if(await putSet(title||'Set',qs)){view='home';render()}}
+qs=qs.map(x=>({q:x.q,c:Array.from(x.c||[]).map(s=>s||''),a:x.a??null,e:x.e??'',x:x.x||null}));if(await putSet(title||'Set',qs)){view='home';render()}}
 function home(){return `<h2>Reviewer Quiz</h2><button class="b" onclick="togSnd()">${snd?'🔊 Sound on':'🔇 Sound off'}</button>`+(navigator.onLine?'':'<p><small>Offline: your answers are saved on this phone and will sync when you’re back online.</small></p>')+(isEd?`<button class="b p" onclick="view='imp';render()">+ Add questions</button>`:'')+
 (sets.length?sets.map(s=>{const lines=Object.keys(results).filter(u=>results[u][s.id]).map(u=>{const p=results[u][s.id];return `${u===me?'You':esc(names[u]?.name||'Someone')}: ${p.ok}/${p.g} correct · ${p.n}/${s.n} answered`}).join('<br>');
 return `<button class="b" onclick="openSet('${s.id}')"><b>${esc(s.title)}</b> <small>(${s.n} questions)</small>${lines?'<br><small>'+lines+'</small>':''}</button>`}).join(''):'<p><small>No quizzes yet.</small></p><button class="b" onclick="loadStarter()">Load the 2 starter sets</button>')}
@@ -70,7 +70,10 @@ let h=`<div class="row"><button class="b" onclick="view='setup';render()">←</b
 if(grid)return h+`<div class="g">${S.o.map((k,n)=>`<button onclick="go(${n})" style="${p.a[k]?'border-color:var(--ac)':''}">${n+1}</button>`).join('')}</div>`;
 h+=`<h3>${i+1}. ${esc(q.q)}</h3>`;
 pm.forEach((src,j)=>{const l=L[j];let cl='';if(a){if(ca)cl=l===ca?'ok':(l===a?'bad':'');else if(l===a)cl='sel'}h+=`<button class="b ${cl}" onclick="pick('${l}')"><b>${l}.</b> ${esc(q.c[src])}</button>`});
-if(a&&ca)h+=`<div class="ex"><b>${a===ca?'Correct':'Correct answer: '+ca}</b>${q.e?'<br>'+esc(q.e):''}</div>`;
+if(a&&ca){const X=q.x||{},xa=X[L[pm[L.indexOf(a)]]],xc=X[L[pm[L.indexOf(ca)]]],ok=a===ca;let ex='<b>'+(ok?'Correct':'Wrong. Correct answer: '+ca)+'</b>';
+if(!ok&&xa)ex+='<br><b>Why your answer ('+a+') is wrong:</b> '+esc(xa);
+if(xc)ex+='<br>'+(ok?'':'<b>Why '+ca+' is right:</b> ')+esc(xc);
+if(q.e)ex+='<br><small>'+esc(q.e)+'</small>';h+='<div class="ex">'+ex+'</div>'}
 if(a&&!ca)h+=`<div class="ex"><small>No answer key for this item.</small></div>`;
 return h+`<div class="row" style="margin-top:12px"><button class="b" ${i?'':'disabled'} onclick="go(i-1)">Prev</button><button class="b p" ${i<S.o.length-1?'':'disabled'} onclick="go(i+1)">Next</button></div>`}
 function res(){const p=mine[cur.id],S=sess(cur,p),wrong=[];S.o.forEach((K,n)=>{const q=S.qs[K],a=p.a[K];if(a&&q.a&&a!==L[S.perm[K].indexOf(L.indexOf(q.a))])wrong.push(n)});
