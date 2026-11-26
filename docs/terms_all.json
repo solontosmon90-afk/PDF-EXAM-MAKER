@@ -1,0 +1,3525 @@
+{
+"title": "ME Review - Terms (all sets)",
+"questions": [
+{
+"q": "Which of the following predicts the failure stress reasonably well for brittle materials under static biaxial loading?",
+"c": [
+"Maximum normal stress theory",
+"Coulomb-Mohr theory",
+"Von Mises Theory",
+"Maximum shear stress theory"
+],
+"a": "A",
+"e": "Maximum normal stress (Rankine) theory: a brittle part fails when the largest principal stress reaches the ultimate strength. Von Mises and maximum shear are ductile-yield criteria. (Coulomb-Mohr is a refinement for brittle materials with different tensile and compressive strengths.)"
+},
+{
+"q": "In the absence of friction, a simple machine is an ideal machine if the efficiency is",
+"c": [
+"less than 1",
+"1",
+"Zero",
+"greater than 1"
+],
+"a": "B",
+"e": "Efficiency = output work / input work. With no friction there are no losses, so efficiency = 1 (100%)."
+},
+{
+"q": "Which of the following is a form of an inclined plane?",
+"c": [
+"Pulley",
+"Screw",
+"Lever",
+"Wheel and axle"
+],
+"a": "B",
+"e": "A screw is an inclined plane wrapped around a cylinder (a helical ramp)."
+},
+{
+"q": "What is the ideal mechanical advantage of a machine that changes only the direction of the input force?",
+"c": [
+"less than 1",
+"zero",
+"1",
+"greater than 1"
+],
+"a": "C",
+"e": "Output force equals input force (e.g., a fixed pulley), so IMA = 1."
+},
+{
+"q": "Ackermann steering gear is made up of",
+"c": [
+"Sliding and rotary pairs",
+"Rolling pairs",
+"Turning pairs",
+"Rolling and sliding pairs"
+],
+"a": "C",
+"e": "The Ackermann gear is a four-bar linkage with turning (revolute) pairs only. The Davis gear is the one with sliding pairs."
+},
+{
+"q": "What is the meaning of the “U” stamp on a pressure vessel?",
+"c": [
+"It meets ASME Boiler and Pressure Vessel Code requirements",
+"It is approved for nuclear-grade service",
+"It has passed ultrasonic testing only",
+"It is intended for low-temperature operation"
+],
+"a": "A",
+"e": "The ASME “U” stamp certifies the vessel was designed, fabricated and inspected per the ASME BPV Code (Section VIII)."
+},
+{
+"q": "Which failure mode is most critical for long, slender columns under compressive load?",
+"c": [
+"Buckling",
+"Yielding",
+"Fatigue",
+"Shear failure"
+],
+"a": "A",
+"e": "Slender columns fail by sudden lateral instability (buckling) well before the material yields."
+},
+{
+"q": "What is the term for the ratio of a column's effective length to its radius of gyration?",
+"c": [
+"Slenderness ratio",
+"Aspect ratio",
+"Shape factor",
+"Stress ratio"
+],
+"a": "A",
+"e": "Slenderness ratio = Le / r, where r is the radius of gyration."
+},
+{
+"q": "Which support condition provides both vertical reaction and moment resistance?",
+"c": [
+"Fixed support",
+"Roller support",
+"Pin support",
+"Link support"
+],
+"a": "A",
+"e": "A fixed support restrains translation and rotation, so it gives reactions in both directions and a moment. Pin: forces only. Roller: one force only."
+},
+{
+"q": "What is the combination of applied normal and shear stresses that produces the maximum principal normal stress or minimum principal normal stress, with a third principal stress between or equivalent to the extremes?",
+"c": [
+"Principal shear stress",
+"Principal normal stress",
+"Maximum shear stress",
+"Bending and shear stresses"
+],
+"a": "B",
+"e": "Principal normal stresses are the maximum and minimum normal stresses acting on planes with zero shear stress."
+},
+{
+"q": "What is the other term for the Maximum-Shear-Stress Theory, as a failure prediction theory?",
+"c": [
+"von Mises criterion",
+"Tresca yield criterion",
+"Coulomb-Mohr theory",
+"Modified Mohr theory"
+],
+"a": "B",
+"e": "The Tresca criterion is the maximum shear stress theory: yielding starts when τmax reaches Sy/2. Von Mises is the distortion-energy theory."
+},
+{
+"q": "In planar kinematics, what is the locus of points on a moving body that exhibits zero rate of change of curvature at a given instant?",
+"c": [
+"Cubic of stationary curvature",
+"Fixed centrode",
+"Inflection circle",
+"Evolute of the path"
+],
+"a": "A",
+"e": "The cubic of stationary curvature is the locus of points whose path curvature is momentarily stationary. The inflection circle is the locus of points with zero curvature (instantaneous straight-line motion)."
+},
+{
+"q": "Which of the following is the ratio of the fatigue strength without a stress concentration to the fatigue strength with a stress concentration?",
+"c": [
+"Notch sensitivity factor",
+"Factor of safety",
+"Reliability factor",
+"Fatigue stress concentration factor"
+],
+"a": "D",
+"e": "Kf = fatigue strength of unnotched specimen / fatigue strength of notched specimen."
+},
+{
+"q": "This is a theory in cyclic and impact loading which states that damage at any stress level is proportional to the number of cycles. What is this theory commonly called?",
+"c": [
+"Miner's Rule",
+"Paris Power Law",
+"Goodman Rule",
+"Manson-Coffin Relationship"
+],
+"a": "A",
+"e": "Miner's rule (linear cumulative damage): D = Σ ni/Ni, with failure when D = 1."
+},
+{
+"q": "A storage tank for saline water requires a material that is lightweight, corrosion-resistant, and has good mechanical strength. Which material is the most suitable choice?",
+"c": [
+"6061 aluminum alloy",
+"Galvanized steel",
+"Medium carbon steel",
+"Austenitic stainless steel 316"
+],
+"a": "A",
+"e": "6061 aluminum best matches all three needs (low weight, corrosion resistance, good strength). 316 stainless resists chlorides but is much heavier; carbon and galvanized steel corrode."
+},
+{
+"q": "It is one of the rigid members/bodies joined together to form a kinematic chain.",
+"c": [
+"Coplanar",
+"Link",
+"Frame",
+"Machine"
+],
+"a": "B",
+"e": "A link is a rigid body (or resistant body) connected to others by joints to form a kinematic chain."
+},
+{
+"q": "For a kinematic chain to be considered as a mechanism",
+"c": [
+"None of the links should be fixed",
+"One link should be fixed",
+"Two links should be fixed",
+"There is no such criterion"
+],
+"a": "B",
+"e": "Fixing one link (the frame) turns a kinematic chain into a mechanism."
+},
+{
+"q": "The mechanism used to enlarge or reduce movements for reproducing drawings to different scales is called",
+"c": [
+"Clinograph",
+"Trisquare",
+"Graphometer",
+"Pantograph"
+],
+"a": "D",
+"e": "A pantograph is a parallelogram-based linkage that copies a drawing at a different scale."
+},
+{
+"q": "In gramophones for adjusting the speed of the turn-table, what type of governor is commonly used?",
+"c": [
+"Hartung type",
+"Inertia type",
+"Pickering type",
+"Wilson Hartnell"
+],
+"a": "C",
+"e": "The Pickering governor (leaf-spring type) is used in gramophones and phonographs."
+},
+{
+"q": "What beam is carried by three or more supports, allowing the bending effects to be distributed along its span?",
+"c": [
+"Continuous beam",
+"Cantilever beam",
+"Propped cantilever beam",
+"Fixed beam"
+],
+"a": "A",
+"e": "A continuous beam spans over three or more supports."
+},
+{
+"q": "Which beam-section property is used as the ratio of moment of inertia to the distance from the neutral axis to the extreme fiber?",
+"c": [
+"Section modulus",
+"Polar moment of inertia",
+"Slenderness ratio",
+"Modulus of elasticity"
+],
+"a": "A",
+"e": "Section modulus S = I/c."
+},
+{
+"q": "For a compression member, what property is increased when the diameter of the column is made larger?",
+"c": [
+"Resistance to buckling",
+"Torsional shear stress",
+"Bearing pressure",
+"Surface hardness"
+],
+"a": "A",
+"e": "A larger diameter raises I and lowers the slenderness ratio, so the critical load (Pcr = π²EI/L²) increases."
+},
+{
+"q": "In a beam under bending, what is the axis where the normal bending stress becomes zero?",
+"c": [
+"Neutral axis",
+"Shear center",
+"Principal axis",
+"Elastic curve"
+],
+"a": "A",
+"e": "Bending stress varies linearly from the neutral axis (zero stress), which passes through the centroid for elastic bending."
+},
+{
+"q": "If an eccentric compressive load acts within the kern of a column section, what stress condition exists over the whole cross-section?",
+"c": [
+"Entire section remains in compression",
+"One side becomes tensile only",
+"Entire section is subjected to shear",
+"Section becomes stress-free at the edge"
+],
+"a": "A",
+"e": "Within the kern (core) the bending stress never exceeds the direct compressive stress, so no tension develops anywhere."
+},
+{
+"q": "It is also known as the diamond pyramid hardness test, uses a pyramid-shaped diamond indenter and a load that ranges from 1 kg to 120 kg.",
+"c": [
+"Vickers test",
+"Mohs hardness",
+"Knoop test",
+"Brinell test"
+],
+"a": "A",
+"e": "The Vickers test uses a square-based diamond pyramid. Knoop uses an elongated pyramid; Brinell uses a steel ball."
+},
+{
+"q": "“For a planar four-bar linkage, the sum of the shortest and longest lengths cannot be greater than the sum of the remaining two link lengths if there is to be a continuous relative rotation between two members.” How do you call the preceding statement?",
+"c": [
+"Grubler's Law",
+"Coriolli's Law",
+"Grashof's Law",
+"Freudenstein's Law"
+],
+"a": "C",
+"e": "Grashof's law: s + l ≤ p + q."
+},
+{
+"q": "It is a Grashof four-bar mechanism in which the shortest link is the frame or fixed link and the other two cranks completely rotate with their axes. How do you call this Grashof four-bar mechanism?",
+"c": [
+"Drag-link mechanism",
+"Double-rocker mechanism",
+"Crank-rocker mechanism",
+"Triple-rocker mechanism"
+],
+"a": "A",
+"e": "Shortest link fixed gives a double-crank (drag-link) mechanism. Shortest link as the crank gives a crank-rocker; shortest link as the coupler gives a double-rocker."
+},
+{
+"q": "The motion of a shaft in a circular hole is an example of ______ motion.",
+"c": [
+"successful constraint",
+"completely constraint",
+"free",
+"incompletely constraint"
+],
+"a": "D",
+"e": "The shaft can both rotate and slide along the hole, so the motion depends on the applied force direction: incompletely constrained motion."
+},
+{
+"q": "Which property best distinguishes a ductile material from a brittle one when analyzing a stress-strain diagram?",
+"c": [
+"Greater energy absorption prior to fracture",
+"Higher modulus of elasticity",
+"Lower yield strength",
+"Sudden fracture without deformation"
+],
+"a": "A",
+"e": "Ductile materials show a large plastic region, so a large area under the curve (toughness) before fracture. Brittle materials fracture with little deformation."
+},
+{
+"q": "In vibration analysis, which parameter governs the natural frequency of a simple spring–mass system?",
+"c": [
+"Square root of stiffness-to-mass ratio",
+"Ratio of mass to stiffness",
+"Product of stiffness and displacement",
+"Inverse of mass only"
+],
+"a": "A",
+"e": "ωn = √(k/m)."
+},
+{
+"q": "Which superalloy is commonly utilized as a stainless-type material due to its high yield strength?",
+"c": [
+"Allegheny Ludlum alloy",
+"Nitralloy",
+"Nimonic alloy",
+"Inconel alloy"
+],
+"a": "A",
+"e": "Marked answer: Allegheny Ludlum alloy. Nimonic and Inconel are nickel-base alloys for high-temperature service; Nitralloy is a nitriding steel."
+},
+{
+"q": "Which term refers to the vector change in position of an object with respect to a reference point?",
+"c": [
+"Displacement",
+"Path length",
+"Speed",
+"Rate of change of velocity"
+],
+"a": "A",
+"e": "Displacement is a vector (straight-line change in position). Path length and speed are scalars; rate of change of velocity is acceleration."
+},
+{
+"q": "Which component of acceleration is directed inward toward the center of rotation in circular motion?",
+"c": [
+"Radial acceleration",
+"Tangential acceleration",
+"Translational acceleration",
+"Angular acceleration"
+],
+"a": "A",
+"e": "Radial (centripetal) acceleration = v²/r = ω²r, pointing toward the center."
+},
+{
+"q": "The instantaneous center of rotation of a rigid thin disc rolling without slip on a plane rigid surface is located at",
+"c": [
+"the center of the disc",
+"an infinite distance perpendicular to the plane surface",
+"the point of contact",
+"the point on the circumference situated vertically opposite to the contact point"
+],
+"a": "C",
+"e": "With no slip, the contact point has zero instantaneous velocity, so it is the instantaneous center."
+},
+{
+"q": "For a 4-bar linkage in toggle position, the value of mechanical advantage is",
+"c": [
+"Infinity",
+"0.5",
+"1",
+"0"
+],
+"a": "A",
+"e": "At toggle, the output link is momentarily stationary for any input motion, so a tiny input force produces a very large output force: MA → ∞."
+},
+{
+"q": "It is a failure prediction theory which states that a part subjected to any combination of loads will fail (by yielding or fracturing) whenever the maximum shear stress exceeds a critical value. How do you call this failure prediction theory?",
+"c": [
+"Distortion-energy theory",
+"Maximum-shear-stress theory",
+"Internal friction theory",
+"Modified Mohr theory"
+],
+"a": "B",
+"e": "Maximum-shear-stress (Tresca) theory: failure when τmax ≥ Sy/2."
+},
+{
+"q": "Which standard governs the design and installation of piping systems typically used in process plants and industrial facilities?",
+"c": [
+"ASME B31.9",
+"ASME B31.1",
+"API 570",
+"ASME Section II"
+],
+"a": "A",
+"e": "Marked answer: ASME B31.9 (Building Services Piping, covering industrial, commercial and institutional facilities). Note: process-plant piping proper is ASME B31.3, which is not among the choices. B31.1 is power piping; API 570 is in-service inspection; Section II is materials."
+},
+{
+"q": "The ratio of the fatigue strength of a polished specimen to the fatigue strength of a notched specimen at the same number of cycles is known as the",
+"c": [
+"Fatigue factor",
+"Fatigue notch factor",
+"Fatigue notch sensitivity",
+"stress concentration factor"
+],
+"a": "B",
+"e": "Fatigue notch factor Kf = unnotched fatigue strength / notched fatigue strength. Notch sensitivity q = (Kf−1)/(Kt−1) is a different quantity."
+},
+{
+"q": "For large-scale production, which steel forming process is considered the most cost-efficient?",
+"c": [
+"Rolling",
+"Cold forming",
+"Hot working",
+"Forging"
+],
+"a": "A",
+"e": "Rolling is continuous and high-throughput, giving the lowest cost per ton for plate, bar and sections."
+},
+{
+"q": "When one or more springs or resisting members share the load, the relative stiffness is known as",
+"c": [
+"Rigidity",
+"Elasticity",
+"Modulus",
+"Flexural rigidity"
+],
+"a": "A",
+"e": "Rigidity (stiffness) determines how the load divides among members: stiffer members take a larger share."
+},
+{
+"q": "It is a correction factor used to account for nonuniform stress distributions.",
+"c": [
+"Fatigue Stress Concentration Factor",
+"Geometric Stress concentration factor",
+"Stress Concentration Factor",
+"Stress correction factor"
+],
+"a": "C",
+"e": "The stress concentration factor corrects the nominal stress for local peaks at holes, notches, fillets and other geometry changes."
+},
+{
+"q": "Fatigue failure occurs when a part is subjected to:",
+"c": [
+"Compressive stress",
+"Tensile stress",
+"Torsional stress",
+"Fluctuating stress"
+],
+"a": "D",
+"e": "Fatigue failure results from repeated or fluctuating (cyclic) stress, even well below the static strength."
+},
+{
+"q": "A kinematic chain needs a minimum:",
+"c": [
+"2 links and 2 turning pairs",
+"3 links and turning pairs",
+"4 links and 4 turning pairs",
+"3 links and 2 turning pairs"
+],
+"a": "C",
+"e": "The simplest constrained chain is the four-bar: 4 links joined by 4 turning pairs."
+},
+{
+"q": "On a pressure vessel nameplate, which designation indicates that the welds have been fully examined by radiographic testing?",
+"c": [
+"RT-1",
+"RT-2",
+"PWHT",
+"NDE"
+],
+"a": "A",
+"e": "RT-1 = full radiography of the required welds. RT-2 to RT-4 mean partial, spot or no radiography. PWHT is post-weld heat treatment."
+},
+{
+"q": "The total permissible variation in the size of a dimension: the difference between the limits of size.",
+"c": [
+"Allowance",
+"Tolerance",
+"Variance",
+"Interference"
+],
+"a": "B",
+"e": "Tolerance = upper limit − lower limit. Allowance is the intended difference between mating parts."
+},
+{
+"q": "How many independent motions can a rigid body have when moved freely in space?",
+"c": [
+"6",
+"5",
+"7",
+"9"
+],
+"a": "A",
+"e": "Three translations plus three rotations = 6 degrees of freedom."
+},
+{
+"q": "Which code is commonly used as a reference for the inspection, repair, and maintenance of pressure vessels in refinery and petrochemical service?",
+"c": [
+"API 510",
+"API 653",
+"API 571",
+"ASME Section VIII"
+],
+"a": "A",
+"e": "API 510 is the Pressure Vessel Inspection Code (in-service inspection, repair, alteration, rerating). API 653 is for storage tanks; API 571 is damage mechanisms; Section VIII is construction."
+},
+{
+"q": "In general, the design stress and factor of safety are related as follows:",
+"c": [
+"Design stress = ultimate stress times factor of safety",
+"Design stress = ultimate stress divided by factor of safety",
+"Design stress = design stress divided by ultimate stress",
+"Design stress = factor of safety divided by design stress"
+],
+"a": "B",
+"e": "σd = σu / N."
+},
+{
+"q": "The total deformation measured in the direction of the line of stress.",
+"c": [
+"Axial deformation",
+"Elongation",
+"Strain",
+"Unit stress"
+],
+"a": "C",
+"e": "Marked answer: strain, defined here as the total deformation in the direction of the stress. (Unit strain = deformation per unit length.)"
+},
+{
+"q": "The maximum stress to which a material can be subjected without a trace of any permanent set remaining upon a complete withdrawal of the stress.",
+"c": [
+"Ultimate limit",
+"Proportional limit",
+"Endurance limit",
+"Elastic limit"
+],
+"a": "D",
+"e": "Elastic limit: the largest stress from which the material fully recovers. Proportional limit is where stress stops being linear with strain."
+},
+{
+"q": "Which type of polyethylene exhibits the highest degree of crystallinity, resulting in greater stiffness, strength, and higher softening temperature?",
+"c": [
+"High-density polyethylene (HDPE)",
+"Cross-linked polyethylene (PEX)",
+"Ultra-low-density polyethylene (ULDPE)",
+"Amorphous polyethylene"
+],
+"a": "A",
+"e": "HDPE has little chain branching, so chains pack tightly into crystalline regions."
+},
+{
+"q": "A soft material ______",
+"c": [
+"Exhibits a high modulus of elasticity",
+"Yields greatly before breaking",
+"Does not exhibit high modulus of elasticity",
+"Does not yield greatly before breaking"
+],
+"a": "C",
+"e": "Marked answer: a soft material does not have a high modulus of elasticity (it deforms easily under load)."
+},
+{
+"q": "Strain energy is a measure of",
+"c": [
+"The ratio of ultimate failure strain to yielding strain",
+"Energy per unit volume stored in a deformed material",
+"Total plastic strain at failure",
+"Strain energy per unit volume to reach the yield point"
+],
+"a": "B",
+"e": "Strain energy is the energy stored in a body by deformation; per unit volume it is the area under the stress-strain curve."
+},
+{
+"q": "For any specific material, the percentage decrease in diameter is known as",
+"c": [
+"Axial strain",
+"Diametral Strain",
+"Lateral strain",
+"Longitudinal strain"
+],
+"a": "C",
+"e": "Lateral (transverse) strain = change in diameter / original diameter. Poisson's ratio = lateral strain / longitudinal strain."
+},
+{
+"q": "The maximum stress induced in a material when subjected to alternate or repeated loading without causing failure.",
+"c": [
+"Yield point",
+"Ultimate point",
+"Endurance limit",
+"Proportional limit"
+],
+"a": "C",
+"e": "Endurance limit: the stress below which the material survives an effectively infinite number of cycles."
+},
+{
+"q": "The ability of metal to withstand forces thus following a number of twists.",
+"c": [
+"Shear strength",
+"Bearing strength",
+"Endurance limit",
+"Deformation"
+],
+"a": "A",
+"e": "Marked answer: shear strength, because twisting (torsion) loads a material in shear."
+},
+{
+"q": "A coating material used to produce galvanized iron",
+"c": [
+"Zirconium",
+"Zinc",
+"Aluminum",
+"Chromium"
+],
+"a": "B",
+"e": "Galvanizing is a zinc coating on iron or steel."
+},
+{
+"q": "Materials have a yield strength of 450 MPa and an ultimate strength of 700 MPa. If it is subjected to a tensile stress of 500 MPa, at what stage of the stress-strain curve is the material likely operating?",
+"c": [
+"Plastic region before reaching ultimate strength",
+"Elastic region below proportional limit",
+"Fracture point",
+"Strain hardening beyond ultimate strength"
+],
+"a": "A",
+"e": "500 MPa exceeds the 450 MPa yield but is below the 700 MPa ultimate, so the material is in the plastic region before ultimate strength."
+},
+{
+"q": "Which kinematic principle states that the instantaneous centers of three bodies in plane motion lie on a straight line?",
+"c": [
+"Kennedy's theorem",
+"Gruebler's equation",
+"D'Alembert's principle",
+"Hooke's law"
+],
+"a": "A",
+"e": "Kennedy's (Aronhold-Kennedy) theorem: the three instantaneous centers of three relatively moving bodies are collinear."
+},
+{
+"q": "According to code requirements, what is the minimum allowable thickness (inches), excluding corrosion allowance, for pressure vessels used in steam service?",
+"c": [
+"1/16",
+"1/8",
+"3/32",
+"1/4"
+],
+"a": "A",
+"e": "Marked answer: 1/16 in, the general minimum thickness in ASME Section VIII (UG-16). Note: UG-16 lists 3/32 in for vessels in compressed air, steam and water service, so confirm against your code edition or source."
+},
+{
+"q": "The property of steel which resists indention or penetration.",
+"c": [
+"Hardness",
+"Elasticity",
+"Ductility",
+"None of these"
+],
+"a": "A",
+"e": "Hardness is resistance to indentation or penetration."
+},
+{
+"q": "The hardness of steel increases if it contains:",
+"c": [
+"Martensite",
+"Pearlite",
+"Austenite",
+"All of these"
+],
+"a": "A",
+"e": "Martensite is the hardest microstructure in steel. Pearlite and austenite are softer."
+},
+{
+"q": "Fatigue failure occurs when a part is subjected to:",
+"c": [
+"Compressive stress",
+"Tensile stress",
+"Torsional stress",
+"Fluctuating stress"
+],
+"a": "D",
+"e": "Fluctuating (cyclic) stress causes progressive crack growth and fatigue fracture."
+},
+{
+"q": "Which steel type is specifically designed for service at elevated temperatures, offering strong resistance to creep, oxidation, and corrosion?",
+"c": [
+"Valve steel",
+"Creep-resistant steel",
+"Tool steel",
+"Maraging steel"
+],
+"a": "A",
+"e": "Marked answer: valve steel, a heat-resisting steel (e.g., for exhaust valves) with oxidation, corrosion and creep resistance at high temperature. Tool steel and maraging steel are not high-temperature service steels."
+},
+{
+"q": "Which material does NOT exhibit a distinct endurance limit under cyclic loading?",
+"c": [
+"Aluminum",
+"Titanium",
+"Copper",
+"Iron"
+],
+"a": "A",
+"e": "Marked answer: aluminum. Its S-N curve keeps sloping downward, so fatigue strength is quoted at a set number of cycles (e.g., 5×10⁸) rather than as a true endurance limit. Steels and irons show a distinct knee."
+},
+{
+"q": "Which engine cycle best represents a diesel engine?",
+"c": [
+"Otto cycle",
+"Rankine cycle",
+"Diesel cycle",
+"Brayton cycle"
+],
+"a": "C",
+"e": "Heat is added at constant pressure and rejected at constant volume: the Diesel cycle."
+},
+{
+"q": "Which component converts engine mechanical output to electricity?",
+"c": [
+"Turbocharger",
+"Condenser",
+"Alternator",
+"Governor"
+],
+"a": "C",
+"e": "The alternator (generator) converts shaft mechanical power into electrical power."
+},
+{
+"q": "Which fuel injection system is widely used in modern diesel engines for precise control?",
+"c": [
+"Spill-port pump",
+"Carburetion",
+"Unit injector",
+"Common-rail injection"
+],
+"a": "D",
+"e": "Common-rail systems keep fuel at high pressure in a shared rail with electronically controlled injectors, giving precise timing, pressure and multiple injections."
+},
+{
+"q": "What parameter is primarily indicated by cetane number of diesel fuel?",
+"c": [
+"Calorific value",
+"Viscosity index",
+"Ignition quality",
+"Anti-knock quality"
+],
+"a": "C",
+"e": "Cetane number measures how readily diesel fuel auto-ignites (ignition delay). Anti-knock quality is the octane number for gasoline."
+},
+{
+"q": "Which type of alternator is most common in gensets?",
+"c": [
+"Induction generator",
+"Homopolar generator",
+"Synchronous alternator",
+"DC generator"
+],
+"a": "C",
+"e": "Gensets use synchronous alternators because they give controllable voltage and frequency and can run in parallel."
+},
+{
+"q": "What parameter primarily affects Diesel cycle efficiency?",
+"c": [
+"Volume only",
+"Pressure only",
+"Temperature only",
+"Cut-off ratio"
+],
+"a": "D",
+"e": "Diesel efficiency depends on compression ratio and cut-off ratio; at a fixed compression ratio, a larger cut-off ratio lowers efficiency."
+},
+{
+"q": "What does octane number represent?",
+"c": [
+"Volatility",
+"Flash point",
+"Energy content",
+"Resistance to knocking"
+],
+"a": "D",
+"e": "Octane number rates a spark-ignition fuel's resistance to knock (detonation)."
+},
+{
+"q": "What is the usual frequency of grid-synchronized diesel plants in many countries?",
+"c": [
+"75 Hz",
+"50 Hz or 60 Hz",
+"25 Hz",
+"90 Hz"
+],
+"a": "B",
+"e": "Power grids operate at 50 Hz or 60 Hz (the Philippines uses 60 Hz)."
+},
+{
+"q": "Which device protects the engine from overspeed during load rejection?",
+"c": [
+"Overspeed trip",
+"Separator",
+"AVR",
+"Pre-lube pump"
+],
+"a": "A",
+"e": "The overspeed trip shuts down the engine (fuel cut-off) when speed exceeds a set limit. The AVR regulates voltage."
+},
+{
+"q": "What does the term \"black start\" refer to in diesel power plants?",
+"c": [
+"Starting at low ambient temperature",
+"Starting with empty fuel tanks",
+"Starting without external power supply",
+"Starting after maintenance"
+],
+"a": "C",
+"e": "Black start means starting the plant from a dead (blackout) condition using its own batteries or air start, without outside power."
+},
+{
+"q": "Which emission is MAINLY reduced by Exhaust Gas Recirculation (EGR)?",
+"c": [
+"PM only",
+"CO 2",
+"SO 2",
+"NOx"
+],
+"a": "D",
+"e": "EGR dilutes the intake charge and lowers peak combustion temperature, which reduces thermal NOx formation."
+},
+{
+"q": "Which control ensures equal kW sharing among multiple generators?",
+"c": [
+"Speed governor droop",
+"AVR droop",
+"Temperature controller",
+"Power factor controller"
+],
+"a": "A",
+"e": "Governor droop makes speed fall slightly with load, so paralleled sets share real power (kW). AVR droop shares reactive power (kVAR)."
+},
+{
+"q": "Which instrument measures insulation resistance of generator windings?",
+"c": [
+"Tachometer",
+"Manometer",
+"Stroboscope",
+"Megohmmeter (megger)"
+],
+"a": "D",
+"e": "A megger applies high DC voltage to measure insulation resistance."
+},
+{
+"q": "What is the likely cause of blue exhaust smoke?",
+"c": [
+"High sulfur fuel",
+"Water carryover",
+"Lube oil burning",
+"Unburnt diesel fuel"
+],
+"a": "C",
+"e": "Blue smoke indicates lubricating oil burning in the cylinder (worn rings, valve guides, turbo seals). Black = rich or incomplete combustion; white = unburnt fuel or water."
+},
+{
+"q": "Which standard commonly covers on-site generator installation practices (electrical)?",
+"c": [
+"API 610",
+"ISO 9011",
+"ASME VIII",
+"NFPA 110"
+],
+"a": "D",
+"e": "NFPA 110 covers emergency and standby power systems (generator installation, testing and maintenance)."
+},
+{
+"q": "Which device measures generator reactive power?",
+"c": [
+"VAR meter",
+"Frequency meter",
+"Ammeter",
+"Wattmeter"
+],
+"a": "A",
+"e": "A VAR meter measures reactive power (kVAR)."
+},
+{
+"q": "Which type of gas turbine cycle is also called the Brayton cycle?",
+"c": [
+"Constant volume cycle",
+"Ericsson cycle",
+"Dual cycle",
+"Constant pressure cycle"
+],
+"a": "D",
+"e": "Brayton cycle = constant-pressure heat addition and rejection with isentropic compression and expansion."
+},
+{
+"q": "Which component compresses the inlet air in a gas turbine?",
+"c": [
+"Turbine",
+"Combustor",
+"Diffuser",
+"Compressor"
+],
+"a": "D",
+"e": "The compressor raises the air pressure before combustion."
+},
+{
+"q": "Which cycle modification improves gas turbine efficiency by cooling compressed air before combustion?",
+"c": [
+"Regeneration",
+"Reheating",
+"Supercharging",
+"Intercooling"
+],
+"a": "D",
+"e": "Intercooling between compressor stages cuts compressor work (and lowers temperature). Strictly it raises net work; the question's intended answer is intercooling."
+},
+{
+"q": "What is the function of an intercooler in a multistage compressor?",
+"c": [
+"To reduce compressor work",
+"To decrease pressure ratio",
+"To increase turbine efficiency",
+"To heat compressed air"
+],
+"a": "A",
+"e": "Cooling the air between stages reduces its specific volume, so later stages need less work."
+},
+{
+"q": "What is the effect of reheating in a gas turbine cycle?",
+"c": [
+"Increases specific work output",
+"Lowers fuel consumption",
+"Reduces exhaust temperature",
+"Decreases work output"
+],
+"a": "A",
+"e": "Reheating between turbine stages increases turbine work and thus net specific work output (while fuel use rises)."
+},
+{
+"q": "Which cycle efficiency increases by regeneration?",
+"c": [
+"Volumetric efficiency",
+"Thermal efficiency",
+"Mechanical efficiency",
+"Isothermal efficiency"
+],
+"a": "B",
+"e": "Regeneration recovers exhaust heat to preheat compressed air, lowering fuel needed and raising thermal efficiency."
+},
+{
+"q": "Which type of compressor is generally used in aircraft gas turbines?",
+"c": [
+"Scroll compressor",
+"Reciprocating compressor",
+"Centrifugal compressor",
+"Axial-flow compressor"
+],
+"a": "D",
+"e": "Axial-flow compressors give high mass flow and high pressure ratio with small frontal area."
+},
+{
+"q": "Which combustion chamber type is commonly used in stationary gas turbines?",
+"c": [
+"Can-annular",
+"Can",
+"Tubular",
+"Annular"
+],
+"a": "A",
+"e": "Heavy-duty stationary turbines commonly use can-annular (cannular) combustors: individual cans arranged around the shaft inside an annular casing. (Older industrial units used separate can/tubular types.)"
+},
+{
+"q": "Which law relates stagnation temperature rise in compressors to work input?",
+"c": [
+"Newton's law",
+"Charles' law",
+"Boyle's law",
+"Steady flow energy equation"
+],
+"a": "D",
+"e": "From the steady-flow energy equation, W = c p (T 02 - T 01 ) for an adiabatic compressor."
+},
+{
+"q": "What is the effect of regeneration on turbine exhaust temperature?",
+"c": [
+"Constant",
+"Increases",
+"Doubles",
+"Decreases"
+],
+"a": "D",
+"e": "Exhaust heat is transferred to the compressed air, so the gas leaving the regenerator (stack temperature) is lower."
+},
+{
+"q": "Which cycle is used in jet propulsion gas turbines?",
+"c": [
+"Diesel cycle",
+"Closed Brayton cycle",
+"Open Brayton cycle",
+"Rankine cycle"
+],
+"a": "C",
+"e": "Jet engines take in and discharge atmospheric air, so they follow the open Brayton cycle."
+},
+{
+"q": "Which cycle efficiency is highest theoretically among Brayton, Otto, and Diesel for same compression ratio?",
+"c": [
+"Diesel",
+"Brayton",
+"Otto cycle",
+"All equal"
+],
+"a": "C",
+"e": "At the same compression ratio, Otto (constant volume heat addition) has the highest efficiency; Diesel is lower because of its cut-off ratio. (The source choices were mislabeled A, D, C, D; arranged here as A to D.)"
+},
+{
+"q": "What is the effect of pressure ratio increasing beyond optimum in gas turbines?",
+"c": [
+"Efficiency constant",
+"Efficiency increases",
+"Efficiency decreases",
+"Power doubles"
+],
+"a": "C",
+"e": "Beyond the optimum, compressor work grows faster than turbine work (and component losses grow), so net output and actual efficiency fall."
+},
+{
+"q": "Which part of gas turbine requires most maintenance?",
+"c": [
+"Compressor",
+"Turbine blades",
+"Bearings",
+"Combustor"
+],
+"a": "B",
+"e": "Turbine blades face high temperature, centrifugal stress, creep, corrosion and erosion, so they need the most inspection and replacement. (The combustor is also a hot-section part.)"
+},
+{
+"q": "What is the usual firing order in multiple combustor gas turbines?",
+"c": [
+"Simultaneous",
+"Cyclic",
+"Sequential",
+"Random"
+],
+"a": "C",
+"e": "Ignition starts in one or two combustors and the flame spreads to the others in sequence through cross-fire tubes."
+},
+{
+"q": "What is the primary pollutant formed at high turbine inlet temperatures?",
+"c": [
+"HC",
+"CO",
+"SO 2",
+"NOx"
+],
+"a": "D",
+"e": "Thermal NOx forms rapidly at high flame temperature."
+},
+{
+"q": "What primarily affects the thermal efficiency of a gas turbine plant?",
+"c": [
+"Pressure ratio",
+"Fuel density",
+"Blade length",
+"Volume flow"
+],
+"a": "A",
+"e": "Ideal Brayton efficiency = 1 - 1/r p (k-1)/k ."
+},
+{
+"q": "What is the working principle of a steam power plant?",
+"c": [
+"Joule cycle",
+"Otto cycle",
+"Rankine cycle",
+"Diesel cycle"
+],
+"a": "C",
+"e": "Steam power plants operate on the Rankine cycle."
+},
+{
+"q": "Which component of a steam power plant generates steam by burning fuel?",
+"c": [
+"Turbine",
+"Condenser",
+"Feed pump",
+"Boiler"
+],
+"a": "D",
+"e": "The boiler (steam generator) burns fuel to convert feedwater into steam."
+},
+{
+"q": "Which device increases the temperature of steam above saturation temperature?",
+"c": [
+"Economizer",
+"Superheater",
+"Evaporator",
+"Deaerator"
+],
+"a": "B",
+"e": "The superheater adds heat to dry saturated steam, raising it above saturation temperature."
+},
+{
+"q": "Which type of boiler is commonly used in large steam power plants?",
+"c": [
+"Fire-tube boiler",
+"Water-tube boiler",
+"Cochran boiler",
+"Locomotive boiler"
+],
+"a": "B",
+"e": "Water-tube boilers handle high pressures and large capacities."
+},
+{
+"q": "What is the function of an economizer?",
+"c": [
+"To preheat feedwater using flue gas",
+"To increase combustion efficiency",
+"To condense exhaust steam",
+"To superheat steam"
+],
+"a": "A",
+"e": "The economizer recovers flue-gas heat to preheat boiler feedwater."
+},
+{
+"q": "Which type of condenser is used in most large plants?",
+"c": [
+"Surface condenser",
+"Dry condenser",
+"Evaporative condenser",
+"Jet condenser"
+],
+"a": "A",
+"e": "Surface (shell-and-tube) condensers keep the condensate separate from cooling water, so it can be reused as feedwater."
+},
+{
+"q": "Which device is used to remove scales and sludge from boiler?",
+"c": [
+"Blowdown valve",
+"Fusible plug",
+"Safety valve",
+"Economizer"
+],
+"a": "A",
+"e": "The blowdown valve drains sludge and concentrated dissolved solids from the boiler."
+},
+{
+"q": "Which cycle modification improves efficiency by extracting steam?",
+"c": [
+"Intercooling",
+"Reheat",
+"Bypass",
+"Regeneration"
+],
+"a": "D",
+"e": "In a regenerative cycle, steam bled from the turbine heats the feedwater."
+},
+{
+"q": "Which device ensures boiler water does not overheat the furnace?",
+"c": [
+"Thermostat",
+"Blowdown valve",
+"Fusible plug",
+"Safety valve"
+],
+"a": "C",
+"e": "The fusible plug melts when the water level is dangerously low, releasing steam to warn of and prevent overheating."
+},
+{
+"q": "What should be done to decrease heat rejected in a steam plant?",
+"c": [
+"Increase boiler pressure",
+"Reduce turbine efficiency",
+"Lower condenser temperature",
+"Increase condenser pressure"
+],
+"a": "C",
+"e": "Lowering condenser temperature (pressure) increases turbine work for the same heat input, so heat rejected per unit of work is lower."
+},
+{
+"q": "Which auxiliary increases boiler efficiency by heating combustion air?",
+"c": [
+"Air preheater",
+"Deaerator",
+"Economizer",
+"Superheater"
+],
+"a": "A",
+"e": "The air preheater recovers flue-gas heat to warm the combustion air."
+},
+{
+"q": "Which method reduces scaling in boiler tubes?",
+"c": [
+"Blowdown and water treatment",
+"Increased steam pressure",
+"Higher flue gas temperature",
+"Poor feedwater"
+],
+"a": "A",
+"e": "Water treatment removes scale-forming hardness, and blowdown removes concentrated solids."
+},
+{
+"q": "Which component regulates steam flow to turbine?",
+"c": [
+"Governor valve",
+"Blowdown valve",
+"Fusible plug",
+"Attemperator"
+],
+"a": "A",
+"e": "The governor (throttle) valve controls steam admission to match load and speed."
+},
+{
+"q": "Which loss is highest in coal-fired boilers?",
+"c": [
+"Ash loss",
+"Dry flue gas loss",
+"Radiation loss",
+"Moisture loss"
+],
+"a": "B",
+"e": "Heat carried away by dry flue gas is typically the largest boiler loss."
+},
+{
+"q": "Which method improves boiler combustion efficiency?",
+"c": [
+"Poor draft",
+"Poor fuel mixing",
+"High unburnt carbon",
+"Proper excess air control"
+],
+"a": "D",
+"e": "Optimum excess air ensures complete combustion without excess flue-gas loss."
+},
+{
+"q": "Which type of condenser has better water economy?",
+"c": [
+"Spray condenser",
+"Dry condenser",
+"Surface condenser",
+"Jet condenser"
+],
+"a": "C",
+"e": "In a surface condenser the condensate is recovered and returned to the boiler. (A dry/air-cooled condenser uses no cooling water but is a special-purpose type.)"
+},
+{
+"q": "Which section of Rankine cycle improves by regeneration?",
+"c": [
+"Feedwater heating",
+"Condensation",
+"Expansion",
+"Superheating"
+],
+"a": "A",
+"e": "Regeneration improves the feedwater heating section by using extracted steam to raise feedwater temperature."
+},
+{
+"q": "In bolts design, the quotient of the proof load and the tensile-stress area is called",
+"c": [
+"proof strength",
+"yield strength",
+"section modulus",
+"modulus of resilience"
+],
+"a": "A",
+"e": "Proof strength = proof load / tensile-stress area."
+},
+{
+"q": "In clutch analysis, which assumption is generally used for torque calculations?",
+"c": [
+"Uniform wear condition",
+"Uniform pressure condition",
+"Variable pressure condition",
+"Minimum energy condition"
+],
+"a": "A",
+"e": "For design, the uniform wear assumption is used because it is more conservative and applies once the plates have worn in."
+},
+{
+"q": "It is the distance in inches a screw thread (a helix) advances axially in one turn.",
+"c": [
+"Pitch",
+"Mean pitch",
+"Lead",
+"Circular pitch"
+],
+"a": "C",
+"e": "Lead is the axial advance per turn. (It equals the pitch only for a single-start thread.)"
+},
+{
+"q": "What type of bolt distinguished by a short portion of the shank underneath the head being square or finned or ribbed?",
+"c": [
+"Machine Bolt",
+"Stud bolt",
+"Coupling",
+"Carriage bolt"
+],
+"a": "D",
+"e": "A carriage bolt has a square, finned or ribbed neck under its rounded head that keeps it from turning when the nut is tightened."
+},
+{
+"q": "If the friction angle in a screw exceeds the lead angle, what behavior is exhibited?",
+"c": [
+"Free rotation",
+"Overhauling condition",
+"Self-locking condition",
+"Reduced torque"
+],
+"a": "C",
+"e": "When φ > λ (tanφ = µ), the load cannot back-drive the screw, so it is self-locking."
+},
+{
+"q": "Which thread form is most suitable for power transmission in lifting devices like screw jacks?",
+"c": [
+"V-thread",
+"Square thread",
+"Buttress thread",
+"ACME thread"
+],
+"a": "B",
+"e": "Square threads have the highest efficiency and no radial (bursting) load on the nut, which suits lifting screws (marked answer on the paper)."
+},
+{
+"q": "Which type of clutch transmits torque through direct engagement of interlocking elements?",
+"c": [
+"Positive clutch",
+"Friction clutch",
+"Hydraulic clutch",
+"Centrifugal clutch"
+],
+"a": "A",
+"e": "Positive clutches (jaw, claw, toothed) transmit torque by mechanical interlock instead of friction."
+},
+{
+"q": "Under uniform wear theory, how does pressure vary along the radius of a clutch plate?",
+"c": [
+"It decreases as radius increases",
+"It increases as radius increases",
+"It remains constant",
+"It becomes zero at the center"
+],
+"a": "A",
+"e": "Uniform wear gives p·r = constant, so pressure is highest at the inner radius and decreases outward."
+},
+{
+"q": "A coupling that allows axial flexibility/movement in the operation. Made of alternate bolting of steel, leather, fabric and/or plastic material into two flanges.",
+"c": [
+"Flexible disk coupling",
+"Flexible toroidal spring coupling",
+"Flexible Oldham coupling",
+"Elastic material bonded coupling"
+],
+"a": "C",
+"e": "Marked answer on the paper is C. Note that the description (alternating bolted layers of steel, leather, fabric or plastic between two flanges) sounds like a flexible disk coupling in some references, so confirm with your reviewer."
+},
+{
+"q": "The crest diameter of a screw thread is the same as:",
+"c": [
+"Pitch diameter",
+"Minor diameter",
+"Major diameter",
+"Base diameter"
+],
+"a": "C",
+"e": "The crests of an external thread are at its largest diameter, the major (outside) diameter."
+},
+{
+"q": "For an American Standard Screw Threads, what does 6-32 UNC designate?",
+"c": [
+"Size 6, 32 threads per inch, coarse thread",
+"6 inches basic diameter, 32 threads per inch, coarse thread",
+"Size 6, 32 threads per inch, fine thread",
+"32 inches basic diameter, 6 threads per inch, coarse thread"
+],
+"a": "A",
+"e": "6 is the screw size number, 32 is threads per inch, and UNC means Unified National Coarse."
+},
+{
+"q": "In braking, the term backstop refers to a brake that is:",
+"c": [
+"Self-locking in one direction",
+"Self-energizing",
+"Self-locking in both directions",
+"Any of these"
+],
+"a": "A",
+"e": "A backstop (non-reversing device) lets the shaft turn freely one way and locks it against rotating the other way."
+},
+{
+"q": "A tool bit for cutting an American National thread should be ground with an angle of:",
+"c": [
+"45 deg.",
+"90 deg.",
+"60 deg.",
+"30 deg."
+],
+"a": "C",
+"e": "American National (and Unified) threads have a 60° included thread angle."
+},
+{
+"q": "What type of compound screw which produces a motion equal to the difference in motion between the two component screws?",
+"c": [
+"Machine screw",
+"Tandem screw",
+"Differential screw",
+"Variable screw"
+],
+"a": "C",
+"e": "A differential screw has two threads of slightly different lead, so the net advance per turn is the difference between them."
+},
+{
+"q": "A screw that requires positive torque to lower the load, or to loosen the screw if it has been turned tight against a resistance.",
+"c": [
+"Power screw",
+"Lock screw",
+"Cone pointed screw",
+"Self-locking screw"
+],
+"a": "D",
+"e": "This describes a self-locking screw: the load cannot turn it back, so torque must be applied to lower or loosen it."
+},
+{
+"q": "In the application of this fastener, a pin is inserted into a hole and a metal collar is place over the end.",
+"c": [
+"Huckbolt fastener",
+"Plastic spring-lock shelf",
+"Nylok fastener",
+"Pushnut fastener"
+],
+"a": "A",
+"e": "A Huckbolt is a lockbolt: a grooved pin goes through the hole and a collar is swaged over the end."
+},
+{
+"q": "Which of the following type of fastener has a trilobe thread structure?",
+"c": [
+"Huckbolt fastener",
+"Taptite thread rolling screw",
+"Nylok fastener",
+"Pushnut fastener"
+],
+"a": "B",
+"e": "Taptite screws have a trilobular (three-lobed) cross-section that forms threads by cold rolling."
+},
+{
+"q": "In general, to engage securely and prevent dragging, what is the clearance between release bearing and release collar in the clutch?",
+"c": [
+"2 – 3 mm",
+"4 – 5 mm",
+"6 – 7 mm",
+"8 – 9 mm"
+],
+"a": "A",
+"e": "Marked answer: about 2–3 mm of free clearance so the bearing does not drag when the clutch is engaged."
+},
+{
+"q": "The function of clutch in the machine tools is:",
+"c": [
+"Lowering the drive",
+"Alignment of drive shaft",
+"To disconnect or connect at will the drive",
+"To ensure that two shafts line up at high speed"
+],
+"a": "C",
+"e": "A clutch lets the operator couple or uncouple the driven shaft from the drive at will."
+},
+{
+"q": "Type of setscrew that is used where frequent adjustment is necessary between the two parts that are secured.",
+"c": [
+"cone pointed",
+"cup-pointed",
+"flat pointed",
+"dog pointed"
+],
+"a": "C",
+"e": "Flat-pointed setscrews cause the least damage to the shaft, so the parts can be readjusted often."
+},
+{
+"q": "Type of setscrew usually used where the two joined parts are to have permanent position with respect to each other.",
+"c": [
+"cone pointed",
+"cup-pointed",
+"flat pointed",
+"dog pointed"
+],
+"a": "A",
+"e": "The cone point digs into a spot on the shaft, giving a strong, permanent hold."
+},
+{
+"q": "Most widely used type of setscrew.",
+"c": [
+"cone pointed",
+"cup-pointed",
+"flat pointed",
+"dog pointed"
+],
+"a": "B",
+"e": "The cup point is the most common general-purpose setscrew."
+},
+{
+"q": "The differential screw is used in a",
+"c": [
+"Turnbuckle",
+"Micrometer",
+"Vernier caliper",
+"Coupler"
+],
+"a": "B",
+"e": "Differential screws give very fine motion, as in micrometer-type adjusters (marked answer on the paper)."
+},
+{
+"q": "Which of the following is an effective method of reducing the alternating stress in bolted tension connections?",
+"c": [
+"Preloading",
+"Loading",
+"Bolting",
+"Precising"
+],
+"a": "A",
+"e": "Preloading keeps the joint clamped so that the bolt sees only a small part of the fluctuating load, which lowers the alternating stress."
+},
+{
+"q": "For bolts, the proof load is slightly less than the",
+"c": [
+"compressive strength",
+"tensile strength",
+"ultimate strength",
+"yield strength"
+],
+"a": "D",
+"e": "Proof load is the maximum load a bolt can carry without permanent deformation, so it is just below the yield strength."
+},
+{
+"q": "The torque coefficient for lubricated bolts generally varies from",
+"c": [
+"0.15 to 0.20",
+"0.10 to 0.15",
+"0.20 to 0.30",
+"0.15 to 0.18"
+],
+"a": "A",
+"e": "Marked answer on the paper. The torque coefficient K in T = KDF is about 0.2 for typical bolts, and a bit lower with lubrication."
+},
+{
+"q": "The maximum efficiency of self-locking screw is",
+"c": [
+"50%",
+"70%",
+"75%",
+"80%"
+],
+"a": "A",
+"e": "For a self-locking screw (φ ≥ λ), efficiency can be at most 50%."
+},
+{
+"q": "Which of the following screw thread is adopted for power transmission in either direction?",
+"c": [
+"ACME thread",
+"Square thread",
+"Buttress thread",
+"Multiple thread"
+],
+"a": "A",
+"e": "ACME threads are used for power transmission in both directions (marked answer on the paper). Buttress threads carry load in one direction only."
+},
+{
+"q": "In case of power screws, what is the combination of materials used for the screw and the nut?",
+"c": [
+"Cast iron screw and mild steel nut",
+"Carbon steel screw and phosphor bronze nut",
+"Cast iron screw and cast-iron nut",
+"Aluminum screw and alloy steel nut"
+],
+"a": "B",
+"e": "A steel screw with a bronze nut gives a low-friction, wear-resistant pair, and the cheaper nut wears out instead of the screw."
+},
+{
+"q": "For most bolt sizes with a coefficient of friction of 0.15, the torque coefficient is approximately",
+"c": [
+"0.10",
+"0.20",
+"0.25",
+"0.30"
+],
+"a": "B",
+"e": "Marked answer: K ≈ 0.20 for typical bolts in T = KDF."
+},
+{
+"q": "Brake that requires some finite application force",
+"c": [
+"self-locking",
+"self-energizing",
+"hydraulic brake",
+"none of these"
+],
+"a": "B",
+"e": "Marked answer on the paper. A self-energizing brake uses friction to help apply itself but still needs some initial application force."
+},
+{
+"q": "On the motors with low starting toque, the type of the clutch to be used is",
+"c": [
+"Multiple-plate clutch",
+"Cone clutch",
+"Centrifugal clutch",
+"Single plate clutch"
+],
+"a": "C",
+"e": "A centrifugal clutch only engages once the motor has speeded up, so the motor starts with almost no load."
+},
+{
+"q": "These clutches produce positive coupling between the two shafts, regardless of direction of rotation.",
+"c": [
+"Rigid couplings",
+"Jaw clutches",
+"Friction clutches",
+"Uniform disk clutches"
+],
+"a": "B",
+"e": "Jaw clutches engage by mechanical interlock, giving positive drive with no slip."
+},
+{
+"q": "If the clutch assembly is known to be semiflexible, what distribution can be assumed?",
+"c": [
+"Uniform wear",
+"Uniform pressure",
+"Uniform axial force",
+"None of these"
+],
+"a": "B",
+"e": "Marked answer on the paper. Uniform pressure applies to new or flexible assemblies, while uniform wear applies to rigid, worn-in ones."
+},
+{
+"q": "Which of the following brake does not require external application force?",
+"c": [
+"self-locking",
+"self-energizing",
+"hydraulic brake",
+"none of these"
+],
+"a": "A",
+"e": "A self-locking brake holds itself on through friction and needs no external force to stay applied."
+},
+{
+"q": "In a block brake, the pressure will be distributed approximately uniformly if the block contact angle is less than",
+"c": [
+"50 deg",
+"60 deg",
+"70 deg",
+"80 deg"
+],
+"a": "B",
+"e": "Pressure is roughly uniform for block contact angles under 60°."
+},
+{
+"q": "Which of the following is a device use to connect an initially stationary shaft to a rotating shaft?",
+"c": [
+"Clutch",
+"Belt",
+"Gear",
+"Pulley"
+],
+"a": "A",
+"e": "A clutch can engage a stationary shaft with a rotating one while the drive keeps running."
+},
+{
+"q": "Which of the following clutches that has a disadvantage of heavier rotating masses?",
+"c": [
+"Multiple disc clutch",
+"Cone clutch",
+"Disc clutch",
+"Twin clutching"
+],
+"a": "A",
+"e": "A multiple disc clutch has many plates, which adds rotating mass and inertia."
+},
+{
+"q": "Which one of the following is not a friction clutch?",
+"c": [
+"Disc or plate clutch",
+"Cone clutch",
+"Centrifugal clutch",
+"Jaw clutch"
+],
+"a": "D",
+"e": "The jaw clutch is a positive (interlocking) clutch, not a friction clutch."
+},
+{
+"q": "The effect of increasing the stiffness of springs of centrifugal clutch is",
+"c": [
+"The decrease of engagement speed",
+"The increase of engagement speed",
+"The increase of frictional force at maximum speed",
+"None of the above"
+],
+"a": "B",
+"e": "Stiffer springs hold the shoes in longer, so the shaft must spin faster before the clutch engages."
+},
+{
+"q": "What type of bolt threaded on both ends and can be used where a through bolt impossible?",
+"c": [
+"Coupling",
+"Stud bolt",
+"Carriage bolt",
+"Machine bolt"
+],
+"a": "B",
+"e": "A stud bolt is threaded on both ends and screws into a tapped hole where a through bolt can't be used."
+},
+{
+"q": "To avoid self-engagement in cone clutch, its semi-cone angle is always kept",
+"c": [
+"smaller than the angle of static friction",
+"equal to the angle of static friction",
+"greater than the angle of static friction",
+"half of the angle of static friction"
+],
+"a": "C",
+"e": "Marked answer on the paper. A cone angle larger than the friction angle lets the clutch release easily and not lock itself in."
+},
+{
+"q": "Clutch slippage while clutch is engaged is especially noticeable.",
+"c": [
+"During idling",
+"A low speed",
+"During acceleration",
+"During braking"
+],
+"a": "C",
+"e": "Slip shows most under high torque demand, which is during acceleration."
+},
+{
+"q": "In bolts design, proof strength corresponds approximately how many percent of the 0.2 percent offset yield strength?",
+"c": [
+"85%",
+"95%",
+"90%",
+"45%"
+],
+"a": "C",
+"e": "Marked answer on the paper: proof strength is about 90% of the 0.2% offset yield strength."
+},
+{
+"q": "A brake commonly used in railway trains is",
+"c": [
+"Shoe brake",
+"Band brake",
+"Band and Block brake",
+"Internal expanding brake"
+],
+"a": "A",
+"e": "Railway trains use shoe (block) brakes pressing on the wheel tread."
+},
+{
+"q": "A type of key in which width and thickness are equal is called as:",
+"c": [
+"Flat key",
+"Square key",
+"Pin key",
+"Barth key"
+],
+"a": "B",
+"e": "A square key has a square cross-section, so its width equals its thickness (w = t). A flat key is wider than it is thick."
+},
+{
+"q": "While designing a parallel sunk key it is assumed that the distribution of force along the length of the key:",
+"c": [
+"varies linearly",
+"is uniform throughout",
+"varies exponentially, being more at the torque input end",
+"varies exponentially, being less at the torque output end"
+],
+"a": "B",
+"e": "Standard key design assumes the load (shear and crushing) is spread uniformly along the key length."
+},
+{
+"q": "What type of key allows the hub to move along the shaft but prevents the rotation of the shaft?",
+"c": [
+"Woodruff key",
+"Feather key",
+"Gibbs key",
+"Square key"
+],
+"a": "B",
+"e": "A feather key is fixed to the shaft (or hub) and the mating part slides along it, so axial motion is allowed while torque is still transmitted."
+},
+{
+"q": "The speed at which the center of mass will be equal the deflecting forces on the shaft; the shaft with its attached bodies will then vibrate violently since the centrifugal force changes its direction as the shaft turns in:",
+"c": [
+"Nominal speed",
+"Critical speed",
+"Relative speed",
+"Mean speed"
+],
+"a": "B",
+"e": "At the critical (whirling) speed the shaft's natural frequency matches the rotational speed, causing resonance and violent vibration."
+},
+{
+"q": "Which device is primarily used to prevent axial movement of components like gears or pulleys along a shaft?",
+"c": [
+"Bearing",
+"Coupling",
+"Retaining ring",
+"Key"
+],
+"a": "C",
+"e": "A retaining ring (circlip) seats in a groove on the shaft and locks parts axially. Keys transmit torque; they do not hold parts axially."
+},
+{
+"q": "Which type of key is used for mounting shifting gears in gear boxes?",
+"c": [
+"Splines",
+"Saddle",
+"Square",
+"Flat"
+],
+"a": "A",
+"e": "Splines transmit torque while letting the gear slide axially along the shaft to shift."
+},
+{
+"q": "It is used for permanent fits and similar to involute splines except that the pressure angle is 14.5 deg.",
+"c": [
+"Separation load",
+"Spline shaft",
+"Stub serrations",
+"Involute serrations"
+],
+"a": "D",
+"e": "Involute serrations resemble involute splines but with a 45° flank / 14.5° pressure angle and are used for permanent press fits."
+},
+{
+"q": "What is the maximum shaft angle for a single Hooke's coupling?",
+"c": [
+"10 deg.",
+"17 deg.",
+"15 deg.",
+"20 deg."
+],
+"a": "C",
+"e": "As the angle between shafts increases, speed fluctuation grows. A single Hooke's joint is generally limited to about 15° (marked answer on the paper)."
+},
+{
+"q": "Universal coupling is:",
+"c": [
+"Used for collinear shafts",
+"Used for non-collinear shafts",
+"Type of flange coupling",
+"Rigid coupling"
+],
+"a": "B",
+"e": "A universal joint connects shafts whose axes intersect at an angle (non-collinear)."
+},
+{
+"q": "What is the primary function of a shaft coupling in mechanical systems?",
+"c": [
+"To prevent relative motion between shafts",
+"To transmit power between two shafts",
+"To reduce shaft speed",
+"To absorb all vibration in the system"
+],
+"a": "B",
+"e": "A coupling joins two shafts so power/torque passes from the driving shaft to the driven shaft."
+},
+{
+"q": "Splines are used when:",
+"c": [
+"The power transmitted is low",
+"The power to be transmitted is high",
+"Axial relative motion between shafts and hub is necessary",
+"Flame hardening"
+],
+"a": "C",
+"e": "Splines carry torque while permitting axial sliding between shaft and hub."
+},
+{
+"q": "Allowance is defined as:",
+"c": [
+"Difference between maximum hole and minimum shaft",
+"Difference between minimum hole and maximum shaft",
+"Sum of tolerances",
+"Maximum clearance"
+],
+"a": "B",
+"e": "Allowance is the intentional minimum clearance: smallest hole − largest shaft."
+},
+{
+"q": "A fit where clearance or interference may occur is called:",
+"c": [
+"Transition fit",
+"Clearance fit",
+"Interference fit",
+"Running fit"
+],
+"a": "A",
+"e": "In a transition fit the tolerance zones overlap, so the assembly may end up with either a small clearance or a small interference."
+},
+{
+"q": "Which type of coupling is commonly used for shafts that are properly aligned but need to be separated occasionally?",
+"c": [
+"Flexible coupling",
+"Oldham coupling",
+"Universal joint",
+"Rigid coupling"
+],
+"a": "D",
+"e": "Rigid couplings (e.g. flange or split-muff types) suit well-aligned shafts and can be unbolted when separation is needed."
+},
+{
+"q": "Maximum clearance is:",
+"c": [
+"Largest hole – smallest shaft",
+"Smallest hole – largest shaft",
+"Largest shaft – smallest hole",
+"Sum of limits"
+],
+"a": "A",
+"e": "Maximum clearance = largest hole − smallest shaft. (Smallest hole − largest shaft is the minimum clearance.)"
+},
+{
+"q": "A negative clearance indicates:",
+"c": [
+"Interference",
+"Clearance",
+"Transition",
+"Zero fit"
+],
+"a": "A",
+"e": "Negative clearance means the shaft is larger than the hole, which is an interference."
+},
+{
+"q": "In hole-basis system, which dimension is fixed?",
+"c": [
+"Hole lower limit",
+"Shaft upper limit",
+"Shaft lower limit",
+"Hole upper limit"
+],
+"a": "A",
+"e": "In the hole-basis system the hole's lower limit equals the basic size (fundamental deviation = 0, the 'H' hole)."
+},
+{
+"q": "In shaft-basis system, which dimension is fixed?",
+"c": [
+"Shaft upper limit",
+"Hole lower limit",
+"Hole upper limit",
+"Shaft lower limit"
+],
+"a": "A",
+"e": "In the shaft-basis system the shaft's upper limit equals the basic size (the 'h' shaft)."
+},
+{
+"q": "What does H7 indicate in ISO system?",
+"c": [
+"Shaft tolerance zone",
+"Hole tolerance zone",
+"Clearance fit",
+"Interference fit"
+],
+"a": "B",
+"e": "Capital letters denote holes. H is the position (fundamental deviation zero) and 7 is the IT tolerance grade."
+},
+{
+"q": "Which type of spline is generally recommended when slight misalignment between shaft and hub must be accommodated?",
+"c": [
+"Straight-sided spline",
+"Parallel spline",
+"Serrated spline",
+"Involute spline"
+],
+"a": "D",
+"e": "Involute splines self-center and distribute load well, so they tolerate slight misalignment better."
+},
+{
+"q": "In fits and tolerance, what does “g6” represent?",
+"c": [
+"Shaft tolerance",
+"Hole tolerance",
+"Fit type",
+"Clearance value"
+],
+"a": "A",
+"e": "Lowercase letters denote shafts: g is the position (a small negative fundamental deviation) and 6 is the tolerance grade."
+},
+{
+"q": "Upper deviation is:",
+"c": [
+"Difference between max size and basic size",
+"Difference between min size and basic size",
+"Total tolerance",
+"Allowance"
+],
+"a": "A",
+"e": "Upper deviation = maximum limit of size − basic size. (Lower deviation uses the minimum limit.)"
+},
+{
+"q": "What characterizes a flexible coupling?",
+"c": [
+"It increases shaft rigidity during operation",
+"It eliminates all shaft misalignment",
+"It is used only for high-speed applications",
+"It accommodates slight misalignment between shafts"
+],
+"a": "D",
+"e": "Flexible couplings tolerate small angular, parallel and axial misalignment and absorb some shock/vibration. They do not eliminate misalignment."
+},
+{
+"q": "In the design of machine keys used for torque transmission, which mode of failure is typically considered critical?",
+"c": [
+"Tensile failure",
+"Shear failure",
+"Fatigue failure",
+"Impact failure"
+],
+"a": "B",
+"e": "Keys are designed mainly against shearing across the shaft-hub interface (and checked for crushing/bearing)."
+},
+{
+"q": "Which torque-transmitting method depends on friction developed due to an interference between mating surfaces?",
+"c": [
+"Pin joint",
+"Press fit",
+"Keyed joint",
+"Splined connection"
+],
+"a": "B",
+"e": "A press fit grips by interference-generated contact pressure, so torque is carried by friction."
+},
+{
+"q": "Which type of key is most suitable when a hub must be accurately positioned against a shaft shoulder?",
+"c": [
+"Feather key",
+"Square key",
+"Woodruff key",
+"Flat key"
+],
+"a": "C",
+"e": "The Woodruff key sits in a deep semicircular seat, so it stays put and is self-aligning (marked answer on the paper)."
+},
+{
+"q": "Which fit is used for permanent assembly?",
+"c": [
+"Force fit",
+"Clearance fit",
+"Running fit",
+"Sliding fit"
+],
+"a": "A",
+"e": "A force (heavy press) fit has large interference and is for permanent assemblies that are not meant to be taken apart."
+},
+{
+"q": "Which system is most commonly used in manufacturing?",
+"c": [
+"Hole-basis system",
+"Shaft-basis system",
+"Mixed system",
+"Custom system"
+],
+"a": "A",
+"e": "Holes are made with standard tools (drills, reamers), so fixing the hole size and varying the shaft is cheaper and more practical."
+},
+{
+"q": "A fit with zero clearance and zero interference is called:",
+"c": [
+"Line fit",
+"Clearance fit",
+"Transition fit",
+"Interference fit"
+],
+"a": "A",
+"e": "A line fit means the mating surfaces just touch along a line, with no clearance and no interference."
+},
+{
+"q": "A rotating shaft subjected to combined bending and torsion should be designed using which failure theory?",
+"c": [
+"Modified Goodman criterion",
+"Distortion energy theory (von Mises)",
+"Rankine theory",
+"Maximum shear stress theory (Guest–Tresca)"
+],
+"a": "D",
+"e": "The classic shaft design equation (ASME code) uses the maximum shear stress theory, which is simple and conservative for ductile shafts (marked answer on the paper). Von Mises is also valid but less conservative."
+},
+{
+"q": "In applying the Goodman relation, which material is generally excluded due to its brittle nature when considering yield strength?",
+"c": [
+"Aluminum alloy",
+"Alloy steel",
+"Cast iron",
+"Titanium alloy"
+],
+"a": "C",
+"e": "Cast iron is brittle and has no well-defined yield point, so yield-based criteria don't apply to it."
+},
+{
+"q": "Which failure theory states that yielding begins when the octahedral shear stress reaches the value corresponding to yielding in simple tension?",
+"c": [
+"Shear energy theory",
+"Maximum principal stress theory",
+"Maximum stress theory",
+"Coulomb–Mohr theory"
+],
+"a": "A",
+"e": "This is the distortion (shear) energy theory (von Mises–Hencky): yielding starts when the octahedral shear stress equals its value at yield in simple tension."
+},
+{
+"q": "In fatigue analysis, which factor depends purely on the shape or geometry of a component?",
+"c": [
+"Fatigue strength reduction factor",
+"Stress concentration factor",
+"Notch sensitivity",
+"Endurance limit factor"
+],
+"a": "B",
+"e": "The theoretical stress concentration factor Kt depends only on geometry. The fatigue strength reduction factor Kf also involves the material through notch sensitivity."
+},
+{
+"q": "What is the standard taper commonly used for a gib-head key in machine design?",
+"c": [
+"1:20",
+"1:48",
+"1:10",
+"1:100"
+],
+"a": "B",
+"e": "Marked answer on the paper is 1:48. Note that many textbooks give 1:100 for standard tapered keys, so go with what your reviewer/professor uses."
+},
+{
+"q": "Which failure theory considers the total strain energy stored in a material, including contributions from shear?",
+"c": [
+"Maximum shear stress theory",
+"Maximum principal stress theory",
+"Maximum strain energy theory",
+"Maximum principal strain theory"
+],
+"a": "C",
+"e": "The maximum strain energy (Haigh) theory uses total strain energy per unit volume, including both volume-change and shape-change parts."
+},
+{
+"q": "A stress varies between zero and a positive maximum value during a loading cycle. What type of stress condition is this?",
+"c": [
+"Fully reversed stress",
+"Repeated stress",
+"Alternating stress",
+"Random stress"
+],
+"a": "B",
+"e": "A cycle from zero to a maximum in one direction (minimum = 0) is repeated stress, a special case of fluctuating stress with R = 0."
+},
+{
+"q": "If both the maximum and minimum stresses are tensile but differ in magnitude, what type of stress cycle is present?",
+"c": [
+"Static stress",
+"Completely reversed stress",
+"Fluctuating stress",
+"Zero-based stress"
+],
+"a": "C",
+"e": "Fluctuating stress has a non-zero mean with unequal max and min. Here both are tensile, so the mean is positive."
+},
+{
+"q": "Which design approach is most effective in minimizing stress concentration in mechanical components?",
+"c": [
+"Using square keyways",
+"Introducing sharp notches",
+"Reducing cross-sectional area abruptly",
+"Smooth fillets and rounded transitions"
+],
+"a": "D",
+"e": "Gradual transitions and generous fillet radii let the stress flow smoothly. Sharp corners, notches and abrupt changes raise stress concentration."
+},
+{
+"q": "Which statement best describes a rigid coupling?",
+"c": [
+"It permits angular and parallel misalignment",
+"It is used only for temporary shaft connections",
+"It connects shafts without allowing any misalignment",
+"It reduces torque transmitted between shafts"
+],
+"a": "C",
+"e": "A rigid coupling joins shafts into one solid unit, so it needs accurate alignment and cannot accommodate misalignment."
+},
+{
+"q": "Which type of key is most suitable when frequent removal of the hub is required without damaging the shaft?",
+"c": [
+"Flat key",
+"Feather key",
+"Woodruff key",
+"Tangential key"
+],
+"a": "C",
+"e": "Marked answer on the paper is Woodruff key (easy to seat and remove, with a shallow keyway in the hub). A feather key is also commonly cited for sliding/removable hubs."
+},
+{
+"q": "Which type of pump is commonly used for viscous fluids like oil?",
+"c": [
+"Axial flow pump",
+"Screw pump",
+"Centrifugal pump",
+"Jet pump"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which parameter represents the energy required at pump suction to avoid cavitation?",
+"c": [
+"Efficiency",
+"Specific speed",
+"NPSH",
+"Head"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which type of pump is classified as a positive displacement pump?",
+"c": [
+"Mixed flow pump",
+"Axial flow pump",
+"Centrifugal pump",
+"Reciprocating pump"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "Which is the point where pump curve and system curve intersect?",
+"c": [
+"Cavitation point",
+"Shutoff point",
+"Operating point",
+"Maximum efficiency point"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which type of pump is commonly used for boiler feed applications?",
+"c": [
+"Gear pump",
+"Axial flow pump",
+"Reciprocating pump",
+"Multistage centrifugal pump"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "Which pump type uses a flexible tube squeezed by rollers?",
+"c": [
+"Gear pump",
+"Screw pump",
+"Peristaltic pump",
+"Centrifugal pump"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which code specifies centrifugal pump standards for petroleum industries?",
+"c": [
+"ISO 14001",
+"ASTM E119",
+"API 610",
+"ASME Section VIII"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "What happens to volume flow rate as head increases in a pump curve?",
+"c": [
+"Increases",
+"Constant",
+"Zero",
+"Decreases"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "What happens to pump power when speed is doubled?",
+"c": [
+"Becomes twice",
+"Remains the same",
+"Becomes four times",
+"Becomes eight times"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "What determines the motor power required for a pump?",
+"c": [
+"Temperature only",
+"Pressure only",
+"Head and efficiency",
+"Volume only"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which type of seal is most reliable for high-pressure pumps?",
+"c": [
+"Lip seal",
+"O-ring",
+"Mechanical seal",
+"Gland packing"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "The efficiency of a fan is defined as:",
+"c": [
+"η = Input shaft power / Output air power",
+"η = Output air power / Input shaft power",
+"η = Shaft torque / Air volume",
+"η = Air velocity / Shaft speed"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "What fan type is best for handling large volumes of clean air at low pressure?",
+"c": [
+"Roots blower",
+"Propeller fan",
+"Centrifugal fan",
+"Regenerative blower"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which blower type creates vacuum as well as pressure applications?",
+"c": [
+"Forward-curved fan",
+"Axial blower",
+"Centrifugal blower",
+"Regenerative blower"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "Which instrument is commonly used to measure airflow in ducts?",
+"c": [
+"Manometer",
+"Hygrometer",
+"Pitot tube",
+"Barometer"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which is a common method of fan speed control?",
+"c": [
+"Changing blade material",
+"Variable frequency drive",
+"Adjusting shaft length",
+"Adding dampers permanently"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which type of fan impeller is most prone to erosion in dusty conditions?",
+"c": [
+"Backward-curved blades",
+"Radial blades",
+"Forward-curved blades",
+"Aerofoil blades"
+],
+"a": "D",
+"e": "Judgment call: aerofoil blades erode fastest in dust. Double-check against your reviewer."
+},
+{
+"q": "Which is a common standard for testing fan performance?",
+"c": [
+"ASTM E84",
+"ISO 9001",
+"ASME Section VIII",
+"AMCA Standard 210"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "Which application requires high-pressure blowers?",
+"c": [
+"Dust collection in homes",
+"HVAC room ventilation",
+"Pneumatic conveying",
+"Cooling towers"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which type of fan is best suited for medium pressure and medium volume?",
+"c": [
+"Tube axial fan",
+"Propeller fan",
+"Backward-curved centrifugal fan",
+"Roots blower"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which fan type is characterized by low efficiency but compact design?",
+"c": [
+"Axial flow fan",
+"Forward-curved centrifugal fan",
+"Roots blower",
+"Backward-curved fan"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which compressor type is best for transporting natural gas in pipelines?",
+"c": [
+"Screw compressor",
+"Reciprocating compressor",
+"Centrifugal compressor",
+"Vane compressor"
+],
+"a": "C",
+"e": "Centrifugal is the modern pipeline choice; reciprocating was used historically."
+},
+{
+"q": "Which standard covers centrifugal compressors for petroleum and gas industries?",
+"c": [
+"ISO 1217",
+"API 617",
+"API 618",
+"ASME PTC 10"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which standard covers performance testing of compressors?",
+"c": [
+"ISO 14000",
+"API 617",
+"ASME PTC 10",
+"ASTM A36"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which problem occurs when compressor flow drops below surge limit?",
+"c": [
+"Flooding",
+"Surge",
+"Cavitation",
+"Choke"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which part of centrifugal compressor imparts kinetic energy to gas?",
+"c": [
+"Bearing",
+"Shaft",
+"Impeller",
+"Diffuser"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which failure occurs due to liquid entering compressor cylinders?",
+"c": [
+"Stall",
+"Cavitation",
+"Surge",
+"Liquid slugging"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "What compressor is suitable for large office towers that require reliability and low maintenance?",
+"c": [
+"Open type compressor",
+"Single stage centrifugal compressor with gear drive",
+"Twin screw compressor with belt drive",
+"Reciprocating compressor with sliding vane"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "What causes choking in a compressor?",
+"c": [
+"Low suction pressure",
+"Excess cooling",
+"High lubrication rate",
+"Flow reaching sonic velocity"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "What is the optimal intercooler pressure for a two-stage compressor?",
+"c": [
+"Arithmetic mean pressure",
+"Geometric mean pressure",
+"Maximum pressure",
+"Minimum pressure"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which term describes the temperature difference between hot water entering and cold water leaving the tower?",
+"c": [
+"Wet bulb temperature",
+"Cooling range",
+"Approach",
+"Effectiveness"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Cooling tower effectiveness is defined as:",
+"c": [
+"(Approach / Range) × 100%",
+"(Flow / Head) × 100%",
+"(Range / (Range + Approach)) × 100%",
+"(Heat lost / Heat supplied) × 100%"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "What is the limiting temperature in cooling tower analysis?",
+"c": [
+"ADP",
+"DPT",
+"WBT",
+"DBT"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which material is commonly used for cooling tower fill?",
+"c": [
+"Glass",
+"Aluminum",
+"PVC",
+"Cast iron"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which problem occurs due to microbial contamination in cooling towers?",
+"c": [
+"Air entrainment",
+"Cavitation",
+"Legionella growth",
+"Surge"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which cooling tower problem causes uneven water distribution?",
+"c": [
+"High fan speed",
+"Small basin depth",
+"Nozzle clogging",
+"Larger drift eliminators"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which type of cooling tower is least affected by wind direction?",
+"c": [
+"Spray pond",
+"Natural draft pond",
+"Induced draft tower",
+"Crossflow tower"
+],
+"a": "C",
+"e": "Judgment call. Double-check against your reviewer."
+},
+{
+"q": "Which parameter is minimized in efficient cooling towers?",
+"c": [
+"Airflow rate",
+"Heat load",
+"Range",
+"Approach temperature"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "What heat exchanger type has concentric tubes, one fluid inside and one outside?",
+"c": [
+"Shell-and-tube heat exchanger",
+"Air-cooled heat exchanger",
+"Double-pipe heat exchanger",
+"Plate heat exchanger"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which dimensionless number represents heat exchanger effectiveness?",
+"c": [
+"Nusselt number",
+"Reynolds number",
+"NTU (Number of Transfer Units)",
+"Prandtl number"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which code provides standards for shell-and-tube heat exchangers?",
+"c": [
+"NFPA 30",
+"API 610",
+"TEMA",
+"ASME Section IX"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which heat exchanger type is best for compact, high-efficiency service?",
+"c": [
+"Shell-and-tube",
+"Plate heat exchanger",
+"Double-pipe exchanger",
+"Air-cooled exchanger"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "What type of reboiler is commonly used in distillation columns?",
+"c": [
+"Falling film evaporator",
+"Plate heat exchanger",
+"Kettle reboiler",
+"Forced circulation evaporator"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which parameter is reduced by using baffled shell-and-tube exchangers?",
+"c": [
+"Pressure drop",
+"Dead zones",
+"Fouling",
+"Gas velocity"
+],
+"a": "B",
+"e": "Judgment call. Double-check against your reviewer."
+},
+{
+"q": "Which type of exchanger is best for heat recovery from exhaust gases?",
+"c": [
+"Air-cooled condenser",
+"Economizer",
+"Jet condenser",
+"Falling film evaporator"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "What determines the capacity of a conveyor?",
+"c": [
+"Pressure only",
+"Power only",
+"Temperature only",
+"Area, velocity, and density"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "Which type of conveyor is used for vertical lifting of bulk solids?",
+"c": [
+"Roller conveyor",
+"Pneumatic conveyor",
+"Bucket elevator",
+"Screw conveyor"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which type of conveyor uses a rotating helical blade inside a tube?",
+"c": [
+"[cut off in scan] conveyor",
+"Chain conveyor",
+"Screw conveyor",
+"Roller conveyor"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "What is the purpose of a snub pulley?",
+"c": [
+"Increase belt wrap angle",
+"Increase belt tension",
+"Align shaft",
+"Reduce belt speed"
+],
+"a": "A",
+"e": ""
+},
+{
+"q": "Which crane is mounted on a wall or column?",
+"c": [
+"Gantry crane",
+"Tower crane",
+"Jib crane",
+"Overhead crane"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which type of conveyor is most energy-intensive?",
+"c": [
+"Screw conveyor",
+"Chain conveyor",
+"Belt conveyor",
+"Pneumatic conveyor"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "What is the reason for using a 3–15 psi range in pneumatic control systems?",
+"c": [
+"Minimum operating value",
+"Safety requirement only",
+"Standard signal range",
+"Maximum pressure limit"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which device prevents reverse movement of bucket elevators?",
+"c": [
+"Snub pulley",
+"Backstop",
+"Idler",
+"Counterweight"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "A steam pipe is insulated using two layers of insulating materials, where the material with better insulating property is placed on the outer layer. If the positions of the two insulating layers are interchanged, what happens to the heat conducted through the pipe?",
+"c": [
+"Decreases",
+"Increases",
+"Remains unchanged",
+"May increase or decrease depending on thickness"
+],
+"a": "A",
+"e": "Better insulation should go on the inside, next to the pipe. Swapping puts it inside, so heat loss decreases."
+},
+{
+"q": "Which of the following materials offers the least propagation of heat energy through conduction?",
+"c": [
+"Lead",
+"Copper",
+"Water",
+"Air “Every item you answer today brings you one step closer to your name on the board passers list.” AERC Refresher Series"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "Which equation defines the coefficient of performance (COP) of a refrigerator?",
+"c": [
+"COP = Heat rejected / Work input",
+"COP = Refrigeration effect / Work input",
+"COP = Work input / Refrigeration effect",
+"COP = Power × Time"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "What improves the efficiency of a refrigeration system?",
+"c": [
+"Increase evaporator temperature",
+"Increase throttling loss",
+"Increase condenser pressure",
+"Decrease refrigerant flow"
+],
+"a": "A",
+"e": ""
+},
+{
+"q": "What causes slugging in a compressor?",
+"c": [
+"High discharge pressure",
+"Excess oil circulation",
+"Liquid refrigerant entering suction",
+"Low evaporator temperature"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "What is the purpose of a suction accumulator?",
+"c": [
+"Improve lubrication",
+"Prevent liquid from entering compressor",
+"Increase discharge pressure",
+"Reduce condenser load"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which component compresses the refrigerant in VCRS?",
+"c": [
+"Condenser",
+"Compressor",
+"Expansion valve",
+"Evaporator"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "What does TXV stand for?",
+"c": [
+"Temperature Expansion Valve",
+"Thermal exchange valve",
+"Thermostatic expansion valve",
+"Throttle Expansion Valve"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "What type of ice is used in the fish industry that requires portability?",
+"c": [
+"Tube",
+"Plate",
+"Flake",
+"Block"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "What material is used in ammonia service valves?",
+"c": [
+"Aluminum and its alloy",
+"Stainless steel",
+"Brass",
+"Copper and its alloy"
+],
+"a": "B",
+"e": "Key marks stainless steel. Ammonia attacks copper and brass, so steel is used."
+},
+{
+"q": "Which type of compressor is widely used in small refrigerators?",
+"c": [
+"Axial compressor",
+"Rotary screw compressor",
+"Hermetic reciprocating compressor",
+"Centrifugal compressor"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "What type of compressor is used in large refrigeration plants?",
+"c": [
+"Rotary vane compressor",
+"Scroll compressor",
+"Centrifugal compressor",
+"Reciprocating compressor"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which refrigerant is eco-friendly and has zero ODP?",
+"c": [
+"R12",
+"R22",
+"R134a",
+"Ammonia"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which natural refrigerant is commonly used in food preservation?",
+"c": [
+"R12",
+"Freon 11",
+"Ammonia",
+"R22"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which refrigerant is flammable but eco-friendly?",
+"c": [
+"R22",
+"R134a",
+"R600a (isobutane)",
+"R12"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which factor contributes to latent heat load in cooling load?",
+"c": [
+"Heat gain from lights",
+"Solar radiation",
+"Moisture in infiltration air",
+"Heat conduction through walls"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "What does CLTD stand for in cooling load calculations?",
+"c": [
+"Cooling Loss Temperature Difference",
+"Cooling Load Temperature Difference",
+"Coefficient of Load Transfer Design",
+"Central Load Temperature Distribution"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which method uses CLTD and CLF to calculate cooling load?",
+"c": [
+"Mollier diagram",
+"ASHRAE method",
+"Energy balance",
+"Ventilation calculation"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which load results from outside air intentionally supplied indoors?",
+"c": [
+"Infiltration load",
+"Equipment load",
+"Ventilation load",
+"Lighting load"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which factor reduces cooling load in building design?",
+"c": [
+"High U-value walls",
+"Poor sealing",
+"Insulation",
+"Large glass areas facing west"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which is the cooling load due to food products stored?",
+"c": [
+"Occupancy load",
+"Product load",
+"Equipment load",
+"Lighting load"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "What does ETD stand for?",
+"c": [
+"Energy Transfer Distribution",
+"Equivalent Temperature Difference",
+"Evaporative Temperature Difference",
+"External Temperature Data"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which method estimates infiltration by number of air changes per hour?",
+"c": [
+"Crack length method",
+"CLF method",
+"Air change method",
+"CLTD method"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which factor is critical in designing air conditioning for auditoriums?",
+"c": [
+"Lighting load",
+"Ventilation load",
+"Occupancy load",
+"Infiltration load"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which factor determines the cooling load in cold storages for vegetables?",
+"c": [
+"Lighting load",
+"Respiration load",
+"Ventilation",
+"Infiltration load"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which factor reduces respiration load in cold storages?",
+"c": [
+"Frequent door openings",
+"High humidity",
+"Lower temperature",
+"Poor insulation"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "What is aseptic packaging?",
+"c": [
+"Refrigerated storage",
+"Sterile packaging process",
+"Pressurized sealing",
+"Vacuum packaging"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which type of ice is commonly produced in traditional ice plants?",
+"c": [
+"Plate ice",
+"Flake ice",
+"Block ice",
+"Tube ice"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which load occurs when doors of cold storage are opened frequently?",
+"c": [
+"Occupancy load",
+"Infiltration load",
+"Lighting load",
+"Solar load"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which refrigerant is commonly used in large ice rinks?",
+"c": [
+"R134a",
+"R22",
+"Ammonia (NH 3 )",
+"R12"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which factor reduces infiltration load in cold storages?",
+"c": [
+"High traffic",
+"Poor sealing",
+"Air locks and vestibules",
+"Frequent door opening"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Refrigerant pipe systems are constructed of ______ pipe for freons.",
+"c": [
+"copper",
+"iron",
+"plastic",
+"galvanized"
+],
+"a": "A",
+"e": ""
+},
+{
+"q": "Which flooring prevents moisture migration into cold storage slabs?",
+"c": [
+"Asphalt flooring",
+"Steel plates",
+"Glass flooring",
+"Vapor barrier flooring"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "Which type of ice is produced continuously and has hollow cylindrical shape?",
+"c": [
+"Flake ice",
+"Block ice",
+"Tube ice",
+"Plate ice"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "What is the purpose of the condenser in a refrigeration system?",
+"c": [
+"to cool hot refrigerant vapor",
+"to dehumidify refrigerant vapor",
+"to dry refrigerant",
+"to condense the cooled refrigerant"
+],
+"a": "A",
+"e": ""
+},
+{
+"q": "Which insulation is widely used in rink floors?",
+"c": [
+"Glass wool",
+"Concrete only",
+"Polystyrene foam",
+"Cork"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which factor prevents moisture penetration in cold storage walls?",
+"c": [
+"Increased ventilation",
+"Solar coatings",
+"Vapor barriers",
+"Poor insulation"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which compressor type is best suited for large industrial refrigeration plants?",
+"c": [
+"Scroll compressor",
+"Screw or centrifugal compressor",
+"Rotary vane compressor",
+"Hermetic reciprocating compressor"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which expansion device automatically adjusts refrigerant flow to match load?",
+"c": [
+"Orifice plate",
+"Capillary tube",
+"Fixed restrictor",
+"Thermostatic expansion valve"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "Which expansion device is most common in small domestic refrigerators?",
+"c": [
+"TXV",
+"Capillary tube",
+"Orifice valve",
+"Electronic expansion valve"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which refrigerant is classified as A1 (low toxicity, low flammability)?",
+"c": [
+"R600a (isobutane)",
+"R290 (propane)",
+"R134a",
+"Ammonia (R717)"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which factor reduces condenser size requirements?",
+"c": [
+"Poor airflow",
+"High fouling",
+"Lower condensing temperature",
+"Higher ambient temperature"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which type of condenser is preferred in regions with water scarcity?",
+"c": [
+"Evaporative condenser",
+"Shell-and-tube condenser",
+"Air-cooled condenser",
+"Water-cooled condenser"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which property of refrigerants is critical for safety classification?",
+"c": [
+"Specific volume",
+"Lubrication compatibility",
+"Flammability and toxicity",
+"Latent heat"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which compressor type is compact and widely used in residential and commercial air-conditioning?",
+"c": [
+"Screw compressor",
+"Scroll compressor",
+"Centrifugal compressor",
+"Open-type reciprocating compressor"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which expansion device offers highest precision in large modern systems?",
+"c": [
+"Thermostatic Expansion Valve (TXV)",
+"Manual Expansion Valve",
+"Electronic expansion valve (EEV)",
+"Capillary tube"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which device is commonly used to prevent short cycling of compressors?",
+"c": [
+"Relief valve",
+"Time delay relay",
+"Sight glass",
+"Flow switch"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which device prevents refrigerant migration during compressor off-cycle?",
+"c": [
+"Flow meter",
+"Pressure gauge",
+"Crankcase heater",
+"Solenoid valve"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which device is used for measuring relative humidity in cold storage?",
+"c": [
+"Thermostat",
+"Hygrometer",
+"Flow switch",
+"Manometer"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which instrument is essential for measuring airflow across evaporator coils?",
+"c": [
+"Thermostat",
+"Hygrometer",
+"Flow meter",
+"Anemometer"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "Which device prevents compressor startup during low oil differential pressure?",
+"c": [
+"Thermostat",
+"Oil safety switch",
+"Humidistat",
+"Solenoid valve"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "Which device prevents system start if condenser water flow is insufficient?",
+"c": [
+"Solenoid valve",
+"Thermostat",
+"Oil separator",
+"Flow switch interlock"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "Which instrument is used to measure suction and discharge line current simultaneously?",
+"c": [
+"Hygrometer",
+"Solenoid",
+"Clamp-on ammeter",
+"Manometer"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which instrument is used to measure the temperature of refrigerant lines?",
+"c": [
+"Pressure gauge",
+"Flow meter",
+"Thermocouple",
+"Manostat"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Which control device regulates refrigerant flow into evaporators?",
+"c": [
+"Relief valve",
+"Receiver",
+"Expansion valve",
+"Solenoid valve"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "A thermostat in a refrigeration system primarily functions to:",
+"c": [
+"Control condenser pressure and temperature",
+"Control refrigerant flow",
+"Maintain desired temperature",
+"Increase compressor speed and temperature"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "In a refrigeration plant, what happens to the compressor power input when the condenser temperature increases?",
+"c": [
+"Increases",
+"Decreases",
+"Remains constant",
+"Becomes unpredictable"
+],
+"a": "A",
+"e": ""
+},
+{
+"q": "For a vapor compression refrigeration system used in ice production, the condensing temperature for achieving higher COP should:",
+"c": [
+"Be near the critical temperature of the refrigerant",
+"Be above the critical temperature of the refrigerant",
+"Be much lower than the critical temperature of the refrigerant",
+"Have no effect on COP"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Periodic defrosting is necessary in domestic refrigerators because frosting:",
+"c": [
+"Causes corrosion of evaporator tubes",
+"Reduces heat transfer rate",
+"Spoils stored food",
+"Restricts condenser airflow"
+],
+"a": "B",
+"e": ""
+},
+{
+"q": "When the lower temperature limit is fixed, the COP of a refrigeration machine can be improved by:",
+"c": [
+"Increasing compressor speed",
+"Operating at lower speed",
+"Raising condenser temperature",
+"Lowering condenser temperature"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "In a vapor compression refrigeration system, what is the primary purpose of a liquid-to-suction heat exchanger?",
+"c": [
+"Maintain constant COP",
+"Prevent liquid refrigerant from entering the compressor",
+"Subcool the liquid refrigerant leaving the condenser",
+"Subcool the vapor refrigerant leaving the evaporator"
+],
+"a": "C",
+"e": ""
+},
+{
+"q": "Why is air cooling commonly used for Freon compressors while water jacketing is preferred for ammonia compressors?",
+"c": [
+"Because ammonia has a higher latent heat than Freon",
+"Because water has higher thermal conductivity than air",
+"Because water has higher specific heat than air",
+"Because ammonia cycles have larger superheat region"
+],
+"a": "A",
+"e": ""
+},
+{
+"q": "A desirable refrigerant should possess which of the following properties?",
+"c": [
+"Large latent heat of vaporization and low operating pressures",
+"Small latent heat of vaporization and high operating pressures",
+"Large latent heat of vaporization and high operating pressures",
+"Small latent heat of vaporization and low operating pressures"
+],
+"a": "A",
+"e": ""
+},
+{
+"q": "Which of the following refrigerants contributes the most to ozone depletion in the stratosphere?",
+"c": [
+"Ammonia",
+"Carbon dioxide",
+"Sulphur dioxide",
+"Fluorine"
+],
+"a": "D",
+"e": "Key marks D (fluorine). Chlorine in CFCs is the usual textbook cause, so double-check."
+},
+{
+"q": "In milk chilling plants, which of the following is commonly used as the secondary refrigerant?",
+"c": [
+"Ammonia solution",
+"Sodium silicate",
+"Propylene glycol",
+"Brine"
+],
+"a": "D",
+"e": ""
+},
+{
+"q": "Leakage in a Freon-based refrigeration system is commonly detected using a:",
+"c": [
+"Oxy-acetylene torch",
+"Halide torch",
+"Sulphur torch",
+"Blue litmus paper"
+],
+"a": "A",
+"e": "Key marks A (oxy-acetylene torch). The standard leak detector for Freon is the halide torch (B), so double-check."
+},
+{
+"q": "Which of the following statements does NOT apply to the volumetric efficiency of a reciprocating air compressor?",
+"c": [
+"It decreases with increase in inlet temperature",
+"It increases with decrease in pressure ratio",
+"It increases with decrease in clearance ratio",
+"It decreases with increase in clearance-to-stroke ratio"
+],
+"a": "A",
+"e": ""
+}
+]
+}
