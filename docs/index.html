@@ -14,6 +14,9 @@ input{width:100%;background:var(--card);border:0;border-radius:12px;padding:12px
 small{opacity:.75}.ex{background:var(--card);border-radius:12px;padding:12px;margin-top:8px}
 </style></head><body><div id="app">Loading…</div><script src="config.js"></script><script>
 const L='ABCD',$=document.getElementById('app'),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let snd=localStorage.getItem('rq_snd')!=='0',AC=null;
+function beep(ok){if(!snd)return;try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();const t=AC.currentTime;(ok?[[660,0],[880,.12]]:[[190,0],[150,.14]]).forEach(([f,d])=>{const o=AC.createOscillator(),g=AC.createGain();o.type=ok?'sine':'sawtooth';o.frequency.value=f;g.gain.setValueAtTime(.0001,t+d);g.gain.exponentialRampToValueAtTime(.25,t+d+.02);g.gain.exponentialRampToValueAtTime(.0001,t+d+.2);o.connect(g);g.connect(AC.destination);o.start(t+d);o.stop(t+d+.22)})}catch(e){}}
+function togSnd(){snd=!snd;localStorage.setItem('rq_snd',snd?'1':'0');if(snd)beep(true);render()}
 let fs,DB,me,myName,isEd=true,sets=[],results={},names={},mine={},view='home',cur=null,i=0,grid=false,opt={c:false,q:false},cache={};
 const V='10.14.1',U='https://www.gstatic.com/firebasejs/'+V+'/';
 const err=e=>{alert('Couldn’t save: '+(e&&e.message||e)+'\nCheck your internet and the Firestore rules.')};
@@ -45,7 +48,7 @@ async function doImport(){const t=document.getElementById('t').value.trim();let 
 try{const j=JSON.parse(t);qs=Array.isArray(j)?j:j.questions;title=title||j.title}catch(e){qs=parse(t)}
 if(!qs||!qs.length){alert('No questions found.');return}
 qs=qs.map(x=>({q:x.q,c:Array.from(x.c||[]).map(s=>s||''),a:x.a??null,e:x.e??''}));if(await putSet(title||'Set',qs)){view='home';render()}}
-function home(){return `<h2>Reviewer Quiz</h2>`+(isEd?`<button class="b p" onclick="view='imp';render()">+ Add questions</button>`:'')+
+function home(){return `<h2>Reviewer Quiz</h2><button class="b" onclick="togSnd()">${snd?'🔊 Sound on':'🔇 Sound off'}</button>`+(isEd?`<button class="b p" onclick="view='imp';render()">+ Add questions</button>`:'')+
 (sets.length?sets.map(s=>{const lines=Object.keys(results).filter(u=>results[u][s.id]).map(u=>{const p=results[u][s.id];return `${u===me?'You':esc(names[u]?.name||'Someone')}: ${p.ok}/${p.g} correct · ${p.n}/${s.n} answered`}).join('<br>');
 return `<button class="b" onclick="openSet('${s.id}')"><b>${esc(s.title)}</b> <small>(${s.n} questions)</small>${lines?'<br><small>'+lines+'</small>':''}</button>`}).join(''):'<p><small>No quizzes yet.</small></p><button class="b" onclick="loadStarter()">Load the 2 starter sets</button>')}
 function imp(){return `<h2>Add questions</h2><input id="n" placeholder="Set name (optional)"><textarea id="t" placeholder="Paste question text or JSON"></textarea><button class="b p" onclick="doImport()">Save to server</button><button class="b" onclick="view='home';render()">Cancel</button>`}
@@ -59,7 +62,7 @@ function start(){if(mine[cur.id]&&mine[cur.id].n&&!confirm('Start new? This clea
 mine[cur.id]={s:Math.floor(Math.random()*2147483647),o:(opt.c?'c':'')+(opt.q?'q':''),a:{},n:0,ok:0,g:0};saveP();i=0;grid=false;view='quiz';render()}
 function resume(){const p=mine[cur.id],S=sess(cur,p);const k=S.o.findIndex(K=>!p.a[K]);i=k<0?0:k;grid=false;view='quiz';render()}
 function pick(l){const p=mine[cur.id],S=sess(cur,p),K=S.o[i],q=S.qs[K],ca=q.a?L[S.perm[K].indexOf(L.indexOf(q.a))]:null;
-if(p.a[K]&&ca)return;if(!p.a[K]){p.n++;if(ca){p.g++;if(l===ca)p.ok++}}p.a[K]=l;saveP();render()}
+if(p.a[K]&&ca)return;if(!p.a[K]){p.n++;if(ca){p.g++;if(l===ca)p.ok++;beep(l===ca)}}p.a[K]=l;saveP();render()}
 function go(n){i=n;grid=false;render()}
 function quiz(){const p=mine[cur.id],S=sess(cur,p),K=S.o[i],q=S.qs[K],a=p.a[K],pm=S.perm[K],ca=q.a?L[pm.indexOf(L.indexOf(q.a))]:null;
 let h=`<div class="row"><button class="b" onclick="view='setup';render()">←</button><button class="b" onclick="grid=!grid;render()">${i+1} / ${S.o.length}</button><button class="b" onclick="view='res';render()">Finish</button></div>`;
