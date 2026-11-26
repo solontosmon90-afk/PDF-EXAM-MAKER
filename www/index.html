@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reviewer Quiz</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--card:#f2f3f5;--ac:#2563eb;--ok:#16a34a;--bad:#dc2626}
+@media(prefers-color-scheme:dark){:root{--bg:#121212;--fg:#eee;--card:#222;--ac:#60a5fa}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px system-ui,sans-serif;padding:env(safe-area-inset-top) 14px 24px}
+h2{margin:14px 0}button,textarea,input{font:inherit;color:inherit}
+.b{display:block;width:100%;text-align:left;background:var(--card);border:2px solid transparent;border-radius:12px;padding:13px;margin:8px 0}
+.p{background:var(--ac);color:#fff;text-align:center}.sel{border-color:var(--ac)}.ok{border-color:var(--ok);background:rgba(22,163,74,.2)}.bad{border-color:var(--bad);background:rgba(220,38,38,.2)}
+.row{display:flex;gap:8px}.row .b{text-align:center}textarea{width:100%;height:260px;background:var(--card);border:0;border-radius:12px;padding:10px}
+input{width:100%;background:var(--card);border:0;border-radius:12px;padding:12px;margin-bottom:8px}
+.g{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}.g button{padding:10px 0;border-radius:8px;border:2px solid transparent;background:var(--card)}
+small{opacity:.7}.ex{background:var(--card);border-radius:12px;padding:12px;margin-top:8px}
+</style></head><body><div id="app"></div><script>
+const K='rq_sets';let sets=[];try{sets=JSON.parse(localStorage.getItem(K)||'[]')}catch(e){}
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(sets))}catch(e){}};
+const A=document.getElementById('app'),L='ABCD',esc=s=>String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+let view='home',cur=null,i=0,grid=false;
+function parse(t){const qs=[];let q=null,mode='q',last=0;
+for(const raw of t.replace(/\r/g,'').split('\n')){const l=raw.trim();if(!l||/^Page \d+$/i.test(l))continue;
+let m=l.match(/^(\d+)\.\s+(.*)/);
+if(m){q={q:m[2],c:[],a:null,e:''};qs.push(q);mode='q';continue}
+if(!q)continue;
+if(/^Answer:/i.test(l)){const a=l.match(/Answer:\s*([A-D])/i);q.a=a?a[1]:null;mode='e';continue}
+if(mode!=='e'&&/^[A-D]\.\s/.test(l)){for(const p of l.split(/\s+(?=[A-D]\.\s)/)){const c=p.match(/^([A-D])\.\s*(.*)/);if(c){last=L.indexOf(c[1]);q.c[last]=c[2];mode='c'}else q.c[last]+=' '+p}continue}
+if(mode==='e')q.e+=(q.e?' ':'')+l.replace(/^Explanation:\s*|^Why:\s*/,'');
+else if(mode==='c')q.c[last]+=' '+l;else q.q+=' '+l}
+return qs.filter(x=>x.c.filter(Boolean).length>=2)}
+function doImport(){const t=document.getElementById('t').value.trim(),n=document.getElementById('n').value.trim();let qs,title=n;
+try{const j=JSON.parse(t);qs=Array.isArray(j)?j:j.questions;title=title||j.title}catch(e){qs=parse(t)}
+if(!qs||!qs.length){alert('No questions found. Check the pasted text.');return}
+qs=qs.map(x=>({q:x.q,c:Array.from(x.c||x.choices||[]).map(s=>s||''),a:x.a??x.answer??null,e:x.e??x.exp??''}));
+sets.push({id:Date.now(),title:title||'Set '+(sets.length+1),questions:qs,ans:{}});save();view='home';render()}
+function render(){A.innerHTML=({home,imp,quiz,res})[view]()}
+function home(){return `<h2>Reviewer Quiz</h2><button class="b p" onclick="view='imp';render()">+ Import questions</button>`+
+(sets.length?sets.map(s=>{const d=Object.keys(s.ans).length;return `<button class="b" onclick="open_(${s.id})"><b>${esc(s.title)}</b><br><small>${d}/${s.questions.length} answered</small></button>`}).join(''):'<p><small>No sets yet. Tap Import and paste your questions.</small></p>')+
+(sets.length?`<button class="b" onclick="del()"><small>Delete a set…</small></button>`:'')}
+function open_(id){cur=sets.find(s=>s.id===id);i=Math.min(Object.keys(cur.ans).length,cur.questions.length-1);view='quiz';grid=false;render()}
+function del(){const n=prompt('Type the set name to delete:');const k=sets.findIndex(s=>s.title===n);if(k>=0&&confirm('Delete '+n+'?')){sets.splice(k,1);save();render()}}
+function imp(){return `<h2>Import</h2><input id="n" placeholder="Set name (optional)"><textarea id="t" placeholder="Paste question text or JSON here"></textarea><button class="b p" onclick="doImport()">Make question list</button><button class="b" onclick="view='home';render()">Cancel</button>`}
+function pick(l){const q=cur.questions[i];if(cur.ans[i]&&q.a)return;cur.ans[i]=l;save();render()}
+function go(n){i=n;grid=false;render()}
+function quiz(){const s=cur,q=s.questions[i],a=s.ans[i];
+let h=`<div class="row"><button class="b" onclick="view='home';render()">←</button><button class="b" onclick="grid=!grid;render()">${i+1} / ${s.questions.length}</button><button class="b" onclick="view='res';render()">Finish</button></div>`;
+if(grid)return h+`<div class="g">${s.questions.map((_,k)=>`<button onclick="go(${k})" style="${s.ans[k]?'border-color:var(--ac)':''}">${k+1}</button>`).join('')}</div>`;
+h+=`<h3>${i+1}. ${esc(q.q)}</h3>`;
+q.c.forEach((c,k)=>{if(!c)return;const l=L[k];let cl='';if(a){if(q.a){cl=l===q.a?'ok':(l===a?'bad':'')}else if(l===a)cl='sel'}
+h+=`<button class="b ${cl}" onclick="pick('${l}')"><b>${l}.</b> ${esc(c)}</button>`});
+if(a&&q.a)h+=`<div class="ex"><b>${a===q.a?'Correct':'Correct answer: '+q.a}</b>${q.e?'<br>'+esc(q.e):''}</div>`;
+if(a&&!q.a)h+=`<div class="ex"><small>No answer key for this item.</small></div>`;
+return h+`<div class="row" style="margin-top:12px"><button class="b" ${i?'':'disabled'} onclick="go(i-1)">Prev</button><button class="b p" ${i<s.questions.length-1?'':'disabled'} onclick="go(i+1)">Next</button></div>`}
+function res(){const s=cur;let ok=0,keyed=0,un=0,wrong=[];s.questions.forEach((q,k)=>{const a=s.ans[k];if(!a)un++;else if(q.a){keyed++;if(a===q.a)ok++;else wrong.push(k)}});
+return `<h2>Results</h2><p><b>${ok} / ${keyed}</b> correct on graded items<br><small>${un} unanswered · ${s.questions.length-keyed-un} without answer key</small></p>`+
+(wrong.length?`<p>Missed:</p><div class="g">${wrong.map(k=>`<button onclick="go(${k});view='quiz';render()">${k+1}</button>`).join('')}</div>`:'')+
+`<button class="b" onclick="view='quiz';render()">Back to quiz</button><button class="b" onclick="if(confirm('Clear answers?')){cur.ans={};save();i=0;view='quiz';render()}">Retake</button><button class="b" onclick="view='home';render()">Home</button>`}
+render();
+</script></body></html>
