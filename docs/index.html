@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Reviewer Quiz</title><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#2563eb"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Reviewer Quiz"><link rel="apple-touch-icon" href="icon-180.png">
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--card:#f2f3f5;--ac:#2563eb;--ok:#16a34a;--bad:#dc2626}
+@media(prefers-color-scheme:dark){:root{--bg:#121212;--fg:#eee;--card:#222;--ac:#60a5fa}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px system-ui,sans-serif;padding:env(safe-area-inset-top) 14px 24px}
+h2{margin:14px 0}button,textarea,input{font:inherit;color:inherit}
+.b{display:block;width:100%;text-align:left;background:var(--card);border:2px solid transparent;border-radius:12px;padding:13px;margin:8px 0}
+.p{background:var(--ac);color:#fff;text-align:center}.sel{border-color:var(--ac)}.ok{border-color:var(--ok);background:rgba(22,163,74,.2)}.bad{border-color:var(--bad);background:rgba(220,38,38,.2)}
+.row{display:flex;gap:8px}.row .b{text-align:center}textarea{width:100%;height:260px;background:var(--card);border:0;border-radius:12px;padding:10px}
+input{width:100%;background:var(--card);border:0;border-radius:12px;padding:12px;margin-bottom:8px}
+.g{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}.g button{padding:10px 0;border-radius:8px;border:2px solid transparent;background:var(--card)}
+small{opacity:.7}.ex{background:var(--card);border-radius:12px;padding:12px;margin-top:8px}
+</style></head><body><div id="app"></div><script>
+const K='rq_sets';let sets=[];try{sets=JSON.parse(localStorage.getItem(K)||'[]')}catch(e){}
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(sets))}catch(e){}};
+const A=document.getElementById('app'),L='ABCD',esc=s=>String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+let view='home',cur=null,i=0,grid=false;
+const shuf=a=>{a=a.slice();for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a};
+function parse(t){const qs=[];let q=null,mode='q',last=0;
+for(const raw of t.replace(/\r/g,'').split('\n')){const l=raw.trim();if(!l||/^Page \d+$/i.test(l))continue;
+let m=l.match(/^(\d+)\.\s+(.*)/);
+if(m){q={q:m[2],c:[],a:null,e:''};qs.push(q);mode='q';continue}
+if(!q)continue;
+if(/^Answer:/i.test(l)){const a=l.match(/Answer:\s*([A-D])/i);q.a=a?a[1]:null;mode='e';continue}
+if(mode!=='e'&&/^[A-D]\.\s/.test(l)){for(const p of l.split(/\s+(?=[A-D]\.\s)/)){const c=p.match(/^([A-D])\.\s*(.*)/);if(c){last=L.indexOf(c[1]);q.c[last]=c[2];mode='c'}else q.c[last]+=' '+p}continue}
+if(mode==='e')q.e+=(q.e?' ':'')+l.replace(/^Explanation:\s*|^Why:\s*/,'');
+else if(mode==='c')q.c[last]+=' '+l;else q.q+=' '+l}
+return qs.filter(x=>x.c.filter(Boolean).length>=2)}
+function doImport(){const t=document.getElementById('t').value.trim(),n=document.getElementById('n').value.trim();let qs,title=n;
+try{const j=JSON.parse(t);qs=Array.isArray(j)?j:j.questions;title=title||j.title}catch(e){qs=parse(t)}
+if(!qs||!qs.length){alert('No questions found. Check the pasted text.');return}
+qs=qs.map(x=>({q:x.q,c:Array.from(x.c||x.choices||[]).map(s=>s||''),a:x.a??x.answer??null,e:x.e??x.exp??''}));
+sets.push({id:Date.now(),title:title||'Set '+(sets.length+1),questions:qs,ans:{},opts:{sc:false,sa:false,sq:false}});save();view='home';render()}
+const unit=t=>{const m=String(t).match(/^[^a-zA-Z]*[-+]?[\d.,]+\s*(.*)$/);return m?m[1].trim():null};
+function build(s){const o=s.opts,P=[];
+if(o.sa)s.questions.forEach((q,k)=>{if(q.a)q.c.forEach((c,j)=>{if(c&&L[j]!==q.a)P.push({k,t:c})})});
+let order=[...Array(s.questions.length).keys()];if(o.sq)order=shuf(order);const v={};
+s.questions.forEach((q,k)=>{let items=q.c.map((t,j)=>({t,ok:L[j]===q.a})).filter(x=>x.t);const ok=items.find(x=>x.ok);
+if(o.sa&&ok){const u=unit(ok.t),used=new Set(items.map(x=>x.t)),seen=new Set(),nw=[];
+const fit=P.filter(p=>p.k!==k&&!used.has(p.t)&&(u!==null?unit(p.t)===u:(unit(p.t)===null&&p.t.length>=ok.t.length*.4&&p.t.length<=ok.t.length*2.5+10)));const d=p=>Math.abs(p.k-k),cand=[...shuf(fit.filter(p=>d(p)<=12)),...shuf(fit.filter(p=>d(p)>12&&d(p)<=40)),...shuf(fit.filter(p=>d(p)>40))];
+const need=items.length-1;for(const c of cand){if(nw.length>=need)break;if(!seen.has(c.t)){seen.add(c.t);nw.push({t:c.t,ok:false})}}
+let pi=0;items=items.map(x=>x.ok?x:(pi<nw.length?nw[pi++]:x))}
+if(o.sc)items=shuf(items);
+v[k]={c:items.map(x=>x.t),a:q.a&&ok?L[items.findIndex(x=>x.ok)]:null}});
+s.sess={order,v};s.ans={};save()}
+function render(){A.innerHTML=({home,imp,setup,quiz,res})[view]()}
+function home(){return `<h2>Reviewer Quiz</h2><button class="b p" onclick="view='imp';render()">+ Import questions</button>`+
+(sets.length?sets.map(s=>{const d=Object.keys(s.ans).length;return `<button class="b" onclick="open_(${s.id})"><b>${esc(s.title)}</b><br><small>${d}/${s.questions.length} answered</small></button>`}).join(''):'<p><small>No sets yet. Tap Import and paste your questions.</small></p>')+
+(sets.length?`<button class="b" onclick="del()"><small>Delete a set…</small></button>`:'')}
+function open_(id){cur=sets.find(s=>s.id===id);cur.opts=cur.opts||{sc:false,sa:false,sq:false};view='setup';render()}
+function del(){const n=prompt('Type the set name to delete:');const k=sets.findIndex(s=>s.title===n);if(k>=0&&confirm('Delete '+n+'?')){sets.splice(k,1);save();render()}}
+function imp(){return `<h2>Import</h2><input id="n" placeholder="Set name (optional)"><textarea id="t" placeholder="Paste question text or JSON here"></textarea><button class="b p" onclick="doImport()">Make question list</button><button class="b" onclick="view='home';render()">Cancel</button>`}
+const tog=(k,t)=>`<button class="b ${cur.opts[k]?'sel':''}" onclick="tg('${k}')">${cur.opts[k]?'☑':'☐'} ${t}</button>`;
+function tg(k){cur.opts[k]=!cur.opts[k];save();render()}
+function setup(){const s=cur,d=Object.keys(s.ans).length;
+return `<h2>${esc(s.title)}</h2>`+tog('sc','Shuffle A/B/C/D positions')+tog('sa','Unfamiliar wrong answers<br><small>Swaps wrong choices for ones from other questions (same unit/kind). Needs answer keys.</small>')+tog('sq','Randomize question order and numbers')+
+(s.sess?`<button class="b p" onclick="resume()">Resume (${d}/${s.questions.length})</button>`:'')+
+`<button class="b ${s.sess?'':'p'}" onclick="start()">Start new</button><button class="b" onclick="view='home';render()">Back</button>`}
+function start(){if(cur.sess&&Object.keys(cur.ans).length&&!confirm('Start new? This clears your answers.'))return;build(cur);i=0;grid=false;view='quiz';render()}
+function resume(){const o=cur.sess.order;const k=o.findIndex(K=>!cur.ans[K]);i=k<0?0:k;grid=false;view='quiz';render()}
+function pick(l){const K=cur.sess.order[i],v=cur.sess.v[K];if(cur.ans[K]&&v.a)return;cur.ans[K]=l;save();render()}
+function go(n){i=n;grid=false;render()}
+function quiz(){const s=cur,o=s.sess.order,K=o[i],q=s.questions[K],v=s.sess.v[K],a=s.ans[K];
+let h=`<div class="row"><button class="b" onclick="view='setup';render()">←</button><button class="b" onclick="grid=!grid;render()">${i+1} / ${o.length}</button><button class="b" onclick="view='res';render()">Finish</button></div>`;
+if(grid)return h+`<div class="g">${o.map((k,p)=>`<button onclick="go(${p})" style="${s.ans[k]?'border-color:var(--ac)':''}">${p+1}</button>`).join('')}</div>`;
+h+=`<h3>${i+1}. ${esc(q.q)}</h3>`;
+v.c.forEach((c,j)=>{const l=L[j];let cl='';if(a){if(v.a){cl=l===v.a?'ok':(l===a?'bad':'')}else if(l===a)cl='sel'}
+h+=`<button class="b ${cl}" onclick="pick('${l}')"><b>${l}.</b> ${esc(c)}</button>`});
+if(a&&v.a)h+=`<div class="ex"><b>${a===v.a?'Correct':'Correct answer: '+v.a}</b>${q.e?'<br>'+esc(q.e):''}</div>`;
+if(a&&!v.a)h+=`<div class="ex"><small>No answer key for this item.</small></div>`;
+return h+`<div class="row" style="margin-top:12px"><button class="b" ${i?'':'disabled'} onclick="go(i-1)">Prev</button><button class="b p" ${i<o.length-1?'':'disabled'} onclick="go(i+1)">Next</button></div>`}
+function res(){const s=cur;let ok=0,keyed=0,un=0,wrong=[];s.sess.order.forEach((K,p)=>{const a=s.ans[K],v=s.sess.v[K];if(!a)un++;else if(v.a){keyed++;if(a===v.a)ok++;else wrong.push(p)}});
+return `<h2>Results</h2><p><b>${ok} / ${keyed}</b> correct on graded items<br><small>${un} unanswered · ${s.questions.length-keyed-un} without answer key</small></p>`+
+(wrong.length?`<p>Missed:</p><div class="g">${wrong.map(p=>`<button onclick="go(${p});view='quiz';render()">${p+1}</button>`).join('')}</div>`:'')+
+`<button class="b" onclick="view='quiz';render()">Back to quiz</button><button class="b" onclick="view='setup';render()">New attempt / options</button><button class="b" onclick="view='home';render()">Home</button>`}
+render();
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script></body></html>
