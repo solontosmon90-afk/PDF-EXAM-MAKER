@@ -21,7 +21,7 @@ let fs,DB,me,myName,isEd=true,sets=[],results={},names={},mine={},view='home',cu
 const V='10.14.1',U='https://www.gstatic.com/firebasejs/'+V+'/';
 const err=e=>{alert('Couldn’t save: '+(e&&e.message||e)+'\nCheck your internet and the Firestore rules.')};
 async function init(){if(typeof FIREBASE_CONFIG==='undefined'||String(FIREBASE_CONFIG.apiKey).startsWith('PASTE')){$.textContent='Setup needed: paste your Firebase config into config.js.';return}
-try{const A=await import(U+'firebase-app.js');fs=await import(U+'firebase-firestore.js');DB=fs.getFirestore(A.initializeApp(FIREBASE_CONFIG))}catch(e){$.textContent='Couldn’t load Firebase. Check your internet.';return}
+try{const A=await import(U+'firebase-app.js');fs=await import(U+'firebase-firestore.js');const app=A.initializeApp(FIREBASE_CONFIG);try{DB=fs.initializeFirestore(app,{localCache:fs.persistentLocalCache({tabManager:fs.persistentSingleTabManager()})})}catch(e){DB=fs.getFirestore(app)}}catch(e){$.textContent='Couldn’t load Firebase. Check your internet.';return}
 me=localStorage.getItem('rq_me');if(!me){me=(crypto.randomUUID?crypto.randomUUID():Date.now()+''+Math.random().toString(36).slice(2));localStorage.setItem('rq_me',me)}
 myName=localStorage.getItem('rq_name');if(!myName){myName=(prompt('Your name?')||'Player').slice(0,30);localStorage.setItem('rq_name',myName)}
 fs.onSnapshot(fs.collection(DB,'sets'),s=>{sets=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(a.ts||0)-(b.ts||0));if(cur)cur=sets.find(x=>x.id===cur.id)||cur;draw()},err);
@@ -29,6 +29,7 @@ fs.onSnapshot(fs.collection(DB,'results'),s=>{results={};names={};s.docs.forEach
 async function putSet(title,qs,ts){const data=JSON.stringify(qs);if(data.length>900000){alert('Too big for one set. Split it.');return false}
 try{await fs.setDoc(fs.doc(DB,'sets',String(ts||Date.now())),{title,ts:ts||Date.now(),n:qs.length,data});return true}catch(e){err(e);return false}}
 async function loadStarter(){let t=Date.now();for(const f of ['terms_all.json','set8_terms.json']){try{const j=await (await fetch(f)).json();await putSet(j.title,j.questions,t++)}catch(e){err(e)}}}
+addEventListener('online',()=>draw());addEventListener('offline',()=>draw());
 function draw(){if(view!=='imp')render()}
 function render(){$.innerHTML=({home,imp,setup,quiz,res})[view]()}
 const Q=s=>cache[s.id+s.ts]||(cache[s.id+s.ts]=JSON.parse(s.data));
@@ -48,7 +49,7 @@ async function doImport(){const t=document.getElementById('t').value.trim();let 
 try{const j=JSON.parse(t);qs=Array.isArray(j)?j:j.questions;title=title||j.title}catch(e){qs=parse(t)}
 if(!qs||!qs.length){alert('No questions found.');return}
 qs=qs.map(x=>({q:x.q,c:Array.from(x.c||[]).map(s=>s||''),a:x.a??null,e:x.e??''}));if(await putSet(title||'Set',qs)){view='home';render()}}
-function home(){return `<h2>Reviewer Quiz</h2><button class="b" onclick="togSnd()">${snd?'🔊 Sound on':'🔇 Sound off'}</button>`+(isEd?`<button class="b p" onclick="view='imp';render()">+ Add questions</button>`:'')+
+function home(){return `<h2>Reviewer Quiz</h2><button class="b" onclick="togSnd()">${snd?'🔊 Sound on':'🔇 Sound off'}</button>`+(navigator.onLine?'':'<p><small>Offline: your answers are saved on this phone and will sync when you’re back online.</small></p>')+(isEd?`<button class="b p" onclick="view='imp';render()">+ Add questions</button>`:'')+
 (sets.length?sets.map(s=>{const lines=Object.keys(results).filter(u=>results[u][s.id]).map(u=>{const p=results[u][s.id];return `${u===me?'You':esc(names[u]?.name||'Someone')}: ${p.ok}/${p.g} correct · ${p.n}/${s.n} answered`}).join('<br>');
 return `<button class="b" onclick="openSet('${s.id}')"><b>${esc(s.title)}</b> <small>(${s.n} questions)</small>${lines?'<br><small>'+lines+'</small>':''}</button>`}).join(''):'<p><small>No quizzes yet.</small></p><button class="b" onclick="loadStarter()">Load the 2 starter sets</button>')}
 function imp(){return `<h2>Add questions</h2><input id="n" placeholder="Set name (optional)"><textarea id="t" placeholder="Paste question text or JSON"></textarea><button class="b p" onclick="doImport()">Save to server</button><button class="b" onclick="view='home';render()">Cancel</button>`}
