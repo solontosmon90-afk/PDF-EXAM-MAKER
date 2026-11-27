@@ -17,7 +17,7 @@ const L='ABCD',$=document.getElementById('app'),esc=s=>String(s??'').replace(/[&
 let snd=localStorage.getItem('rq_snd')!=='0',AC=null;
 function beep(ok){if(!snd)return;try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();const t=AC.currentTime;(ok?[[660,0],[880,.12]]:[[190,0],[150,.14]]).forEach(([f,d])=>{const o=AC.createOscillator(),g=AC.createGain();o.type=ok?'sine':'sawtooth';o.frequency.value=f;g.gain.setValueAtTime(.0001,t+d);g.gain.exponentialRampToValueAtTime(.25,t+d+.02);g.gain.exponentialRampToValueAtTime(.0001,t+d+.2);o.connect(g);g.connect(AC.destination);o.start(t+d);o.stop(t+d+.22)})}catch(e){}}
 function togSnd(){snd=!snd;localStorage.setItem('rq_snd',snd?'1':'0');if(snd)beep(true);render()}
-let fs,DB,me,myName,isEd=true,sets=[],results={},names={},mine={},view='home',cur=null,i=0,grid=false,opt={c:false,q:false},cache={};
+let fs,DB,me,myName,isEd=true,sets=[],results={},names={},mine={},view='home',cur=null,i=0,grid=false,opt={c:false,q:false,r:false},cache={};
 const V='10.14.1',U='https://www.gstatic.com/firebasejs/'+V+'/';
 const err=e=>{alert('Couldn’t save: '+(e&&e.message||e)+'\nCheck your internet and the Firestore rules.')};
 async function init(){if(typeof FIREBASE_CONFIG==='undefined'||String(FIREBASE_CONFIG.apiKey).startsWith('PASTE')){$.textContent='Setup needed: paste your Firebase config into config.js.';return}
@@ -55,22 +55,25 @@ return `<button class="b" onclick="openSet('${s.id}')"><b>${esc(s.title)}</b> <s
 function imp(){return `<h2>Add questions</h2><input id="n" placeholder="Set name (optional)"><textarea id="t" placeholder="Paste question text or JSON"></textarea><button class="b p" onclick="doImport()">Save to server</button><button class="b" onclick="view='home';render()">Cancel</button>`}
 function openSet(id){cur=sets.find(s=>s.id===id);view='setup';render()}
 const tog=(k,t)=>`<button class="b ${opt[k]?'sel':''}" onclick="opt.${k}=!opt.${k};render()">${opt[k]?'☑':'☐'} ${t}</button>`;
-function setup(){const p=mine[cur.id];return `<h2>${esc(cur.title)}</h2>`+tog('c','Shuffle A/B/C/D positions')+tog('q','Randomize question order and numbers')+
+function setup(){const p=mine[cur.id];return `<h2>${esc(cur.title)}</h2>`+tog('c','Shuffle A/B/C/D positions')+tog('q','Randomize question order and numbers')+tog('r','Retry mode<br><small>After a wrong answer you can keep choosing. Shows only why the right answer is right. Score counts your first try.</small>')+
 (p?`<button class="b p" onclick="resume()">Resume (${p.n}/${cur.n})</button>`:'')+`<button class="b ${p?'':'p'}" onclick="start()">Start new</button>`+
 (isEd?`<button class="b" onclick="del()"><small>Delete this set</small></button>`:'')+`<button class="b" onclick="view='home';render()">Back</button>`}
 async function del(){if(!confirm('Delete this set for everyone?'))return;try{await fs.deleteDoc(fs.doc(DB,'sets',cur.id));view='home';render()}catch(e){err(e)}}
 function start(){if(mine[cur.id]&&mine[cur.id].n&&!confirm('Start new? This clears your answers for this set.'))return;
-mine[cur.id]={s:Math.floor(Math.random()*2147483647),o:(opt.c?'c':'')+(opt.q?'q':''),a:{},n:0,ok:0,g:0};saveP();i=0;grid=false;view='quiz';render()}
+mine[cur.id]={s:Math.floor(Math.random()*2147483647),o:(opt.c?'c':'')+(opt.q?'q':'')+(opt.r?'r':''),a:{},n:0,ok:0,g:0};saveP();i=0;grid=false;view='quiz';render()}
 function resume(){const p=mine[cur.id],S=sess(cur,p);const k=S.o.findIndex(K=>!p.a[K]);i=k<0?0:k;grid=false;view='quiz';render()}
 function pick(l){const p=mine[cur.id],S=sess(cur,p),K=S.o[i],q=S.qs[K],ca=q.a?L[S.perm[K].indexOf(L.indexOf(q.a))]:null;
+if(ca&&p.o.includes('r')){p.t=p.t||{};const t=p.t[K]||'';if(t.includes(ca)||t.includes(l))return;if(!p.a[K]){p.a[K]=l;p.n++;p.g++;if(l===ca)p.ok++}p.t[K]=t+l;beep(l===ca);saveP();render();return}
 if(p.a[K]&&ca)return;if(!p.a[K]){p.n++;if(ca){p.g++;if(l===ca)p.ok++;beep(l===ca)}}p.a[K]=l;saveP();render()}
 function go(n){i=n;grid=false;render()}
-function quiz(){const p=mine[cur.id],S=sess(cur,p),K=S.o[i],q=S.qs[K],a=p.a[K],pm=S.perm[K],ca=q.a?L[pm.indexOf(L.indexOf(q.a))]:null;
+function quiz(){const p=mine[cur.id],S=sess(cur,p),K=S.o[i],q=S.qs[K],a=p.a[K],pm=S.perm[K],ca=q.a?L[pm.indexOf(L.indexOf(q.a))]:null,rt=!!ca&&p.o.includes('r'),t=(p.t&&p.t[K])||'',solved=rt&&t.includes(ca);
 let h=`<div class="row"><button class="b" onclick="view='setup';render()">←</button><button class="b" onclick="grid=!grid;render()">${i+1} / ${S.o.length}</button><button class="b" onclick="view='res';render()">Finish</button></div>`;
 if(grid)return h+`<div class="g">${S.o.map((k,n)=>`<button onclick="go(${n})" style="${p.a[k]?'border-color:var(--ac)':''}">${n+1}</button>`).join('')}</div>`;
 h+=`<h3>${i+1}. ${esc(q.q)}</h3>`;
-pm.forEach((src,j)=>{const l=L[j];let cl='';if(a){if(ca)cl=l===ca?'ok':(l===a?'bad':'');else if(l===a)cl='sel'}h+=`<button class="b ${cl}" onclick="pick('${l}')"><b>${l}.</b> ${esc(q.c[src])}</button>`});
-if(a&&ca){const X=q.x||{},xa=X[L[pm[L.indexOf(a)]]],xc=X[L[pm[L.indexOf(ca)]]],ok=a===ca;let ex='<b>'+(ok?'Correct':'Wrong. Correct answer: '+ca)+'</b>';
+pm.forEach((src,j)=>{const l=L[j];let cl='';if(rt){if(t.includes(l))cl=l===ca?'ok':'bad'}else if(a){if(ca)cl=l===ca?'ok':(l===a?'bad':'');else if(l===a)cl='sel'}h+=`<button class="b ${cl}" onclick="pick('${l}')"><b>${l}.</b> ${esc(q.c[src])}</button>`});
+if(rt&&t){const X=q.x||{},xc=X[L[pm[L.indexOf(ca)]]];let ex=solved?'<b>Correct'+(t.length>1?' (after '+(t.length-1)+' wrong '+(t.length>2?'tries':'try')+')':'')+'</b>':'<b>Not quite. Try again.</b>';
+if(xc||q.e)ex+='<br>'+(xc?'<b>Why the correct answer is right:</b> '+esc(xc):'')+(q.e?'<br><small>'+esc(q.e)+'</small>':'');h+='<div class="ex">'+ex+'</div>'}
+else if(a&&ca){const X=q.x||{},xa=X[L[pm[L.indexOf(a)]]],xc=X[L[pm[L.indexOf(ca)]]],ok=a===ca;let ex='<b>'+(ok?'Correct':'Wrong. Correct answer: '+ca)+'</b>';
 if(!ok&&xa)ex+='<br><b>Why your answer ('+a+') is wrong:</b> '+esc(xa);
 if(xc)ex+='<br>'+(ok?'':'<b>Why '+ca+' is right:</b> ')+esc(xc);
 if(q.e)ex+='<br><small>'+esc(q.e)+'</small>';h+='<div class="ex">'+ex+'</div>'}

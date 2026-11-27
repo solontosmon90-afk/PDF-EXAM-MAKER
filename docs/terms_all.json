@@ -10,7 +10,13 @@
 "Maximum shear stress theory"
 ],
 "a": "A",
-"e": "Maximum normal stress (Rankine) theory: a brittle part fails when the largest principal stress reaches the ultimate strength. Von Mises and maximum shear are ductile-yield criteria. (Coulomb-Mohr is a refinement for brittle materials with different tensile and compressive strengths.)"
+"e": "Maximum normal stress (Rankine) theory: a brittle part fails when the largest principal stress reaches the ultimate strength. Von Mises and maximum shear are ductile-yield criteria. (Coulomb-Mohr is a refinement for brittle materials with different tensile and compressive strengths.)",
+"x": {
+"A": "A brittle part fails when its largest principal stress reaches the ultimate strength, which is why this theory fits brittle materials.",
+"B": "Coulomb-Mohr refines the prediction for brittle materials with different tensile and compressive strengths, but it is not the basic theory asked for.",
+"C": "Von Mises is a ductile yield criterion based on distortion energy.",
+"D": "Maximum shear stress is a ductile yield criterion."
+}
 },
 {
 "q": "In the absence of friction, a simple machine is an ideal machine if the efficiency is",
@@ -21,7 +27,13 @@
 "greater than 1"
 ],
 "a": "B",
-"e": "Efficiency = output work / input work. With no friction there are no losses, so efficiency = 1 (100%)."
+"e": "Efficiency = output work / input work. With no friction there are no losses, so efficiency = 1 (100%).",
+"x": {
+"A": "Real machines with friction have efficiency below 1.",
+"B": "With no friction there are no losses, so output work equals input work and efficiency is 1.",
+"C": "An efficiency of zero would mean the machine delivers no output at all.",
+"D": "Efficiency above 1 would create energy, which is impossible."
+}
 },
 {
 "q": "Which of the following is a form of an inclined plane?",
@@ -32,7 +44,13 @@
 "Wheel and axle"
 ],
 "a": "B",
-"e": "A screw is an inclined plane wrapped around a cylinder (a helical ramp)."
+"e": "A screw is an inclined plane wrapped around a cylinder (a helical ramp).",
+"x": {
+"A": "A pulley is a wheel with a rope and works like a lever, not an inclined plane.",
+"B": "A screw is an inclined plane wrapped around a cylinder, a helical ramp.",
+"C": "A lever is a rigid bar turning about a fulcrum.",
+"D": "A wheel and axle is a rotating lever-type machine."
+}
 },
 {
 "q": "What is the ideal mechanical advantage of a machine that changes only the direction of the input force?",
@@ -43,7 +61,13 @@
 "greater than 1"
 ],
 "a": "C",
-"e": "Output force equals input force (e.g., a fixed pulley), so IMA = 1."
+"e": "Output force equals input force (e.g., a fixed pulley), so IMA = 1.",
+"x": {
+"A": "A value below 1 means the output force is smaller than the input force.",
+"B": "If a machine only changes direction, the output force equals the input force, so IMA is 1 (like a fixed pulley).",
+"C": "An IMA of zero would mean no force is delivered.",
+"D": "A value above 1 means the force is multiplied, not just redirected."
+}
 },
 {
 "q": "Ackermann steering gear is made up of",
@@ -54,7 +78,13 @@
 "Rolling and sliding pairs"
 ],
 "a": "C",
-"e": "The Ackermann gear is a four-bar linkage with turning (revolute) pairs only. The Davis gear is the one with sliding pairs."
+"e": "The Ackermann gear is a four-bar linkage with turning (revolute) pairs only. The Davis gear is the one with sliding pairs.",
+"x": {
+"A": "Sliding and rotary pairs are found in the Davis steering gear.",
+"B": "Rolling pairs are not what the Ackermann linkage uses.",
+"C": "The Ackermann gear is a four-bar linkage with turning (revolute) pairs only.",
+"D": "Rolling and sliding pairs are not part of the Ackermann linkage."
+}
 },
 {
 "q": "What is the meaning of the “U” stamp on a pressure vessel?",
@@ -65,7 +95,13 @@
 "It is intended for low-temperature operation"
 ],
 "a": "A",
-"e": "The ASME “U” stamp certifies the vessel was designed, fabricated and inspected per the ASME BPV Code (Section VIII)."
+"e": "The ASME “U” stamp certifies the vessel was designed, fabricated and inspected per the ASME BPV Code (Section VIII).",
+"x": {
+"A": "The U stamp certifies the vessel was designed, fabricated and inspected to the ASME Boiler and Pressure Vessel Code (Section VIII).",
+"B": "Nuclear components use different ASME stamps, not the U stamp.",
+"C": "Ultrasonic testing is an inspection method, not what the stamp stands for.",
+"D": "The U stamp does not indicate a service temperature."
+}
 },
 {
 "q": "Which failure mode is most critical for long, slender columns under compressive load?",
@@ -76,7 +112,13 @@
 "Shear failure"
 ],
 "a": "A",
-"e": "Slender columns fail by sudden lateral instability (buckling) well before the material yields."
+"e": "Slender columns fail by sudden lateral instability (buckling) well before the material yields.",
+"x": {
+"A": "Slender columns fail by sudden sideways instability (buckling) well before the material yields.",
+"B": "Yielding governs short, stocky columns, not long slender ones.",
+"C": "Fatigue needs repeated loading, not a steady compressive load.",
+"D": "Shear failure is not the main mode for a slender column."
+}
 },
 {
 "q": "What is the term for the ratio of a column's effective length to its radius of gyration?",
@@ -87,7 +129,13 @@
 "Stress ratio"
 ],
 "a": "A",
-"e": "Slenderness ratio = Le / r, where r is the radius of gyration."
+"e": "Slenderness ratio = Le / r, where r is the radius of gyration.",
+"x": {
+"A": "The slenderness ratio is the effective length divided by the radius of gyration.",
+"B": "Aspect ratio compares the width and height of a shape.",
+"C": "Shape factor compares plastic and elastic section moduli.",
+"D": "Stress ratio compares the minimum and maximum stress in a fatigue cycle."
+}
 },
 {
 "q": "Which support condition provides both vertical reaction and moment resistance?",
@@ -98,7 +146,13 @@
 "Link support"
 ],
 "a": "A",
-"e": "A fixed support restrains translation and rotation, so it gives reactions in both directions and a moment. Pin: forces only. Roller: one force only."
+"e": "A fixed support restrains translation and rotation, so it gives reactions in both directions and a moment. Pin: forces only. Roller: one force only.",
+"x": {
+"A": "A fixed support restrains translation and rotation, so it gives force reactions and a moment.",
+"B": "A roller gives one force reaction perpendicular to the surface and no moment.",
+"C": "A pin gives force reactions only, with no moment.",
+"D": "A link gives a single force along its length."
+}
 },
 {
 "q": "What is the combination of applied normal and shear stresses that produces the maximum principal normal stress or minimum principal normal stress, with a third principal stress between or equivalent to the extremes?",
@@ -109,7 +163,13 @@
 "Bending and shear stresses"
 ],
 "a": "B",
-"e": "Principal normal stresses are the maximum and minimum normal stresses acting on planes with zero shear stress."
+"e": "Principal normal stresses are the maximum and minimum normal stresses acting on planes with zero shear stress.",
+"x": {
+"A": "Principal shear stress is the maximum shear on a plane, not the extreme normal stress.",
+"B": "Principal normal stresses are the maximum and minimum normal stresses on planes with zero shear.",
+"C": "Maximum shear stress is a different stress quantity.",
+"D": "Bending and shear are types of loading, not stress extremes."
+}
 },
 {
 "q": "What is the other term for the Maximum-Shear-Stress Theory, as a failure prediction theory?",
@@ -120,7 +180,13 @@
 "Modified Mohr theory"
 ],
 "a": "B",
-"e": "The Tresca criterion is the maximum shear stress theory: yielding starts when τmax reaches Sy/2. Von Mises is the distortion-energy theory."
+"e": "The Tresca criterion is the maximum shear stress theory: yielding starts when τmax reaches Sy/2. Von Mises is the distortion-energy theory.",
+"x": {
+"A": "Von Mises is the distortion-energy theory, a different criterion.",
+"B": "The Tresca criterion is the maximum shear stress theory: yielding starts when τmax reaches Sy/2.",
+"C": "Coulomb-Mohr is a theory for brittle materials.",
+"D": "Modified Mohr is also a brittle-material theory."
+}
 },
 {
 "q": "In planar kinematics, what is the locus of points on a moving body that exhibits zero rate of change of curvature at a given instant?",
@@ -131,7 +197,13 @@
 "Evolute of the path"
 ],
 "a": "A",
-"e": "The cubic of stationary curvature is the locus of points whose path curvature is momentarily stationary. The inflection circle is the locus of points with zero curvature (instantaneous straight-line motion)."
+"e": "The cubic of stationary curvature is the locus of points whose path curvature is momentarily stationary. The inflection circle is the locus of points with zero curvature (instantaneous straight-line motion).",
+"x": {
+"A": "The cubic of stationary curvature is the locus of points whose path curvature is momentarily stationary.",
+"B": "The fixed centrode is the locus of instant centers in the fixed plane.",
+"C": "The inflection circle is the locus of points with zero curvature (instantaneous straight-line motion).",
+"D": "An evolute is the locus of centers of curvature of a path."
+}
 },
 {
 "q": "Which of the following is the ratio of the fatigue strength without a stress concentration to the fatigue strength with a stress concentration?",
@@ -142,7 +214,13 @@
 "Fatigue stress concentration factor"
 ],
 "a": "D",
-"e": "Kf = fatigue strength of unnotched specimen / fatigue strength of notched specimen."
+"e": "Kf = fatigue strength of unnotched specimen / fatigue strength of notched specimen.",
+"x": {
+"A": "Notch sensitivity q = (Kf − 1)/(Kt − 1) is a different quantity.",
+"B": "The factor of safety compares strength with applied stress.",
+"C": "A reliability factor adjusts endurance strength for statistical reliability.",
+"D": "The fatigue stress concentration factor Kf is the unnotched fatigue strength divided by the notched fatigue strength."
+}
 },
 {
 "q": "This is a theory in cyclic and impact loading which states that damage at any stress level is proportional to the number of cycles. What is this theory commonly called?",
@@ -153,7 +231,13 @@
 "Manson-Coffin Relationship"
 ],
 "a": "A",
-"e": "Miner's rule (linear cumulative damage): D = Σ ni/Ni, with failure when D = 1."
+"e": "Miner's rule (linear cumulative damage): D = Σ ni/Ni, with failure when D = 1.",
+"x": {
+"A": "Miner's rule is linear cumulative damage: D = Σ n/N, failing at D = 1.",
+"B": "The Paris law describes crack growth rate.",
+"C": "The Goodman rule corrects for mean stress.",
+"D": "Manson-Coffin relates strain to life in low-cycle fatigue."
+}
 },
 {
 "q": "A storage tank for saline water requires a material that is lightweight, corrosion-resistant, and has good mechanical strength. Which material is the most suitable choice?",
@@ -164,7 +248,13 @@
 "Austenitic stainless steel 316"
 ],
 "a": "A",
-"e": "6061 aluminum best matches all three needs (low weight, corrosion resistance, good strength). 316 stainless resists chlorides but is much heavier; carbon and galvanized steel corrode."
+"e": "6061 aluminum best matches all three needs (low weight, corrosion resistance, good strength). 316 stainless resists chlorides but is much heavier; carbon and galvanized steel corrode.",
+"x": {
+"A": "6061 aluminum is light, corrosion-resistant and strong, matching all three needs.",
+"B": "Galvanized steel is heavy, and its zinc coat corrodes in saline water.",
+"C": "Medium carbon steel is heavy and corrodes in saline water.",
+"D": "316 stainless resists chlorides but is much heavier, so it fails the lightweight need."
+}
 },
 {
 "q": "It is one of the rigid members/bodies joined together to form a kinematic chain.",
@@ -175,7 +265,13 @@
 "Machine"
 ],
 "a": "B",
-"e": "A link is a rigid body (or resistant body) connected to others by joints to form a kinematic chain."
+"e": "A link is a rigid body (or resistant body) connected to others by joints to form a kinematic chain.",
+"x": {
+"A": "Coplanar describes motion in one plane; it is not a part of a chain.",
+"B": "A link is a rigid body joined to others to form a kinematic chain.",
+"C": "A frame is the fixed link of a mechanism.",
+"D": "A machine is the whole assembly, not one member."
+}
 },
 {
 "q": "For a kinematic chain to be considered as a mechanism",
@@ -186,7 +282,13 @@
 "There is no such criterion"
 ],
 "a": "B",
-"e": "Fixing one link (the frame) turns a kinematic chain into a mechanism."
+"e": "Fixing one link (the frame) turns a kinematic chain into a mechanism.",
+"x": {
+"A": "If no link is fixed, the chain is free to move as a whole.",
+"B": "Fixing one link (the frame) turns a kinematic chain into a mechanism.",
+"C": "Fixing two links would stop it from moving.",
+"D": "There is such a criterion: one link must be fixed."
+}
 },
 {
 "q": "The mechanism used to enlarge or reduce movements for reproducing drawings to different scales is called",
@@ -197,7 +299,13 @@
 "Pantograph"
 ],
 "a": "D",
-"e": "A pantograph is a parallelogram-based linkage that copies a drawing at a different scale."
+"e": "A pantograph is a parallelogram-based linkage that copies a drawing at a different scale.",
+"x": {
+"A": "A clinograph measures inclination; it does not copy drawings.",
+"B": "A trisquare is a drafting square.",
+"C": "A graphometer is a surveying instrument for angles.",
+"D": "A pantograph is a parallelogram linkage that copies a drawing at a different scale."
+}
 },
 {
 "q": "In gramophones for adjusting the speed of the turn-table, what type of governor is commonly used?",
@@ -208,7 +316,13 @@
 "Wilson Hartnell"
 ],
 "a": "C",
-"e": "The Pickering governor (leaf-spring type) is used in gramophones and phonographs."
+"e": "The Pickering governor (leaf-spring type) is used in gramophones and phonographs.",
+"x": {
+"A": "The Hartung governor is a spring-loaded engine governor.",
+"B": "Inertia governors are a different type used on engines.",
+"C": "The Pickering governor uses leaf springs and is used in gramophones to hold turntable speed.",
+"D": "The Wilson-Hartnell governor is a spring-controlled engine governor."
+}
 },
 {
 "q": "What beam is carried by three or more supports, allowing the bending effects to be distributed along its span?",
@@ -219,7 +333,13 @@
 "Fixed beam"
 ],
 "a": "A",
-"e": "A continuous beam spans over three or more supports."
+"e": "A continuous beam spans over three or more supports.",
+"x": {
+"A": "A continuous beam rests on three or more supports.",
+"B": "A cantilever is fixed at one end and free at the other.",
+"C": "A propped cantilever is fixed at one end with one added support.",
+"D": "A fixed beam is fixed at both ends."
+}
 },
 {
 "q": "Which beam-section property is used as the ratio of moment of inertia to the distance from the neutral axis to the extreme fiber?",
@@ -230,7 +350,13 @@
 "Modulus of elasticity"
 ],
 "a": "A",
-"e": "Section modulus S = I/c."
+"e": "Section modulus S = I/c.",
+"x": {
+"A": "Section modulus is S = I/c, the moment of inertia over the distance to the extreme fiber.",
+"B": "Polar moment of inertia relates to torsion.",
+"C": "Slenderness ratio is the effective length over the radius of gyration.",
+"D": "Modulus of elasticity is a material stiffness, not a section property."
+}
 },
 {
 "q": "For a compression member, what property is increased when the diameter of the column is made larger?",
@@ -241,7 +367,13 @@
 "Surface hardness"
 ],
 "a": "A",
-"e": "A larger diameter raises I and lowers the slenderness ratio, so the critical load (Pcr = π²EI/L²) increases."
+"e": "A larger diameter raises I and lowers the slenderness ratio, so the critical load (Pcr = π²EI/L²) increases.",
+"x": {
+"A": "A larger diameter raises the moment of inertia and lowers the slenderness ratio, so buckling resistance goes up.",
+"B": "Torsional shear stress is a shaft property and decreases as diameter grows.",
+"C": "Bearing pressure drops as the contact area grows, not increases.",
+"D": "Surface hardness is a material property."
+}
 },
 {
 "q": "In a beam under bending, what is the axis where the normal bending stress becomes zero?",
@@ -252,7 +384,13 @@
 "Elastic curve"
 ],
 "a": "A",
-"e": "Bending stress varies linearly from the neutral axis (zero stress), which passes through the centroid for elastic bending."
+"e": "Bending stress varies linearly from the neutral axis (zero stress), which passes through the centroid for elastic bending.",
+"x": {
+"A": "The neutral axis is where bending stress is zero.",
+"B": "The shear center is the point where a load causes no twisting.",
+"C": "Principal axes are the axes of maximum and minimum moment of inertia.",
+"D": "The elastic curve is the deflected shape of the beam."
+}
 },
 {
 "q": "If an eccentric compressive load acts within the kern of a column section, what stress condition exists over the whole cross-section?",
@@ -263,7 +401,13 @@
 "Section becomes stress-free at the edge"
 ],
 "a": "A",
-"e": "Within the kern (core) the bending stress never exceeds the direct compressive stress, so no tension develops anywhere."
+"e": "Within the kern (core) the bending stress never exceeds the direct compressive stress, so no tension develops anywhere.",
+"x": {
+"A": "If the load is inside the kern, the whole section stays in compression.",
+"B": "One side goes into tension only if the load is outside the kern.",
+"C": "Shear is not the stress condition across the section.",
+"D": "The edge becomes stress-free only exactly at the kern boundary."
+}
 },
 {
 "q": "It is also known as the diamond pyramid hardness test, uses a pyramid-shaped diamond indenter and a load that ranges from 1 kg to 120 kg.",
@@ -274,7 +418,13 @@
 "Brinell test"
 ],
 "a": "A",
-"e": "The Vickers test uses a square-based diamond pyramid. Knoop uses an elongated pyramid; Brinell uses a steel ball."
+"e": "The Vickers test uses a square-based diamond pyramid. Knoop uses an elongated pyramid; Brinell uses a steel ball.",
+"x": {
+"A": "The Vickers test uses a square-based diamond pyramid and is also called diamond pyramid hardness.",
+"B": "Mohs is a scratch scale for minerals.",
+"C": "The Knoop test uses an elongated diamond pyramid.",
+"D": "The Brinell test uses a steel ball."
+}
 },
 {
 "q": "“For a planar four-bar linkage, the sum of the shortest and longest lengths cannot be greater than the sum of the remaining two link lengths if there is to be a continuous relative rotation between two members.” How do you call the preceding statement?",
@@ -285,7 +435,13 @@
 "Freudenstein's Law"
 ],
 "a": "C",
-"e": "Grashof's law: s + l ≤ p + q."
+"e": "Grashof's law: s + l ≤ p + q.",
+"x": {
+"A": "Grubler's equation gives degrees of freedom, not this law.",
+"B": "Coriolis is about the acceleration component in rotating frames, not link lengths.",
+"C": "Grashof's law: the shortest plus longest link must not exceed the sum of the other two for continuous rotation.",
+"D": "Freudenstein's equation is used to synthesize four-bar linkages."
+}
 },
 {
 "q": "It is a Grashof four-bar mechanism in which the shortest link is the frame or fixed link and the other two cranks completely rotate with their axes. How do you call this Grashof four-bar mechanism?",
@@ -296,7 +452,13 @@
 "Triple-rocker mechanism"
 ],
 "a": "A",
-"e": "Shortest link fixed gives a double-crank (drag-link) mechanism. Shortest link as the crank gives a crank-rocker; shortest link as the coupler gives a double-rocker."
+"e": "Shortest link fixed gives a double-crank (drag-link) mechanism. Shortest link as the crank gives a crank-rocker; shortest link as the coupler gives a double-rocker.",
+"x": {
+"A": "In a drag-link mechanism the shortest link is fixed and both cranks rotate fully.",
+"B": "In a double-rocker the shortest link is the coupler.",
+"C": "In a crank-rocker the shortest link is the crank.",
+"D": "A triple-rocker is a non-Grashof linkage, where no link rotates fully."
+}
 },
 {
 "q": "The motion of a shaft in a circular hole is an example of ______ motion.",
@@ -307,7 +469,13 @@
 "incompletely constraint"
 ],
 "a": "D",
-"e": "The shaft can both rotate and slide along the hole, so the motion depends on the applied force direction: incompletely constrained motion."
+"e": "The shaft can both rotate and slide along the hole, so the motion depends on the applied force direction: incompletely constrained motion.",
+"x": {
+"A": "Successful constraint means external forces keep the motion definite, as with a piston.",
+"B": "Completely constrained motion allows only one possible motion.",
+"C": "Free motion has no constraint.",
+"D": "A shaft in a round hole can rotate and slide, so its motion depends on the applied force: incompletely constrained."
+}
 },
 {
 "q": "Which property best distinguishes a ductile material from a brittle one when analyzing a stress-strain diagram?",
@@ -318,7 +486,13 @@
 "Sudden fracture without deformation"
 ],
 "a": "A",
-"e": "Ductile materials show a large plastic region, so a large area under the curve (toughness) before fracture. Brittle materials fracture with little deformation."
+"e": "Ductile materials show a large plastic region, so a large area under the curve (toughness) before fracture. Brittle materials fracture with little deformation.",
+"x": {
+"A": "Ductile materials absorb more energy before fracture because of their large plastic region.",
+"B": "Stiffness (modulus) does not separate ductile from brittle.",
+"C": "Yield strength can be high or low in either kind.",
+"D": "Sudden fracture without deformation describes a brittle material."
+}
 },
 {
 "q": "In vibration analysis, which parameter governs the natural frequency of a simple spring–mass system?",
@@ -329,7 +503,13 @@
 "Inverse of mass only"
 ],
 "a": "A",
-"e": "ωn = √(k/m)."
+"e": "ωn = √(k/m).",
+"x": {
+"A": "The natural frequency is the square root of stiffness over mass: ωn = √(k/m).",
+"B": "The ratio of mass to stiffness is inverted and lacks the square root.",
+"C": "Stiffness times displacement is a force, not a frequency.",
+"D": "Frequency depends on stiffness as well, not on mass alone."
+}
 },
 {
 "q": "Which superalloy is commonly utilized as a stainless-type material due to its high yield strength?",
@@ -340,7 +520,13 @@
 "Inconel alloy"
 ],
 "a": "A",
-"e": "Marked answer: Allegheny Ludlum alloy. Nimonic and Inconel are nickel-base alloys for high-temperature service; Nitralloy is a nitriding steel."
+"e": "Marked answer: Allegheny Ludlum alloy. Nimonic and Inconel are nickel-base alloys for high-temperature service; Nitralloy is a nitriding steel.",
+"x": {
+"A": "Marked answer: Allegheny Ludlum alloy is the stainless-type material with high yield strength.",
+"B": "Nitralloy is a nitriding steel.",
+"C": "Nimonic is a nickel-base alloy for high-temperature service.",
+"D": "Inconel is a nickel-base alloy for high-temperature service."
+}
 },
 {
 "q": "Which term refers to the vector change in position of an object with respect to a reference point?",
@@ -351,7 +537,13 @@
 "Rate of change of velocity"
 ],
 "a": "A",
-"e": "Displacement is a vector (straight-line change in position). Path length and speed are scalars; rate of change of velocity is acceleration."
+"e": "Displacement is a vector (straight-line change in position). Path length and speed are scalars; rate of change of velocity is acceleration.",
+"x": {
+"A": "Displacement is the vector change in position of an object relative to a reference point.",
+"B": "Path length is a scalar.",
+"C": "Speed is a scalar.",
+"D": "The rate of change of velocity is acceleration."
+}
 },
 {
 "q": "Which component of acceleration is directed inward toward the center of rotation in circular motion?",
@@ -362,7 +554,13 @@
 "Angular acceleration"
 ],
 "a": "A",
-"e": "Radial (centripetal) acceleration = v²/r = ω²r, pointing toward the center."
+"e": "Radial (centripetal) acceleration = v²/r = ω²r, pointing toward the center.",
+"x": {
+"A": "Radial (centripetal) acceleration points inward toward the center of rotation.",
+"B": "Tangential acceleration acts along the path, not toward the center.",
+"C": "Translational acceleration describes straight-line motion.",
+"D": "Angular acceleration is the rate of change of angular velocity."
+}
 },
 {
 "q": "The instantaneous center of rotation of a rigid thin disc rolling without slip on a plane rigid surface is located at",
@@ -373,7 +571,13 @@
 "the point on the circumference situated vertically opposite to the contact point"
 ],
 "a": "C",
-"e": "With no slip, the contact point has zero instantaneous velocity, so it is the instantaneous center."
+"e": "With no slip, the contact point has zero instantaneous velocity, so it is the instantaneous center.",
+"x": {
+"A": "The center of the disc moves, so it is not momentarily at rest.",
+"B": "An infinite distance would mean pure translation, not rolling.",
+"C": "With no slip the contact point has zero instantaneous velocity, so it is the instantaneous center.",
+"D": "The point opposite the contact moves at twice the center's speed."
+}
 },
 {
 "q": "For a 4-bar linkage in toggle position, the value of mechanical advantage is",
@@ -384,7 +588,13 @@
 "0"
 ],
 "a": "A",
-"e": "At toggle, the output link is momentarily stationary for any input motion, so a tiny input force produces a very large output force: MA → ∞."
+"e": "At toggle, the output link is momentarily stationary for any input motion, so a tiny input force produces a very large output force: MA → ∞.",
+"x": {
+"A": "At the toggle position the output link is momentarily stationary, so the mechanical advantage tends to infinity.",
+"B": "A value of 0.5 is not what toggle gives.",
+"C": "A value of 1 is not what toggle gives.",
+"D": "Zero would mean no force is delivered, the opposite of toggle."
+}
 },
 {
 "q": "It is a failure prediction theory which states that a part subjected to any combination of loads will fail (by yielding or fracturing) whenever the maximum shear stress exceeds a critical value. How do you call this failure prediction theory?",
@@ -395,7 +605,13 @@
 "Modified Mohr theory"
 ],
 "a": "B",
-"e": "Maximum-shear-stress (Tresca) theory: failure when τmax ≥ Sy/2."
+"e": "Maximum-shear-stress (Tresca) theory: failure when τmax ≥ Sy/2.",
+"x": {
+"A": "Distortion-energy theory is von Mises, a different criterion.",
+"B": "The maximum-shear-stress (Tresca) theory predicts failure when the maximum shear stress reaches a critical value.",
+"C": "Internal friction theory is a theory for brittle materials.",
+"D": "Modified Mohr is a theory for brittle materials."
+}
 },
 {
 "q": "Which standard governs the design and installation of piping systems typically used in process plants and industrial facilities?",
@@ -406,7 +622,13 @@
 "ASME Section II"
 ],
 "a": "A",
-"e": "Marked answer: ASME B31.9 (Building Services Piping, covering industrial, commercial and institutional facilities). Note: process-plant piping proper is ASME B31.3, which is not among the choices. B31.1 is power piping; API 570 is in-service inspection; Section II is materials."
+"e": "Marked answer: ASME B31.9 (Building Services Piping, covering industrial, commercial and institutional facilities). Note: process-plant piping proper is ASME B31.3, which is not among the choices. B31.1 is power piping; API 570 is in-service inspection; Section II is materials.",
+"x": {
+"A": "Marked answer: ASME B31.9 covers building services piping, including industrial and institutional facilities.",
+"B": "B31.1 is power piping.",
+"C": "API 570 is in-service piping inspection.",
+"D": "ASME Section II covers materials."
+}
 },
 {
 "q": "The ratio of the fatigue strength of a polished specimen to the fatigue strength of a notched specimen at the same number of cycles is known as the",
@@ -417,7 +639,13 @@
 "stress concentration factor"
 ],
 "a": "B",
-"e": "Fatigue notch factor Kf = unnotched fatigue strength / notched fatigue strength. Notch sensitivity q = (Kf−1)/(Kt−1) is a different quantity."
+"e": "Fatigue notch factor Kf = unnotched fatigue strength / notched fatigue strength. Notch sensitivity q = (Kf−1)/(Kt−1) is a different quantity.",
+"x": {
+"A": "Fatigue factor is not the standard name for this ratio.",
+"B": "The fatigue notch factor Kf is the unnotched fatigue strength divided by the notched strength.",
+"C": "Notch sensitivity q is a different quantity.",
+"D": "The stress concentration factor Kt is the theoretical factor from geometry."
+}
 },
 {
 "q": "For large-scale production, which steel forming process is considered the most cost-efficient?",
@@ -428,7 +656,13 @@
 "Forging"
 ],
 "a": "A",
-"e": "Rolling is continuous and high-throughput, giving the lowest cost per ton for plate, bar and sections."
+"e": "Rolling is continuous and high-throughput, giving the lowest cost per ton for plate, bar and sections.",
+"x": {
+"A": "Rolling is continuous and high throughput, so it has the lowest cost per ton at large scale.",
+"B": "Cold forming gives a better finish but costs more.",
+"C": "Hot working includes rolling but is a general term.",
+"D": "Forging is slower and costlier, used for strong shaped parts."
+}
 },
 {
 "q": "When one or more springs or resisting members share the load, the relative stiffness is known as",
@@ -439,7 +673,13 @@
 "Flexural rigidity"
 ],
 "a": "A",
-"e": "Rigidity (stiffness) determines how the load divides among members: stiffer members take a larger share."
+"e": "Rigidity (stiffness) determines how the load divides among members: stiffer members take a larger share.",
+"x": {
+"A": "Rigidity (stiffness) decides how load is divided among members: stiffer members take more.",
+"B": "Elasticity is the ability to recover after loading.",
+"C": "Modulus is a material constant, not the load sharing.",
+"D": "Flexural rigidity (EI) is specific to beam bending."
+}
 },
 {
 "q": "It is a correction factor used to account for nonuniform stress distributions.",
@@ -450,7 +690,13 @@
 "Stress correction factor"
 ],
 "a": "C",
-"e": "The stress concentration factor corrects the nominal stress for local peaks at holes, notches, fillets and other geometry changes."
+"e": "The stress concentration factor corrects the nominal stress for local peaks at holes, notches, fillets and other geometry changes.",
+"x": {
+"A": "The fatigue stress concentration factor is the fatigue-specific factor, not the general nonuniform-stress factor.",
+"B": "The geometric stress concentration factor is the theoretical Kt.",
+"C": "Marked answer: the stress concentration factor corrects for local stress peaks at holes, notches and fillets.",
+"D": "Stress correction factor is not the standard term."
+}
 },
 {
 "q": "Fatigue failure occurs when a part is subjected to:",
@@ -461,7 +707,13 @@
 "Fluctuating stress"
 ],
 "a": "D",
-"e": "Fatigue failure results from repeated or fluctuating (cyclic) stress, even well below the static strength."
+"e": "Fatigue failure results from repeated or fluctuating (cyclic) stress, even well below the static strength.",
+"x": {
+"A": "A steady compressive stress does not cause fatigue.",
+"B": "A steady tensile stress does not cause fatigue.",
+"C": "A steady torsional stress does not cause fatigue.",
+"D": "Fluctuating (cyclic) stress causes fatigue failure, even well below static strength."
+}
 },
 {
 "q": "A kinematic chain needs a minimum:",
@@ -472,7 +724,13 @@
 "3 links and 2 turning pairs"
 ],
 "a": "C",
-"e": "The simplest constrained chain is the four-bar: 4 links joined by 4 turning pairs."
+"e": "The simplest constrained chain is the four-bar: 4 links joined by 4 turning pairs.",
+"x": {
+"A": "Two links and two pairs cannot form a closed chain.",
+"B": "Three links form a rigid triangle with no relative motion.",
+"C": "The four-bar, with 4 links and 4 turning pairs, is the simplest constrained chain.",
+"D": "Three links with two pairs form an open chain."
+}
 },
 {
 "q": "On a pressure vessel nameplate, which designation indicates that the welds have been fully examined by radiographic testing?",
@@ -483,7 +741,13 @@
 "NDE"
 ],
 "a": "A",
-"e": "RT-1 = full radiography of the required welds. RT-2 to RT-4 mean partial, spot or no radiography. PWHT is post-weld heat treatment."
+"e": "RT-1 = full radiography of the required welds. RT-2 to RT-4 mean partial, spot or no radiography. PWHT is post-weld heat treatment.",
+"x": {
+"A": "RT-1 means the required welds are fully radiographed.",
+"B": "RT-2 is partial radiography.",
+"C": "PWHT means post-weld heat treatment.",
+"D": "NDE is a general term for non-destructive examination."
+}
 },
 {
 "q": "The total permissible variation in the size of a dimension: the difference between the limits of size.",
@@ -494,7 +758,13 @@
 "Interference"
 ],
 "a": "B",
-"e": "Tolerance = upper limit − lower limit. Allowance is the intended difference between mating parts."
+"e": "Tolerance = upper limit − lower limit. Allowance is the intended difference between mating parts.",
+"x": {
+"A": "Allowance is the intended difference between mating parts.",
+"B": "Tolerance is the total permissible variation: upper limit minus lower limit.",
+"C": "Variance is a statistical term.",
+"D": "Interference is a negative clearance."
+}
 },
 {
 "q": "How many independent motions can a rigid body have when moved freely in space?",
@@ -505,7 +775,13 @@
 "9"
 ],
 "a": "A",
-"e": "Three translations plus three rotations = 6 degrees of freedom."
+"e": "Three translations plus three rotations = 6 degrees of freedom.",
+"x": {
+"A": "A free body has 6 degrees of freedom: three translations and three rotations.",
+"B": "5 is too few for a free body.",
+"C": "7 is too many.",
+"D": "9 is too many."
+}
 },
 {
 "q": "Which code is commonly used as a reference for the inspection, repair, and maintenance of pressure vessels in refinery and petrochemical service?",
@@ -516,7 +792,13 @@
 "ASME Section VIII"
 ],
 "a": "A",
-"e": "API 510 is the Pressure Vessel Inspection Code (in-service inspection, repair, alteration, rerating). API 653 is for storage tanks; API 571 is damage mechanisms; Section VIII is construction."
+"e": "API 510 is the Pressure Vessel Inspection Code (in-service inspection, repair, alteration, rerating). API 653 is for storage tanks; API 571 is damage mechanisms; Section VIII is construction.",
+"x": {
+"A": "API 510 is the pressure vessel inspection code for in-service inspection, repair and rerating.",
+"B": "API 653 is for storage tanks.",
+"C": "API 571 describes damage mechanisms.",
+"D": "ASME Section VIII covers construction, not in-service inspection."
+}
 },
 {
 "q": "In general, the design stress and factor of safety are related as follows:",
@@ -527,7 +809,13 @@
 "Design stress = factor of safety divided by design stress"
 ],
 "a": "B",
-"e": "σd = σu / N."
+"e": "σd = σu / N.",
+"x": {
+"A": "Multiplying ultimate stress by the factor of safety would give a stress above ultimate.",
+"B": "Design stress = ultimate stress divided by the factor of safety.",
+"C": "Dividing design stress by ultimate stress does not define the relation.",
+"D": "This is not the relationship."
+}
 },
 {
 "q": "The total deformation measured in the direction of the line of stress.",
@@ -538,7 +826,13 @@
 "Unit stress"
 ],
 "a": "C",
-"e": "Marked answer: strain, defined here as the total deformation in the direction of the stress. (Unit strain = deformation per unit length.)"
+"e": "Marked answer: strain, defined here as the total deformation in the direction of the stress. (Unit strain = deformation per unit length.)",
+"x": {
+"A": "Axial deformation is the change in length along the axis; it is a close idea but not the marked answer.",
+"B": "Elongation is the increase in length.",
+"C": "Marked answer: strain, the deformation in the direction of the stress.",
+"D": "Unit stress is stress per unit area."
+}
 },
 {
 "q": "The maximum stress to which a material can be subjected without a trace of any permanent set remaining upon a complete withdrawal of the stress.",
@@ -549,7 +843,13 @@
 "Elastic limit"
 ],
 "a": "D",
-"e": "Elastic limit: the largest stress from which the material fully recovers. Proportional limit is where stress stops being linear with strain."
+"e": "Elastic limit: the largest stress from which the material fully recovers. Proportional limit is where stress stops being linear with strain.",
+"x": {
+"A": "The ultimate limit is the maximum stress before fracture.",
+"B": "The proportional limit is where stress stops being linear with strain.",
+"C": "The endurance limit relates to fatigue.",
+"D": "The elastic limit is the largest stress from which the material fully recovers."
+}
 },
 {
 "q": "Which type of polyethylene exhibits the highest degree of crystallinity, resulting in greater stiffness, strength, and higher softening temperature?",
@@ -560,7 +860,13 @@
 "Amorphous polyethylene"
 ],
 "a": "A",
-"e": "HDPE has little chain branching, so chains pack tightly into crystalline regions."
+"e": "HDPE has little chain branching, so chains pack tightly into crystalline regions.",
+"x": {
+"A": "HDPE has little chain branching, so its chains pack tightly into crystalline regions.",
+"B": "Cross-linked PEX has chains tied together, which reduces crystallinity.",
+"C": "ULDPE is highly branched, so it has low crystallinity.",
+"D": "Amorphous polyethylene has no crystalline order."
+}
 },
 {
 "q": "A soft material ______",
@@ -571,7 +877,13 @@
 "Does not yield greatly before breaking"
 ],
 "a": "C",
-"e": "Marked answer: a soft material does not have a high modulus of elasticity (it deforms easily under load)."
+"e": "Marked answer: a soft material does not have a high modulus of elasticity (it deforms easily under load).",
+"x": {
+"A": "A high modulus describes a stiff material, not a soft one.",
+"B": "Yielding greatly before breaking describes a ductile material.",
+"C": "Marked answer: a soft material does not have a high modulus of elasticity.",
+"D": "Not yielding greatly describes a brittle material."
+}
 },
 {
 "q": "Strain energy is a measure of",
@@ -582,7 +894,13 @@
 "Strain energy per unit volume to reach the yield point"
 ],
 "a": "B",
-"e": "Strain energy is the energy stored in a body by deformation; per unit volume it is the area under the stress-strain curve."
+"e": "Strain energy is the energy stored in a body by deformation; per unit volume it is the area under the stress-strain curve.",
+"x": {
+"A": "The ratio of ultimate to yield strain is not strain energy.",
+"B": "Strain energy per unit volume is the energy stored in a deformed material, the area under the stress-strain curve.",
+"C": "Total plastic strain at failure is not strain energy.",
+"D": "Energy per unit volume up to yield is the modulus of resilience."
+}
 },
 {
 "q": "For any specific material, the percentage decrease in diameter is known as",
@@ -593,7 +911,13 @@
 "Longitudinal strain"
 ],
 "a": "C",
-"e": "Lateral (transverse) strain = change in diameter / original diameter. Poisson's ratio = lateral strain / longitudinal strain."
+"e": "Lateral (transverse) strain = change in diameter / original diameter. Poisson's ratio = lateral strain / longitudinal strain.",
+"x": {
+"A": "Axial strain is along the loading direction.",
+"B": "Diametral strain is the change in diameter over the original diameter; it is the same quantity as lateral strain.",
+"C": "Lateral strain is the change in diameter over the original diameter.",
+"D": "Longitudinal strain is along the length."
+}
 },
 {
 "q": "The maximum stress induced in a material when subjected to alternate or repeated loading without causing failure.",
@@ -604,7 +928,13 @@
 "Proportional limit"
 ],
 "a": "C",
-"e": "Endurance limit: the stress below which the material survives an effectively infinite number of cycles."
+"e": "Endurance limit: the stress below which the material survives an effectively infinite number of cycles.",
+"x": {
+"A": "The yield point is where plastic deformation begins.",
+"B": "The ultimate point is the maximum stress.",
+"C": "The endurance limit is the stress the material can take under repeated loading without failure.",
+"D": "The proportional limit is where stress stops being linear with strain."
+}
 },
 {
 "q": "The ability of metal to withstand forces thus following a number of twists.",
@@ -615,7 +945,13 @@
 "Deformation"
 ],
 "a": "A",
-"e": "Marked answer: shear strength, because twisting (torsion) loads a material in shear."
+"e": "Marked answer: shear strength, because twisting (torsion) loads a material in shear.",
+"x": {
+"A": "Marked answer: shear strength, since twisting (torsion) loads a material in shear.",
+"B": "Bearing strength is about crushing under contact, not twisting.",
+"C": "The endurance limit relates to repeated loading, not twisting.",
+"D": "Deformation is a change in shape, not a strength property."
+}
 },
 {
 "q": "A coating material used to produce galvanized iron",
@@ -626,7 +962,13 @@
 "Chromium"
 ],
 "a": "B",
-"e": "Galvanizing is a zinc coating on iron or steel."
+"e": "Galvanizing is a zinc coating on iron or steel.",
+"x": {
+"A": "Zirconium is not used to galvanize iron.",
+"B": "Galvanizing is a zinc coating on iron or steel.",
+"C": "Aluminum coats steel in aluminizing, not galvanizing.",
+"D": "Chromium is used for chrome plating."
+}
 },
 {
 "q": "Materials have a yield strength of 450 MPa and an ultimate strength of 700 MPa. If it is subjected to a tensile stress of 500 MPa, at what stage of the stress-strain curve is the material likely operating?",
@@ -637,7 +979,13 @@
 "Strain hardening beyond ultimate strength"
 ],
 "a": "A",
-"e": "500 MPa exceeds the 450 MPa yield but is below the 700 MPa ultimate, so the material is in the plastic region before ultimate strength."
+"e": "500 MPa exceeds the 450 MPa yield but is below the 700 MPa ultimate, so the material is in the plastic region before ultimate strength.",
+"x": {
+"A": "500 MPa is above the 450 MPa yield and below the 700 MPa ultimate, so it is in the plastic region.",
+"B": "The elastic region is below the 450 MPa yield.",
+"C": "Fracture happens at the breaking stress.",
+"D": "Strain hardening beyond ultimate would be past 700 MPa."
+}
 },
 {
 "q": "Which kinematic principle states that the instantaneous centers of three bodies in plane motion lie on a straight line?",
@@ -648,7 +996,13 @@
 "Hooke's law"
 ],
 "a": "A",
-"e": "Kennedy's (Aronhold-Kennedy) theorem: the three instantaneous centers of three relatively moving bodies are collinear."
+"e": "Kennedy's (Aronhold-Kennedy) theorem: the three instantaneous centers of three relatively moving bodies are collinear.",
+"x": {
+"A": "Kennedy's theorem says the three instant centers of three bodies in relative plane motion lie on a straight line.",
+"B": "Gruebler's equation gives degrees of freedom.",
+"C": "D'Alembert's principle relates to dynamic equilibrium.",
+"D": "Hooke's law relates stress and strain."
+}
 },
 {
 "q": "According to code requirements, what is the minimum allowable thickness (inches), excluding corrosion allowance, for pressure vessels used in steam service?",
@@ -659,7 +1013,13 @@
 "1/4"
 ],
 "a": "A",
-"e": "Marked answer: 1/16 in, the general minimum thickness in ASME Section VIII (UG-16). Note: UG-16 lists 3/32 in for vessels in compressed air, steam and water service, so confirm against your code edition or source."
+"e": "Marked answer: 1/16 in, the general minimum thickness in ASME Section VIII (UG-16). Note: UG-16 lists 3/32 in for vessels in compressed air, steam and water service, so confirm against your code edition or source.",
+"x": {
+"A": "Marked answer: 1/16 in is the general minimum thickness given for pressure vessels.",
+"B": "1/8 in is not the marked value.",
+"C": "3/32 in is the figure UG-16 lists for compressed air, steam and water service, so check your code edition.",
+"D": "1/4 in is not the marked value."
+}
 },
 {
 "q": "The property of steel which resists indention or penetration.",
@@ -670,7 +1030,13 @@
 "None of these"
 ],
 "a": "A",
-"e": "Hardness is resistance to indentation or penetration."
+"e": "Hardness is resistance to indentation or penetration.",
+"x": {
+"A": "Hardness is resistance to indentation or penetration.",
+"B": "Elasticity is the ability to return to shape after loading.",
+"C": "Ductility is the ability to stretch before breaking.",
+"D": "Hardness is the correct property."
+}
 },
 {
 "q": "The hardness of steel increases if it contains:",
@@ -681,7 +1047,13 @@
 "All of these"
 ],
 "a": "A",
-"e": "Martensite is the hardest microstructure in steel. Pearlite and austenite are softer."
+"e": "Martensite is the hardest microstructure in steel. Pearlite and austenite are softer.",
+"x": {
+"A": "Martensite is the hardest microstructure in steel.",
+"B": "Pearlite is softer.",
+"C": "Austenite is soft.",
+"D": "Not all of these raise hardness."
+}
 },
 {
 "q": "Fatigue failure occurs when a part is subjected to:",
@@ -692,7 +1064,13 @@
 "Fluctuating stress"
 ],
 "a": "D",
-"e": "Fluctuating (cyclic) stress causes progressive crack growth and fatigue fracture."
+"e": "Fluctuating (cyclic) stress causes progressive crack growth and fatigue fracture.",
+"x": {
+"A": "Compressive stress alone does not cause fatigue.",
+"B": "Tensile stress alone does not cause fatigue.",
+"C": "Torsional stress alone does not cause fatigue.",
+"D": "Fluctuating stress causes progressive cracking and fatigue fracture."
+}
 },
 {
 "q": "Which steel type is specifically designed for service at elevated temperatures, offering strong resistance to creep, oxidation, and corrosion?",
@@ -703,7 +1081,13 @@
 "Maraging steel"
 ],
 "a": "A",
-"e": "Marked answer: valve steel, a heat-resisting steel (e.g., for exhaust valves) with oxidation, corrosion and creep resistance at high temperature. Tool steel and maraging steel are not high-temperature service steels."
+"e": "Marked answer: valve steel, a heat-resisting steel (e.g., for exhaust valves) with oxidation, corrosion and creep resistance at high temperature. Tool steel and maraging steel are not high-temperature service steels.",
+"x": {
+"A": "Marked answer: valve steel is a heat-resisting steel with oxidation, corrosion and creep resistance at high temperature.",
+"B": "Creep-resistant steel is also for high temperature, so some references prefer it here.",
+"C": "Tool steel is for cutting tools, not high-temperature service.",
+"D": "Maraging steel is an ultra-high-strength steel, not an elevated-temperature one."
+}
 },
 {
 "q": "Which material does NOT exhibit a distinct endurance limit under cyclic loading?",
@@ -714,7 +1098,13 @@
 "Iron"
 ],
 "a": "A",
-"e": "Marked answer: aluminum. Its S-N curve keeps sloping downward, so fatigue strength is quoted at a set number of cycles (e.g., 5×10⁸) rather than as a true endurance limit. Steels and irons show a distinct knee."
+"e": "Marked answer: aluminum. Its S-N curve keeps sloping downward, so fatigue strength is quoted at a set number of cycles (e.g., 5×10⁸) rather than as a true endurance limit. Steels and irons show a distinct knee.",
+"x": {
+"A": "Marked answer: aluminum has no distinct endurance limit; its S-N curve keeps sloping down.",
+"B": "Titanium shows an endurance limit.",
+"C": "Copper also lacks a sharp endurance limit, so this question has two arguable answers.",
+"D": "Iron and steels show a distinct knee in the S-N curve."
+}
 },
 {
 "q": "Which engine cycle best represents a diesel engine?",
