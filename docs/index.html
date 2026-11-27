@@ -49,13 +49,13 @@ async function doImport(){const t=document.getElementById('t').value.trim();let 
 try{const j=JSON.parse(t);qs=Array.isArray(j)?j:j.questions;title=title||j.title}catch(e){qs=parse(t)}
 if(!qs||!qs.length){alert('No questions found.');return}
 qs=qs.map(x=>({q:x.q,c:Array.from(x.c||[]).map(s=>s||''),a:x.a??null,e:x.e??'',x:x.x||null}));if(await putSet(title||'Set',qs)){view='home';render()}}
-function home(){return `<h2>Reviewer Quiz</h2><button class="b" onclick="togSnd()">${snd?'🔊 Sound on':'🔇 Sound off'}</button>`+(navigator.onLine?'':'<p><small>Offline: your answers are saved on this phone and will sync when you’re back online.</small></p>')+(isEd?`<button class="b p" onclick="view='imp';render()">+ Add questions</button>`:'')+
+function home(){return `<h2>Reviewer Quiz <small>v8</small></h2><button class="b" onclick="togSnd()">${snd?'🔊 Sound on':'🔇 Sound off'}</button>`+(navigator.onLine?'':'<p><small>Offline: your answers are saved on this phone and will sync when you’re back online.</small></p>')+(isEd?`<button class="b p" onclick="view='imp';render()">+ Add questions</button>`:'')+
 (sets.length?sets.map(s=>{const lines=Object.keys(results).filter(u=>results[u][s.id]).map(u=>{const p=results[u][s.id];return `${u===me?'You':esc(names[u]?.name||'Someone')}: ${p.ok}/${p.g} correct · ${p.n}/${s.n} answered`}).join('<br>');
 return `<button class="b" onclick="openSet('${s.id}')"><b>${esc(s.title)}</b> <small>(${s.n} questions)</small>${lines?'<br><small>'+lines+'</small>':''}</button>`}).join(''):'<p><small>No quizzes yet.</small></p><button class="b" onclick="loadStarter()">Load the 2 starter sets</button>')}
 function imp(){return `<h2>Add questions</h2><input id="n" placeholder="Set name (optional)"><textarea id="t" placeholder="Paste question text or JSON"></textarea><button class="b p" onclick="doImport()">Save to server</button><button class="b" onclick="view='home';render()">Cancel</button>`}
 function openSet(id){cur=sets.find(s=>s.id===id);view='setup';render()}
 const tog=(k,t)=>`<button class="b ${opt[k]?'sel':''}" onclick="opt.${k}=!opt.${k};render()">${opt[k]?'☑':'☐'} ${t}</button>`;
-function setup(){const p=mine[cur.id];return `<h2>${esc(cur.title)}</h2>`+tog('c','Shuffle A/B/C/D positions')+tog('q','Randomize question order and numbers')+tog('r','Retry mode<br><small>After a wrong answer you can keep choosing. Shows only why the right answer is right. Score counts your first try.</small>')+
+function setup(){const p=mine[cur.id];return `<h2>${esc(cur.title)}</h2>`+tog('c','Shuffle A/B/C/D positions')+tog('q','Randomize question order and numbers')+tog('r','Retry mode<br><small>After a wrong answer it explains only the answer you picked (why it’s wrong) and lets you try again. Score counts your first try.</small>')+
 (p?`<button class="b p" onclick="resume()">Resume (${p.n}/${cur.n})</button>`:'')+`<button class="b ${p?'':'p'}" onclick="start()">Start new</button>`+
 (isEd?`<button class="b" onclick="del()"><small>Delete this set</small></button>`:'')+`<button class="b" onclick="view='home';render()">Back</button>`}
 async function del(){if(!confirm('Delete this set for everyone?'))return;try{await fs.deleteDoc(fs.doc(DB,'sets',cur.id));view='home';render()}catch(e){err(e)}}
@@ -72,7 +72,8 @@ if(grid)return h+`<div class="g">${S.o.map((k,n)=>`<button onclick="go(${n})" st
 h+=`<h3>${i+1}. ${esc(q.q)}</h3>`;
 pm.forEach((src,j)=>{const l=L[j];let cl='';if(rt){if(t.includes(l))cl=l===ca?'ok':'bad'}else if(a){if(ca)cl=l===ca?'ok':(l===a?'bad':'');else if(l===a)cl='sel'}h+=`<button class="b ${cl}" onclick="pick('${l}')"><b>${l}.</b> ${esc(q.c[src])}</button>`});
 if(rt&&t){const X=q.x||{},xc=X[L[pm[L.indexOf(ca)]]];let ex=solved?'<b>Correct'+(t.length>1?' (after '+(t.length-1)+' wrong '+(t.length>2?'tries':'try')+')':'')+'</b>':'<b>Not quite. Try again.</b>';
-if(xc||q.e)ex+='<br>'+(xc?'<b>Why the correct answer is right:</b> '+esc(xc):'')+(q.e?'<br><small>'+esc(q.e)+'</small>':'');h+='<div class="ex">'+ex+'</div>'}
+for(const w of t){if(w===ca)continue;const xw=X[L[pm[L.indexOf(w)]]];if(xw)ex+='<br><b>You chose '+w+':</b> '+esc(xw)}
+if(solved){if(xc)ex+='<br><b>Why '+ca+' is right:</b> '+esc(xc);if(q.e)ex+='<br><small>'+esc(q.e)+'</small>'}h+='<div class="ex">'+ex+'</div>'}
 else if(a&&ca){const X=q.x||{},xa=X[L[pm[L.indexOf(a)]]],xc=X[L[pm[L.indexOf(ca)]]],ok=a===ca;let ex='<b>'+(ok?'Correct':'Wrong. Correct answer: '+ca)+'</b>';
 if(!ok&&xa)ex+='<br><b>Why your answer ('+a+') is wrong:</b> '+esc(xa);
 if(xc)ex+='<br>'+(ok?'':'<b>Why '+ca+' is right:</b> ')+esc(xc);
